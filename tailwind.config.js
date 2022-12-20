@@ -3,18 +3,19 @@
 const chroma = require('chroma-js');
 
 const colors = {
-  primary: "#2c485e",
-  secondary: "#568dc3",
-  accent: "#ea526f",
-  neutral: "#3d4451",
+  primary: "#1d3557",
+  secondary: "#457b9d",
+  accent: "#a8dadc",
+  neutral: "#f1faee",
+  // e63946
 
   info: "#2094f3",
   success: "#009485",
   warning: "#ff9900",
   error: "#ff5724",
 
-  light: "#f9fafb",
-  dark: "#1f2937",
+  light: "#f1faee",
+  dark: "#1d3557",
 };
 
 const colorModifier = {
