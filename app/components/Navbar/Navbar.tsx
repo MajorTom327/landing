@@ -1,27 +1,30 @@
 import { Link } from "@remix-run/react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
 export const Navbar: React.FC<Props> = ({}) => {
+  const { t } = useTranslation();
   const linkClass = "py-4 px-4 bg-white/0 hover:bg-white/30";
+
   return (
     <>
       <div className="bg-primary w-full flex justify-center text-primary-content font-semibold flex-none">
         <div className="container flex justify-between transition-all">
           <Link to="/" className={linkClass}>
-            Valentin THOMAS
+            {t("site.name")}
           </Link>
 
           <div className="flex">
             <Link to="/" className={linkClass}>
-              Projects
+              {t("menu.project")}
             </Link>
             <Link to="/" className={linkClass}>
-              CV
+              {t("menu.cv")}
             </Link>
             <Link to="/" className={linkClass}>
-              Contact
+              {t("menu.contact")}
             </Link>
           </div>
         </div>
