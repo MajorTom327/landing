@@ -6,5 +6,10 @@
     "project": "Projets",
     "cv": "C.V.",
     "contact": "Me contacter"
+  },
+  "socials": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn"
   }
 }

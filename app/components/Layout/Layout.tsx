@@ -11,7 +11,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="container mx-auto py-2 flex-1">{children}</div>
+        <div className="flex-1">{children}</div>
         <Footer />
       </div>
     </>
