@@ -23,6 +23,7 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
           {causes.map((cause) => (
             <NavLink
               key={cause.title}
+              prefetch="intent"
               className={({ isActive }) =>
                 classNames(
                   "px-4 py-2 rounded transition-colors text-lg w-full text-center",
