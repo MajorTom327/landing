@@ -9,6 +9,7 @@ type Props = {};
 const causes = [
   { title: "causes.spa.title", route: "/home/spa" },
   { title: "causes.resto.title", route: "/home/resto" },
+  { title: "causes.privacy.title", route: "/home/privacy" },
 ];
 
 export const CauseThatMatter: React.FC<Props> = ({}) => {
