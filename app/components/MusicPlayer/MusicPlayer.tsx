@@ -1,6 +1,7 @@
 import { not } from "ramda";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ClientOnly } from "remix-utils";
 import bgmUrl from "~/assets/bgm.mp3";
 // import { FaPlayCircle } from "react-icons";
 
@@ -25,21 +26,27 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
 
   return (
     <>
-      <button
-        className="justify-center items-center flex flex-col text-md font-normal"
-        onClick={onToggle}
-      >
-        <div className="flex gap-2">
-          <div>{t("music.title")}</div>
-        </div>
+      <ClientOnly fallback={<></>}>
+        {() => (
+          <>
+            <button
+              className="justify-center items-center flex flex-col text-md font-normal"
+              onClick={onToggle}
+            >
+              <div className="flex gap-2">
+                <div>{t("music.title")}</div>
+              </div>
 
-        {isPlaying && (
-          <div className="text-xs text-gray-500">
-            Aphex Twin - Stone In Focus
-          </div>
+              {isPlaying && (
+                <div className="text-xs text-gray-500">
+                  Aphex Twin - Stone In Focus
+                </div>
+              )}
+            </button>
+            <audio ref={audioRef} src={bgmUrl} loop />
+          </>
         )}
-      </button>
-      <audio ref={audioRef} src={bgmUrl} loop />
+      </ClientOnly>
     </>
   );
 };
