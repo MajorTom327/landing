@@ -12,5 +12,17 @@
     "github": "GitHub",
     "twitter": "Twitter",
     "linkedin": "LinkedIn"
+  },
+  "causes": {
+    "title": "Les causes qui me tiennent à coeur",
+    "spa": {
+      "title": "SPA",
+      "reasons": [
+        "La SPA (Société protectrice des animaux) française est une organisation de bienfaisance qui a pour mission de protéger les animaux et de lutter contre la cruauté envers eux. J'aime la SPA française parce qu'elle offre une aide précieuse aux animaux qui ont besoin de protection et de soins.",
+        "La SPA française travaille dur pour s'assurer que les animaux sont bien traités et protégés contre la cruauté et l'abandon. Elle offre des services tels que la stérilisation et la vaccination pour aider à contrôler la population animale, ainsi que des programmes de réhabilitation et de réadaptation pour les animaux qui ont été maltraités ou abandonnés.",
+        "En plus de ses efforts pour protéger les animaux, la SPA française sensibilise également les gens à la cause animale et leur apprend à prendre soin de leurs compagnons à quatre pattes de manière responsable. Cela contribue à créer une société plus juste et plus respectueuse des animaux, ce qui est important pour moi.",
+        "En tant qu'animal lover, je suis reconnaissant envers la SPA française pour son travail crucial pour protéger et soutenir les animaux. Je suis fier de soutenir cette organisation et de contribuer à ses efforts pour améliorer la vie des animaux dans notre société."
+      ]
+    }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "Valentin Thomas"
+  },
+  "menu": {
+    "themes": "Subject I love",
+    "project": "My Projects",
+    "cv": "My C.V.",
+    "contact": "Contact me"
+  },
+  "social": {
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn"
+  },
+  "causes": {
+    "title": "The causes that matter for me",
+    "spa": {
+      "title": "SPA",
+      "reasons": [
+        "The French SPA (Society for the Protection of Animals) is a charitable organization that has the mission of protecting animals and fighting against cruelty towards them. I love the French SPA because it provides valuable assistance to animals that need protection and care.",
+        "The French SPA works hard to ensure that animals are well-treated and protected against cruelty and abandonment. It offers services such as sterilization and vaccination to help control the animal population, as well as rehabilitation and reintegration programs for animals that have been mistreated or abandoned.",
+        "In addition to its efforts to protect animals, the French SPA also raises awareness about animal welfare and teaches people how to care for their four-legged companions responsibly. This helps to create a more just and respectful society for animals, which is important to me.",
+        "As an animal lover, I am grateful to the French SPA for its crucial work in protecting and supporting animals. I am proud to support this organization and contribute to its efforts to improve the lives of animals in our society."
+      ]
+    }
+  }
+}
