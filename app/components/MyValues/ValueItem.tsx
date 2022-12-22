@@ -12,7 +12,7 @@ export const ValueItem: React.FC<Props> = ({ value }) => {
       <div className="flex gap-2 px-4">
         <div className="flex flex-col gap-2">
           <Title lg>{t(`${value}.title`)}</Title>
-          <Title md light>
+          <Title md light className="text-justify">
             {t(`${value}.description`)}
           </Title>
         </div>

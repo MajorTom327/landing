@@ -18,9 +18,9 @@ export const Cause: React.FC<Props> = ({ title, rows }) => {
   return (
     <div className="lg:w-2/3 px-4">
       <Title md>{t(title + ".title")}</Title>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3 text-justify">
         {description.map((desc) => (
-          <p key={desc}>{t(desc)}</p>
+          <p key={desc}>&nbsp;&nbsp;&nbsp;&nbsp;{t(desc)}</p>
         ))}
       </div>
     </div>
