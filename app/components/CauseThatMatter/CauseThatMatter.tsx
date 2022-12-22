@@ -7,9 +7,9 @@ import Title from "../Title";
 type Props = {};
 
 const causes = [
-  { title: "causes.spa.title", route: "/home/spa" },
-  { title: "causes.resto.title", route: "/home/resto" },
-  { title: "causes.privacy.title", route: "/home/privacy" },
+  { title: "causes.spa.title", route: "/home/cause/spa" },
+  { title: "causes.resto.title", route: "/home/cause/resto" },
+  { title: "causes.privacy.title", route: "/home/cause/privacy" },
 ];
 
 export const CauseThatMatter: React.FC<Props> = ({}) => {
@@ -19,14 +19,17 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
       <div className="container mx-auto py-8">
         <Title xl>{t("causes.title")}</Title>
 
-        <div className="flex gap-3">
+        <div className="flex justify-evenly w-full gap-3 py-2">
           {causes.map((cause) => (
             <NavLink
               className={({ isActive }) =>
-                classNames("px-4 py-2 rounded transition-colors", {
-                  "bg-primary text-primary-content": isActive,
-                  "bg-secondary text-secondary-content": !isActive,
-                })
+                classNames(
+                  "px-4 py-2 rounded transition-colors text-lg w-full text-center",
+                  {
+                    "bg-primary text-primary-content": isActive,
+                    "bg-secondary text-secondary-content": !isActive,
+                  }
+                )
               }
               to={cause.route}
             >

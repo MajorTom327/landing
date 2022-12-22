@@ -1,6 +1,7 @@
 import { Link } from "@remix-run/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import MusicPlayer from "../MusicPlayer/MusicPlayer";
 
 type Props = {};
 
@@ -16,10 +17,12 @@ export const Navbar: React.FC<Props> = ({}) => {
             {t("site.name")}
           </Link>
 
+          <MusicPlayer />
+
           <div className="flex">
-            <Link prefetch="intent" to="/themes" className={linkClass}>
+            {/* <Link prefetch="intent" to="/themes" className={linkClass}>
               {t("menu.themes")}
-            </Link>
+            </Link> */}
             <Link prefetch="intent" to="/projects" className={linkClass}>
               {t("menu.project")}
             </Link>

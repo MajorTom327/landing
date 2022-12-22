@@ -8,6 +8,9 @@
     "cv": "Mon C.V.",
     "contact": "Me contacter"
   },
+  "music": {
+    "title": "Naviguer avec mon ambiance musicale"
+  },
   "social": {
     "github": "GitHub",
     "twitter": "Twitter",
