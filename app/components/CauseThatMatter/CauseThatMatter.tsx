@@ -22,6 +22,7 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
         <div className="flex justify-evenly w-full gap-3 py-2">
           {causes.map((cause) => (
             <NavLink
+              key={cause.title}
               className={({ isActive }) =>
                 classNames(
                   "px-4 py-2 rounded transition-colors text-lg w-full text-center",

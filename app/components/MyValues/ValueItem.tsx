@@ -7,14 +7,18 @@ type Props = {
 
 export const ValueItem: React.FC<Props> = ({ value }) => {
   const { t } = useTranslation();
-  return (<>
-    <div className="flex gap-2">
-      <div className="flex flex-col gap-2">
-        <Title lg>{t(`${value}.title`)}</Title>
-        <Title md>{t(`${value}.description`)}</Title>
+  return (
+    <>
+      <div className="flex gap-2 px-4">
+        <div className="flex flex-col gap-2">
+          <Title lg>{t(`${value}.title`)}</Title>
+          <Title md light>
+            {t(`${value}.description`)}
+          </Title>
+        </div>
       </div>
-    </div>
-  </>);
+    </>
+  );
 }
 
 ValueItem.defaultProps = {

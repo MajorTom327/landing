@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ClientOnly } from "remix-utils";
 import bgmUrl from "~/assets/bgm.mp3";
-// import { FaPlayCircle } from "react-icons";
+import Play from "./Play";
+import Pause from "./Pause";
 
 type Props = {};
 
@@ -33,8 +34,11 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
               className="justify-center items-center flex flex-col text-md font-normal"
               onClick={onToggle}
             >
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <div>{t("music.title")}</div>
+                <div className="h-4 w-4">
+                  {isPlaying ? <Pause /> : <Play />}
+                </div>
               </div>
 
               {isPlaying && (

@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import MusicPlayer from "../MusicPlayer/MusicPlayer";
+import MusicPlayer from "../MusicPlayer";
 
 type Props = {};
 

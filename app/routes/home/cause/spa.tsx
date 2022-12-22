@@ -16,9 +16,12 @@ export const SpaCause: React.FC<Props> = ({}) => {
 
         <Divider />
 
-        <div className="grid lg:grid-cols-2 gap-2">
-          <div className="text-2xl flex justify-center items-center">
-            {t("causes.spa.posix")}
+        <div className="grid lg:grid-cols-2 gap-2 group">
+          <div className="text-2xl flex flex-col justify-center items-center">
+            <div className="text-2xl">{t("causes.spa.posix")}</div>
+            <div className="text-lg text-gray-300 group-hover:text-gray-500 transition-colors">
+              {t("causes.spa.posix_role")}
+            </div>
           </div>
           <div className="flex justify-center">
             <img
