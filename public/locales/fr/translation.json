@@ -73,5 +73,29 @@
       "title": "Honnêteté",
       "description": "Je suis honnête et je m'engage à être transparent et à être fidèle à mes engagements. Je suis digne de confiance et je suis fier de mon intégrité. J'apprecie autant de dire la vérité que de l'entendre qu'elle soit positive ou négative."
     }
+  },
+  "time": {
+    "now": "Maintenant"
+  },
+  "skills": {
+    "react": "React",
+    "node": "Node.js",
+    "express": "Express",
+    "mongo": "MongoDB",
+    "csharp": "C#",
+    "dotnet": ".NET",
+    "meteor": "Meteor",
+    "php": "PHP"
+  },
+  "jobs": {
+    "fullstack": "Développeur Fullstack",
+    "csharp": "Développeur logiciel C#"
+  },
+  "societies": {
+    "fasst": "F.ASS.T",
+    "ededoc": "Ededoc",
+    "monbuilding": "MonBuilding",
+    "solicis": "Solicis",
+    "mscpi": "MeilleureSCPI"
   }
 }

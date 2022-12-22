@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ClientOnly } from "remix-utils";
 import bgmUrl from "~/assets/bgm.mp3";
+
+import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
 import Play from "./Play";
 import Pause from "./Pause";
 
@@ -36,9 +38,7 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
             >
               <div className="flex gap-2 items-center">
                 <div>{t("music.title")}</div>
-                <div className="h-4 w-4">
-                  {isPlaying ? <Pause /> : <Play />}
-                </div>
+                {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
               </div>
 
               {isPlaying && (
