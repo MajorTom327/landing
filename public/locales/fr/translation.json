@@ -3,8 +3,9 @@
     "name": "Valentin Thomas"
   },
   "menu": {
-    "project": "Projets",
-    "cv": "C.V.",
+    "themes": "Les Sujets",
+    "project": "Mes Projets",
+    "cv": "Mon C.V.",
     "contact": "Me contacter"
   },
   "social": {

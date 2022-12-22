@@ -1,30 +1,20 @@
 Arguments: 
-  /usr/local/Cellar/node/19.1.0/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js add -D @types/i18next-http-backend
+  /usr/local/share/nvm/versions/node/v16.18.1/bin/node /usr/share/yarn/bin/yarn.js
 
 PATH: 
-  /Users/vthomas/Library/pnpm:/Users/vthomas/bin:/Users/vthomas/Library/pnpm:/Users/vthomas/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/vthomas/.cargo/bin
+  /usr/local/rvm/gems/ruby-3.1.3/bin:/usr/local/rvm/gems/ruby-3.1.3@global/bin:/usr/local/rvm/rubies/ruby-3.1.3/bin:/vscode/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/opt/conda/bin:/usr/local/php/current/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v16.18.1/bin:/usr/local/hugo/bin:/usr/local/dotnet/current:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/codespace/.dotnet/tools:/usr/local/rvm/bin
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  19.1.0
+  16.18.1
 
 Platform: 
-  darwin x64
+  linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fi18next-http-backend: Not found
-      at params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
-      at self.callback (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1359:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  Error: ENOTEMPTY: directory not empty, rmdir '/home/codespace/.cache/yarn/v6/npm-react-icons-4.7.1-0f4b25a5694e6972677cb189d2a72eabea7a8345-integrity/node_modules/react-icons'
 
 npm manifest: 
   {
@@ -49,11 +39,12 @@ npm manifest:
       "cross-env": "^7.0.3",
       "express": "^4.18.2",
       "helmet": "^6.0.1",
-      "i18next": "^22.4.6",
+      "i18next": "^22.0.6",
       "i18next-browser-languagedetector": "^7.0.1",
-      "i18next-chained-backend": "^4.2.0",
-      "i18next-fs-backend": "^2.1.1",
-      "i18next-localstorage-backend": "^4.1.0",
+      "i18next-chained-backend": "^4.0.1",
+      "i18next-fs-backend": "^2.0.1",
+      "i18next-http-backend": "^2.0.2",
+      "i18next-localstorage-backend": "^4.0.1",
       "isbot": "^3.6.5",
       "luxon": "^3.1.1",
       "morgan": "^1.10.0",
@@ -61,9 +52,9 @@ npm manifest:
       "ramda-adjunct": "^3.4.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
-      "react-i18next": "^12.1.1",
+      "react-i18next": "^12.0.0",
       "react-icons": "^4.7.1",
-      "remix-i18next": "^5.0.0",
+      "remix-i18next": "^4.2.0",
       "remix-utils": "^5.1.0"
     },
     "devDependencies": {
@@ -2694,6 +2685,13 @@ Lockfile:
     dependencies:
       cross-spawn "^7.0.1"
   
+  cross-fetch@3.1.5:
+    version "3.1.5"
+    resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+    integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+    dependencies:
+      node-fetch "2.6.7"
+  
   cross-spawn@^6.0.5:
     version "6.0.5"
     resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -4199,19 +4197,26 @@ Lockfile:
     dependencies:
       "@babel/runtime" "^7.19.4"
   
-  i18next-chained-backend@^4.2.0:
+  i18next-chained-backend@^4.0.1:
     version "4.2.0"
     resolved "https://registry.yarnpkg.com/i18next-chained-backend/-/i18next-chained-backend-4.2.0.tgz#8d2ccba6f2faca14d2bc5023ba61c759215b99a9"
     integrity sha512-p3qhv6GMouhpcFPnOBqSDsQyVrwZu+PKr+kXaEAGE+w9O39t4pbpBsFYjxh4Nvhn8MUEXstaDx4ZuQvsNlI5fg==
     dependencies:
       "@babel/runtime" "^7.19.4"
   
-  i18next-fs-backend@^2.1.1:
+  i18next-fs-backend@^2.0.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.1.1.tgz#07c6393be856c5a398e3dfc1257bf8439841cd89"
     integrity sha512-FTnj+UmNgT3YRml5ruRv0jMZDG7odOL/OP5PF5mOqvXud2vHrPOOs68Zdk6iqzL47cnnM0ZVkK2BAvpFeDJToA==
   
-  i18next-localstorage-backend@^4.1.0:
+  i18next-http-backend@^2.0.2:
+    version "2.1.1"
+    resolved "https://registry.yarnpkg.com/i18next-http-backend/-/i18next-http-backend-2.1.1.tgz#72a21d61c2e96eea9ad45ba1b9dd0090e119709a"
+    integrity sha512-jByfUCDVgQ8+/Wens7queQhYYvMcGTW/lR4IJJNEDDXnmqjLrwi8ubXKpmp76/JIWEZHffNdWqnxFJcTVGeaOw==
+    dependencies:
+      cross-fetch "3.1.5"
+  
+  i18next-localstorage-backend@^4.0.1:
     version "4.1.0"
     resolved "https://registry.yarnpkg.com/i18next-localstorage-backend/-/i18next-localstorage-backend-4.1.0.tgz#b2e99eb18312654b3b13b34bb25331fbe1d3b380"
     integrity sha512-lxcuww2QSIvu3Ev5fiysTrAjNzWwhVh2u+/ZJCkxIg9Eo9KL5A8qQwmujlsdADs4YjfjxPm/GaivIYxcqWqKgg==
@@ -4225,7 +4230,7 @@ Lockfile:
     dependencies:
       "@babel/runtime" "^7.17.2"
   
-  i18next@^22.4.6:
+  i18next@^22.0.6:
     version "22.4.6"
     resolved "https://registry.yarnpkg.com/i18next/-/i18next-22.4.6.tgz#876352c3ba81bdfedc38eeda124e2bbd05f46988"
     integrity sha512-9Tm1ezxWyzV+306CIDMBbYBitC1jedQyYuuLtIv7oxjp2ohh8eyxP9xytIf+2bbQfhH784IQKPSYp+Zq9+YSbw==
@@ -5748,7 +5753,7 @@ Lockfile:
     dependencies:
       minimatch "^3.0.2"
   
-  node-fetch@^2.6.7:
+  node-fetch@2.6.7, node-fetch@^2.6.7:
     version "2.6.7"
     resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
     integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
@@ -6469,7 +6474,7 @@ Lockfile:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
   
-  react-i18next@^12.1.1:
+  react-i18next@^12.0.0:
     version "12.1.1"
     resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-12.1.1.tgz#2626cdbfe6bcb76ef833861c0184a5c4e5e3c089"
     integrity sha512-mFdieOI0LDy84q3JuZU6Aou1DoWW2fhapcTGeBS8+vWSJuViuoCLQAMYSb0QoHhXS8B0WKUOPpx4cffAP7r/aA==
@@ -6698,10 +6703,10 @@ Lockfile:
       mdast-util-to-hast "^11.0.0"
       unified "^10.0.0"
   
-  remix-i18next@^5.0.0:
-    version "5.0.0"
-    resolved "https://registry.yarnpkg.com/remix-i18next/-/remix-i18next-5.0.0.tgz#e9555dab0fd60cde0fdb98a728102baece65fa0a"
-    integrity sha512-HB7FjbxdkSDwqMAgVzAb3UTxkzK0mUzRiIvH+GsdoLd6avJVn5Lr4NUs3vLQi9Ez2ufA0QrjGXDEIHBs+26ppA==
+  remix-i18next@^4.2.0:
+    version "4.2.0"
+    resolved "https://registry.yarnpkg.com/remix-i18next/-/remix-i18next-4.2.0.tgz#d32aa9dd053149bee5adea858360139ba69a6984"
+    integrity sha512-jRQJ88ppu49x8pp4hEAUuEdGjaEOxSPGP0JcpP7bW6C/N0cCqB49E0dHGYljibn5iSyIszj7SNgF7GaNvwJVGQ==
     dependencies:
       accept-language-parser "^1.5.0"
       intl-parse-accept-language "^1.0.0"

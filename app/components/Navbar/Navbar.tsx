@@ -17,13 +17,16 @@ export const Navbar: React.FC<Props> = ({}) => {
           </Link>
 
           <div className="flex">
-            <Link prefetch="intent" to="/" className={linkClass}>
+            <Link prefetch="intent" to="/themes" className={linkClass}>
+              {t("menu.themes")}
+            </Link>
+            <Link prefetch="intent" to="/projects" className={linkClass}>
               {t("menu.project")}
             </Link>
-            <Link prefetch="intent" to="/" className={linkClass}>
+            <Link prefetch="intent" to="/cv" className={linkClass}>
               {t("menu.cv")}
             </Link>
-            <Link prefetch="intent" to="/" className={linkClass}>
+            <Link prefetch="intent" to="/contact" className={linkClass}>
               {t("menu.contact")}
             </Link>
           </div>
