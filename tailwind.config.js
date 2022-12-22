@@ -26,7 +26,7 @@ const colorModifier = {
 const toLight = (color) => chroma(color).brighten(colorModifier.light).hex();
 const toDark = (color) => chroma(color).darken(colorModifier.light).hex();
 const getContentColor = (color) =>
-  chroma.contrast(color, colors.light) > 4.5 ? colors.light : colors.dark;
+  chroma.contrast(color, colors.light) > 4 ? colors.light : colors.dark;
 
 module.exports = {
   content: [

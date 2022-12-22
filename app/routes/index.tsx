@@ -1,11 +1,3 @@
-import ActorHero from "~/components/ActorHero";
-import CauseThatMatter from "~/components/CauseThatMatter";
+import { redirect } from "@remix-run/node";
 
-export default function Index() {
-  return (
-    <>
-      <ActorHero />
-      <CauseThatMatter />
-    </>
-  );
-}
+export const loader: LoaderFunction = async () => redirect("/home");
