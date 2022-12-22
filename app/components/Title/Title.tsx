@@ -8,6 +8,7 @@ type Props = {
   lg?: boolean;
   md?: boolean;
   sm?: boolean;
+  center?: boolean
 };
 
 export const Title: React.FC<Props> = ({
@@ -17,6 +18,7 @@ export const Title: React.FC<Props> = ({
   lg,
   md,
   sm,
+  center,
 }) => {
   const classes = classNames(
     "font-semibold",
@@ -25,7 +27,9 @@ export const Title: React.FC<Props> = ({
       "text-3xl": lg,
       "text-2xl": md,
       "text-xl": sm,
+      "text-center": center
     },
+
     className
   );
 

@@ -20,6 +20,7 @@
     "title": "Les causes qui me tiennent à coeur",
     "spa": {
       "title": "SPA",
+      "posix": "Faites connaissance avec mon meilleur ami: Posix",
       "reasons": [
         "La SPA (Société protectrice des animaux) française est une organisation de bienfaisance qui a pour mission de protéger les animaux et de lutter contre la cruauté envers eux. J'aime la SPA française parce qu'elle offre une aide précieuse aux animaux qui ont besoin de protection et de soins.",
         "La SPA française travaille dur pour s'assurer que les animaux sont bien traités et protégés contre la cruauté et l'abandon. Elle offre des services tels que la stérilisation et la vaccination pour aider à contrôler la population animale, ainsi que des programmes de réhabilitation et de réadaptation pour les animaux qui ont été maltraités ou abandonnés.",
@@ -51,6 +52,25 @@
     "description": "Je suis un développeur web. Je suis passionné par le développement web et l'innovation."
   },
   "personality": {
-    "title": "Ma personnalité"
+    "title": "Ma personnalitée"
+  },
+  "values": {
+    "title": "Mes valeurs",
+    "openness": {
+      "title": "Ouverture d'esprit",
+      "description": "Je suis ouvert à de nouvelles expériences et à de nouvelles idées. Je suis curieux et j'aime apprendre de nouvelles choses."
+    },
+    "quality": {
+      "title": "Qualité",
+      "description": "Je m'efforce de faire de mon mieux dans tout ce que je fais. Je suis fier de mon travail et je m'engage à fournir des produits de qualité. Je suis toujours à la recherche de nouvelles façons d'améliorer mes compétences et mes connaissances que ce soit en outils comme en langages."
+    },
+    "creativity": {
+      "title": "Créativité",
+      "description": "Je suis créatif et j'aime trouver des solutions innovantes aux problèmes. Je suis toujours à la recherche de nouvelles idées et de nouvelles façons de faire les choses. J'aime créer des choses et je suis fier de mon imagination. J'apprecie de voir mes idées se concrétiser et voir mes créations prendre vie."
+    },
+    "honesty": {
+      "title": "Honnêteté",
+      "description": "Je suis honnête et je m'engage à être transparent et à être fidèle à mes engagements. Je suis digne de confiance et je suis fier de mon intégrité. J'apprecie autant de dire la vérité que de l'entendre qu'elle soit positive ou négative."
+    }
   }
 }

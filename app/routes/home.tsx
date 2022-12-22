@@ -2,7 +2,7 @@ import { Outlet } from "@remix-run/react";
 import React from "react";
 import ActorHero from "~/components/ActorHero";
 import CauseThatMatter from "~/components/CauseThatMatter";
-import Personality from "~/components/Personality";
+import MyValues from "~/components/MyValues";
 import Divider from "../components/Divider";
 
 type Props = {};
@@ -20,7 +20,7 @@ export const Home: React.FC<Props> = ({}) => {
           <Divider />
         </div>
 
-        <Personality />
+        <MyValues />
       </div>
     </>
   );

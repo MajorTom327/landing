@@ -18,3 +18,45 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+.animate-floating {
+  animation: floating linear 20s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  12.5% {
+    transform: translate(3%, 0%);
+  }
+
+  25% {
+    transform: translate(5%, 2%);
+  }
+
+  37.5% {
+    transform: translate(3%, -2%);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  62.5% {
+    transform: translate(-3%, 2%)
+  }
+
+  75% {
+    transform: translate(-5%, 0%);
+  }
+
+  87.5% {
+    transform: translate(-3%, -2%)
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

@@ -722,6 +722,10 @@ select {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-96 {
   height: 24rem;
 }
@@ -782,6 +786,10 @@ select {
   gap: 0.75rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -792,6 +800,10 @@ select {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -876,6 +888,11 @@ select {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -896,17 +913,12 @@ select {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .text-neutral-content {
@@ -1006,6 +1018,48 @@ select {
   }
 }
 
+.animate-floating {
+  animation: floating linear 20s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  12.5% {
+    transform: translate(3%, 0%);
+  }
+
+  25% {
+    transform: translate(5%, 2%);
+  }
+
+  37.5% {
+    transform: translate(3%, -2%);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  62.5% {
+    transform: translate(-3%, 2%)
+  }
+
+  75% {
+    transform: translate(-5%, 0%);
+  }
+
+  87.5% {
+    transform: translate(-3%, -2%)
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -1037,5 +1091,9 @@ select {
 @media (min-width: 1024px) {
   .lg\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
