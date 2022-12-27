@@ -42,7 +42,7 @@ export const TimelineItem: React.FC<Props> = ({ item, isFirst }) => {
     <>
       <div className="grid grid-cols-4 group px-2">
         <TimelineLine isFirst={isFirst} />
-        <div className="my-2 bg-secondary text-secondary-content p-2 rounded-xl col-span-3 shadow-xl border border-secondary-darken flex flex-col gap-2 transition transform group-hover:-translate-x-4 border-b-8">
+        <div className="my-2 bg-secondary text-secondary-content p-2 rounded-xl col-span-3 shadow-xl border border-secondary-darken flex flex-col gap-2 transition transform group-hover:motion-safe:-translate-x-4 border-b-8">
           <Title>
             <div className="flex gap-3">
               <span>{t(item.title)}</span>

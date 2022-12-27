@@ -89,7 +89,7 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
       <body className="bg-neutral text-neutral-content">
         <AuthenticityTokenProvider token={csrf}>
           <Layout>{children}</Layout>
-          <ScrollRestoration />
+          {/* <ScrollRestoration /> */}
           <Scripts />
           <LiveReload />
         </AuthenticityTokenProvider>

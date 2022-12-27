@@ -78,10 +78,13 @@
     "now": "Maintenant"
   },
   "skills": {
+    "remix": "Remix.run",
     "react": "React",
     "node": "Node.js",
     "express": "Express",
     "mongo": "MongoDB",
+    "web3": "Web3",
+    "mysql": "MySQL",
     "csharp": "C#",
     "dotnet": ".NET",
     "meteor": "Meteor",
@@ -97,5 +100,46 @@
     "monbuilding": "MonBuilding",
     "solicis": "Solicis",
     "mscpi": "MeilleureSCPI"
+  },
+  "inspect": {
+    "repository": "Voir le code source",
+    "website": "Voir le site web"
+  },
+  "projects": {
+    "bellz": {
+      "title": "Bellz",
+      "description": [
+        "Bellz est une application de gestion comptable destinée aux particuliers qui souhaitent mieux gérer leurs finances. Elle permet de lister les transactions et les comptes de manière organisée, ce qui facilite la prise de décision financière. L'application offre également la possibilité de partager ces informations avec d'autres personnes, ce qui peut être utile lorsqu'on travaille en couple ou en famille. Disponible en tant que service web, Bellz permet aux utilisateurs de suivre leur comptabilité depuis n'importe où et à tout moment. En utilisant cette application, les particuliers peuvent atteindre leurs objectifs financiers de manière plus efficace et organisée.",
+        "Cette application a été construite autour de Remix afin d'apprendre a utiliser ce framework ainsi que d'apprendre certaines optimisations de sorte a reduire le temps de chargement et rendre l'application la plus rapide possible. Elle a été pensée pour permettre une utilisation sans javascript sur le front ainsi que dans des conditions de reseau hautement dégradée.",
+        "Elle m'aura aussi permis de produire une base de projet baser sur Remix, TailwindCSS et revolut afin d'avoir un template de service SaaS complet et performant."
+      ]
+    },
+    "deadsafe": {
+      "title": "The DeadSafe",
+      "description": [
+        "The DeadSafe c'est un projet ambitieux de jeux decentralise de gestion basé sur les NFTs dont le but est de deverrouiller l'acces a un coffre fort.",
+        "DeadSafe est en cours de création."
+      ]
+    },
+    "basemint": {
+      "title": "BaseMint",
+      "description": [
+        "Le projet de basemint est un fanart dont l'objectif est d'apprendre l'utilisation du web3 et les interractions avec un contrat ethereum. Dans le cas ci present, le contrat de VirtueAnimation pour leur NFT BaseMint Buds.",
+        "J'ai pu ainsi apprendre a afficher les informations de base d'un contrat et interagir avec au travers de javascript"
+      ]
+    },
+    "andromeda": {
+      "title": "Andromeda",
+      "description": [
+        "Andromeda est une application conçue pour aider les développeurs à mieux gérer leur temps et à se souvenir de ce qu'ils ont accompli la veille. Elle offre une interface Kanban facile à utiliser qui permet aux développeurs de suivre leur journée de travail et de se remémorer ce qu'ils ont accompli lors de leur Daily. Cette application est développée en Meteor avec React et utilise MongoDB comme base de données. Elle permet aux développeurs de mieux organiser leur travail et de suivre leur progression de manière efficace.",
+        "J'ai pu profiter de la creation de cette application pour pouvoir travailler sur une interface donnant un etat visuel des choses a travers des animations de la page."
+      ]
+    },
+    "styx": {
+      "title": "Styx",
+      "description": [
+        "Styx est une application de gestion de client pour crématorium, elle permet simplement de gérer les defunts et les informations associée. "
+      ]
+    }
   }
 }
