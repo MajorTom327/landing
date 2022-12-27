@@ -101,6 +101,33 @@
     "solicis": "Solicis",
     "mscpi": "MeilleureSCPI"
   },
+  "experiences": {
+    "fasst": {
+      "description": [
+        "Pendant cette expérience professionnelle, j'ai travaillé avec des technologies telles que React, NodeJS, GraphQL et MongoDB pour développer des applications pour le secteur des assurances. J'ai également appris de nombreuses nouvelles compétences et j'ai évolué au sein d'une équipe en croissance. J'ai aidé des développeurs junior en reconversion à s'intégrer à l'entreprise et j'ai participé à la structuration de l'entreprise qui est passée de moins d'une dizaine de collaborateurs à environ 50. Cette expérience professionnelle m'a permis de développer mes compétences techniques et de travailler dans un environnement en constante évolution. J'ai également contribué à la croissance et au développement de l'entreprise en accompagnant les développeurs junior et en participant à la structuration de l'entreprise."
+      ]
+    },
+    "ededoc": {
+      "description": [
+        "Pendant cette expérience professionnelle, j'ai appris à coder en C# pour travailler sur le développement d'une application d'imprimante virtuelle destinée à la dématérialisation de documents pour les entreprises. Mes principales tâches ont consisté à créer un système autour des emails pour m'assurer de la traçabilité de la livraison des emails en gérant les bounces, ainsi que l'intégration de la signature electronique de documents dans le flux de travail de l'imprimante. J'ai également travaillé sur du JavaScript en développant un système de scrapping qui permettait de récupérer des factures sur des portails de FAI. Cette expérience professionnelle m'a permis de développer mes compétences en développement d'applications natives et en traitement de données à partir de sites Web."
+      ]
+    },
+    "monbuilding": {
+      "description": [
+        "Pendant cette courte expérience professionnelle, j'ai découvert Meteor.js et commencé à apprendre ReactJS. J'ai eu la responsabilité d'intégrer le suivi de machines à laver avec pour objectif d'avoir l'information en quasi temps-réel. Cela a été une expérience enrichissante car c'était ma première expérience dans l'univers NodeJS et cela a donc été une sorte de révélation sur mon affection pour l'univers JS et les applications temps-réel. Cette expérience m'a permis de découvrir de nouvelles technologies et de renforcer mes compétences en développement web."
+      ]
+    },
+    "solicis": {
+      "description": [
+        "Cette expérience chez Solicis a été difficile car j'ai commencé à approfondir mes connaissances en PHP afin d'intégrer un site vitrine pour une agence de vente de maisons. Celle-ci utilisait le framework Zend. Cependant, j'ai peu apprécié cette expérience, ce qui confirme mon manque d'appétence pour PHP. Bien que cette expérience m'ait permis de développer mes compétences en PHP, j'ai réalisé que ce n'est pas une technologie qui m'intéresse particulièrement."
+      ]
+    },
+    "mscpi": {
+      "description": [
+        "Cette expérience a eu lieu à Paris, au sein de MeilleureSCPI, une société qui gère les accès à l'investissement immobilier dans le cadre de SCPI. J'ai commencé à travailler avec PHP dans le contexte d'un framework legacy et j'ai également développé des composants en Vue.js 2. Cela m'a permis également d'apprendre Bootstrap et de travailler en équipe avec Git. Cette expérience m'a donné l'occasion de développer mes compétences en PHP et en développement web, ainsi que de travailler avec des technologies modernes."
+      ]
+    }
+  },
   "inspect": {
     "repository": "Voir le code source",
     "website": "Voir le site web"

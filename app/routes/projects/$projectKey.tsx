@@ -20,7 +20,9 @@ export const $project: React.FC<Props> = ({}) => {
   return (
     <div className="flex flex-col gap-4">
       {project.description?.map((p, i) => (
-        <p key={i + 1}>{t(p)}</p>
+        <p className="text-justify" key={i + 1}>
+          {t(p)}
+        </p>
       ))}
 
       {project.image && (

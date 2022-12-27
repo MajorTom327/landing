@@ -60,7 +60,13 @@ export const TimelineItem: React.FC<Props> = ({ item, isFirst }) => {
             <div>-</div>
             <div>{endOf ? toStr(endOf) : t("time.now")}</div>
           </div>
-          <p className="text-justify">{t(item.description)}</p>
+          <div className="flex gap-2">
+            {item.description.map((description) => (
+              <p className="text-justify" key={description}>
+                {t(description)}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </>
