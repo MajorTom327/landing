@@ -2,6 +2,7 @@ import { Outlet, NavLink } from "@remix-run/react";
 import classNames from "classnames";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Routlet from "../Routlet/Routlet";
 import Title from "../Title";
 
 type Props = {};
@@ -40,6 +41,8 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
           ))}
         </div>
       </div>
+
+      <Routlet route={"/home/cause"} />
     </>
   );
 };
