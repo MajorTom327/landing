@@ -168,6 +168,7 @@
     "subject": "The subjet of your message",
     "message": "Your message",
     "email": "Your contact email",
-    "send": "Send"
+    "send": "Send",
+    "submited": "Your message has been sent, I will answer you as soon as possible."
   }
 }

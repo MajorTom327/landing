@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useMatches,
 } from "@remix-run/react";
 import Layout from "./components/Layout";
 
@@ -21,13 +22,10 @@ import {
   AuthenticityTokenProvider,
   createAuthenticityToken,
 } from "remix-utils";
-import { sessionStorage } from "./services/session.server";
+import { sessionStorage } from "~/services/session.server";
 
 export function links() {
-  return [
-    { rel: "stylesheet", href: styles },
-    { rel: "script", href: "/smart-form.min.js" },
-  ];
+  return [{ rel: "stylesheet", href: styles }];
 }
 
 export const meta: MetaFunction = () => ({
