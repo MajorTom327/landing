@@ -161,6 +161,13 @@
         "Styx is a customer management application for crematoriums, it simply allows managing the deceased and associated information."
       ]
     }
+  },
+  "contact": {
+    "title": "Contact me",
+    "name": "Your name",
+    "subject": "The subjet of your message",
+    "message": "Your message",
+    "email": "Your contact email",
+    "send": "Send"
   }
-
 }

@@ -168,5 +168,14 @@
         "Styx est une application de gestion de client pour crématorium, elle permet simplement de gérer les defunts et les informations associée. "
       ]
     }
+  },
+  "contact": {
+    "title": "Me contacter",
+    "description": "Vous pouvez me contacter via le formulaire ci-dessous ou par email à l'adresse suivante :",
+    "name": "Votre nom",
+    "subject": "Sujet de votre message",
+    "message": "Votre message",
+    "email": "Votre email de contact",
+    "send": "Envoyer"
   }
 }

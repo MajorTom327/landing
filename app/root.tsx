@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "~/services/i18n.server";
 
 import styles from "./styles/app.css";
+
 import {
   AuthenticityTokenProvider,
   createAuthenticityToken,
@@ -23,7 +24,10 @@ import {
 import { sessionStorage } from "./services/session.server";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "script", href: "/smart-form.min.js" },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
