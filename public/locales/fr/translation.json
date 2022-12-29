@@ -90,6 +90,9 @@
     "meteor": "Meteor",
     "php": "PHP"
   },
+  "timeline": {
+    "title": "Mon parcours"
+  },
   "jobs": {
     "fullstack": "Développeur Fullstack",
     "csharp": "Développeur logiciel C#"
@@ -178,5 +181,24 @@
     "email": "Votre email de contact",
     "send": "Envoyer",
     "submited": "Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais."
+  },
+  "hobbies": {
+    "title": "Mes hobbies",
+    "game": "Jeux videos",
+    "code": "Code",
+    "gym": "Gym",
+    "blockchain": "Blockchain"
+  },
+  "workingValues": {
+    "title": "Certaines valeurs dans le travail qui me sont chères",
+    "pride": {
+      "title": "La fierté",
+      "description": "Je pense que réaliser quelque chose de bien fait et de propre est une source de fierté et de motivation. L'idée même de pouvoir montrer ce que j'ai fait et de pouvoir en parler avec fierté est un des moteurs de mon travail. Je pense que les créations numériques sont des choses dont la réalisation apporte quelque chose à autrui."
+    },
+    "kindness": {
+      "title": "La bienveillance",
+      "description": "L'apprentissage est un long parcours. Tout le monde apprend et a son rythme. Tout le monde a quelque chose à apprendre aux autres. Je préfère partir du principe que les personnes avec qui j'interagis ont quelque chose à m'apporter. C'est quelque chose qui me permet de rester ouvert, d'apporter mon aide tout en apprenant de mes interlocuteurs."
+    }
+
   }
 }

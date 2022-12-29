@@ -762,6 +762,11 @@ select {
   margin-bottom: 2rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -772,6 +777,10 @@ select {
 
 .-mt-4 {
   margin-top: -1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -860,6 +869,10 @@ select {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -902,6 +915,10 @@ select {
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -1069,6 +1086,11 @@ select {
   padding-bottom: 0.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1114,6 +1136,18 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[4rem\] {
+  font-size: 4rem;
+}
+
+.text-\[3\.5rem\] {
+  font-size: 3.5rem;
 }
 
 .font-semibold {
@@ -1444,6 +1478,11 @@ select {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   @media (prefers-reduced-motion: no-preference) {

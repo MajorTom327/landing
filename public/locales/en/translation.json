@@ -89,6 +89,9 @@
     "meteor": "Meteor",
     "php": "PHP"
   },
+  "timeline": {
+    "title": "My timeline"
+  },
   "jobs": {
     "fullstack": "Fullstack Developer",
     "csharp": "C# Developer"
@@ -170,5 +173,23 @@
     "email": "Your contact email",
     "send": "Send",
     "submited": "Your message has been sent, I will answer you as soon as possible."
+  },
+  "hobbies": {
+    "title": "My hobbies",
+    "game": "Games",
+    "code": "Programming",
+    "gym": "Gym",
+    "blockchain": "Blockchain"
+  },
+  "workingValues": {
+    "title": "Some values in work that are dear to me",
+    "pride": {
+      "title": "Pride",
+      "description": "I believe that achieving something well-made and clean is a source of pride and motivation. The very idea of being able to show what I have done and being able to talk about it with pride is one of the driving forces behind my work. I believe that digital creations are things whose realization brings something to others."
+    },
+    "kindness": {
+      "title": "Kindness",
+      "description": "Learning is a long journey. Everyone learns at their own pace. Everyone has something to learn from others. I prefer to assume that the people I interact with have something to offer me. This helps me to stay open, to offer my help while learning from my interlocutors."
+    }
   }
 }
