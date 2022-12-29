@@ -12,7 +12,7 @@ export const Navbar: React.FC<Props> = ({}) => {
   return (
     <>
       <div className="bg-primary w-full flex justify-center text-primary-content font-semibold flex-none">
-        <div className="container flex justify-between transition-all">
+        <div className="container flex flex-col gap-2 md:flex-row justify-between transition-all">
           <Link prefetch="intent" to="/" className={linkClass}>
             {t("site.name")}
           </Link>
