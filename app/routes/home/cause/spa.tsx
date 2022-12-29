@@ -1,6 +1,6 @@
 import React from "react";
 import { Cause } from "~/components/CauseThatMatter";
-import posixUrl from "~/assets/posix.jpeg";
+import posixUrl from "~/assets/posix.jpg";
 import { T } from "ramda";
 import { useTranslation } from "react-i18next";
 import Divider from "~/components/Divider";

@@ -1,6 +1,6 @@
-import andromedaAsset from '../assets/andromeda.png';
-import basemintAsset from '../assets/basemint.png';
-import deadsafeAsset from '../assets/deadsafe.png';
+import andromedaAsset from '../assets/andromeda.jpg';
+import basemintAsset from '../assets/basemint.jpg';
+import deadsafeAsset from '../assets/deadsafe.jpg';
 
 export type Project = {
   key: string;
