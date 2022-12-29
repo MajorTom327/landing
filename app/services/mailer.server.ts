@@ -16,6 +16,12 @@ export class Mailer {
   nm: any;
 
   constructor() {
+
+    console.log("Connecting to Mailgun");
+    console.log("=====================")
+    console.log("API Key: " + api_key);
+    console.log("Domain:  " + domain);
+    console.log("From:    " + mailgunFrom);
     const auth = {
       auth: {
         api_key,
