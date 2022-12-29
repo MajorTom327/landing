@@ -36,7 +36,7 @@ export class Mailer {
     return this.nm.sendMail({
       from: mailgunFrom,
       to: 'me@valentin-thomas.com',
-      subject: 'Received a message from your website',
+      subject: `[WEBSITE CONTACT] ${name} <${email}>: ${subject}`,
       replyTo: `${name} <${email}>`,
       html: `
         <h1>Received a message from your website</h1>
