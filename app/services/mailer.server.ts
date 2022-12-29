@@ -46,6 +46,10 @@ export class Mailer {
         Subject: ${subject}
         Message: ${message}
       `
+    }).then(() => {
+      console.log('Message sent');
+    }).catch((err: any) => {
+      console.error(err);
     });
   }
 
