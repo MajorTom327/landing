@@ -104,4 +104,4 @@ jobs:
               IdentityFile ~/.ssh/id_ed25519
           if_key_exists: fail
       - name: Copy files
-        run: ssh valentin-thomas "docker-compose pull ; docker-compose up -d ; cat .zshrc"
+        run: ssh valentin-thomas "docker-compose pull ; docker-compose up -d"
