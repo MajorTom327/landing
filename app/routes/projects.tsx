@@ -24,6 +24,7 @@ export const Index: React.FC<Props> = ({}) => {
               <a
                 className="underline text-accent-darken hover:text-accent"
                 target="_blank"
+                rel="noopener noreferrer"
                 href={constants.social.github}
               >
                 {t("social.github")}
