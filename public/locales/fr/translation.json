@@ -136,6 +136,7 @@
     "website": "Voir le site web"
   },
   "projects": {
+    "title": "Si vous voulez en voir plus vous pouvez toujours aller voir sur <0>mon $t(social.github)</0>",
     "bellz": {
       "title": "Bellz",
       "description": [

@@ -129,6 +129,7 @@
     "website": "Open the website"
   },
   "projects": {
+    "title": "If you want to see more, you still can go on <0>my $t(social.github)</0>",
     "bellz": {
       "title": "Bellz",
       "description": [

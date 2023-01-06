@@ -1,5 +1,7 @@
 import nodemailer from 'nodemailer';
 import mg from 'nodemailer-mailgun-transport';
+import { isNil } from 'ramda';
+import { isNilOrEmpty, isNotNilOrEmpty } from 'ramda-adjunct';
 
 const api_key = process.env.MAILGUN_API_KEY!
 const domain = process.env.MAILGUN_DOMAIN!
@@ -12,6 +14,8 @@ type MailContactParams = {
   message: string;
 }
 
+const shouldInitialize = isNotNilOrEmpty(process.env.MAILGUN_API_KEY)
+
 export class Mailer {
   nm: any;
 
@@ -23,10 +27,14 @@ export class Mailer {
       }
     };
 
-    this.nm = nodemailer.createTransport(mg(auth));
+    if (shouldInitialize) {
+      this.nm = nodemailer.createTransport(mg(auth));
+    }
   }
 
   contact({ name, email, subject, message }: MailContactParams) {
+    if (isNil(this.nm)) return Promise.reject('Mailer not initialized');
+
     return this.nm.sendMail({
       from: mailgunFrom,
       to: 'me@valentin-thomas.com',

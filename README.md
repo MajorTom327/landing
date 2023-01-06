@@ -1,6 +1,6 @@
-# Welcome to Remix!
+# Landing Page
+[valentin-thomas.com](https://valentin-thomas.com)
 
-- [Remix Docs](https://remix.run/docs)
 
 ## Development
 
