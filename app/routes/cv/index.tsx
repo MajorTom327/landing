@@ -1,5 +1,6 @@
 import React from "react";
 import Hobbies from "~/components/Hobbies";
+import Skills from "~/components/Skills";
 import Timeline from "~/components/Timeline";
 import WorkingValues from "~/components/WorkingValues";
 
@@ -9,6 +10,7 @@ export const Index: React.FC<Props> = ({}) => {
   return (
     <>
       <WorkingValues />
+      <Skills />
       <Timeline />
       <Hobbies />
     </>

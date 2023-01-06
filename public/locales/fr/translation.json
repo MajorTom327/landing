@@ -78,9 +78,16 @@
     "now": "Maintenant"
   },
   "skills": {
+    "title": "Quelques une de mes compétences",
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
     "remix": "Remix.run",
     "react": "React",
     "node": "Node.js",
+    "typescript": "Typescript",
     "express": "Express",
     "mongo": "MongoDB",
     "web3": "Web3",
@@ -88,7 +95,11 @@
     "csharp": "C#",
     "dotnet": ".NET",
     "meteor": "Meteor",
-    "php": "PHP"
+    "php": "PHP",
+    "agile": "Agile",
+    "craft": "Craftmanship",
+    "git": "Git",
+    "docker": "Docker"
   },
   "timeline": {
     "title": "Mon parcours"
