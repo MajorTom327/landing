@@ -6,12 +6,13 @@ import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import ChainedBackend from "i18next-chained-backend";
 import HttpBackend from "i18next-http-backend";
+import LocalStorageBackend from "i18next-localstorage-backend";
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import { getInitialNamespaces } from "remix-i18next";
 import { Duration } from "luxon";
 import { supportedLanguages } from "./services/i18n.server";
 
-const backends = [HttpBackend];
+const backends = [HttpBackend, LocalStorageBackend];
 
 const cacheDuration = Duration.fromObject({ minutes: 1 });
 
