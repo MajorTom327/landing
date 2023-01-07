@@ -74,9 +74,16 @@
     }
   },
   "time": {
-    "now": "now"
+    "now": "now",
+    "experience": {
+      "month_one": "$t(skills.practiced) 1 month",
+      "month_other": "$t(skills.practiced) {{count}} months",
+      "year_one": "$t(skills.practiced) 1 year",
+      "year_other": "$t(skills.practiced) {{count}} years"
+    }
   },
   "skills": {
+    "practiced": "Practicing during",
     "title": "Some of my competences",
     "levels": {
       "beginner": "Beginner",
