@@ -10,7 +10,7 @@ type Props = {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    gap: 15,
+    gap: 10,
   },
 });
 

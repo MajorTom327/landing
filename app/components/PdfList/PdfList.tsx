@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 export const PdfList: React.FC<Props> = ({ item }) => {
   const { t } = useTranslation("cv");
   return (<>
-    <View style={styles.blockGroup}>
+    <View style={styles.blockGroup} wrap={false}>
       <Text style={styles.blockTitle}>{t(item.title)}</Text>
       <Text style={styles.blockContent}>{t(item.content)}</Text>
     </View>

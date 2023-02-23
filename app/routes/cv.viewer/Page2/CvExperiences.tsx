@@ -17,20 +17,26 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     gap: 20,
   },
+  expContainer: {
+    fontSize: textSizes.title,
+    flexDirection: 'column',
+    gap: 25,
+  },
 });
 
 const items = Array.from({length: 7 }, (_, i) => `experiences.items.${i}`);
 
 export const CvExperiences: React.FC<Props> = ({}) => {
-  const { t } = useTranslation("cv");
 
   return (<>
     <View style={styles.container}>
       <PdfTitle>experiences.title</PdfTitle>
+
+      <View style={styles.expContainer}>
       {items.map((item) => (
         <PdfList key={item} item={{ title: `${item}.title`, content: `${item}.value`}} />
-
-    ))}
+      ))}
+      </View>
     </View>
   </>);
 }
