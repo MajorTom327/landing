@@ -105,32 +105,6 @@
       }
     ]
   },
-  "inactivity": {
-    "title": "Periods of inactivity",
-    "items": [
-      {
-        "title": "July 2015 to November 2015",
-        "value": "job search"
-      },
-      {
-        "title": "October 2018 to November 2018",
-        "value": "job search"
-      }
-    ]
-  },
-  "travels": {
-    "title": "Tourist trips",
-    "items": [
-      {
-        "title": "August 2019",
-        "value": "England (one week)"
-      },
-      {
-        "title": "August 2019",
-        "value": "Scotland (one week)"
-      }
-    ]
-  },
   "hobbies": {
     "title": "Hobbies",
     "value": "Video games, code, gym, blockchain"

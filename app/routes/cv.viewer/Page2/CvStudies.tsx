@@ -1,9 +1,8 @@
-import { View, Text, StyleSheet, Page } from '@react-pdf/renderer';
+import { View, StyleSheet } from '@react-pdf/renderer';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PdfTitle from '~/components/PdfTitle';
-import { documentStyle } from '~/refs/constants';
-import pageStyles, { textSizes } from '../config';
+import { textSizes } from '../config';
 import PdfList from '../../../components/PdfList/PdfList';
 
 type Props = {
@@ -12,8 +11,6 @@ type Props = {
 const styles = StyleSheet.create({
   section: {
     fontSize: textSizes.title,
-    margin: documentStyle.margin,
-    padding: documentStyle.padding,
     flexDirection: 'column',
     gap: 20,
   },
