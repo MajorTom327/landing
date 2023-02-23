@@ -1,6 +1,5 @@
-import { Outlet, useLocation, useMatches } from "@remix-run/react";
+import { Outlet, useLocation } from "@remix-run/react";
 import { flatten } from "ramda";
-import { isArray } from "ramda-adjunct";
 import React from "react";
 
 type Props = {

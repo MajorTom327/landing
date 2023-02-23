@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link, Outlet } from "@remix-run/react";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import type { Project } from "~/data/projects";
@@ -9,6 +9,7 @@ import TechBadge from "./TechBadge";
 
 type Props = {
   project: Project;
+  children?: React.ReactNode;
 };
 
 const buttonClasses = classNames(
@@ -16,7 +17,7 @@ const buttonClasses = classNames(
   "text-center rounded shadow hover:shadow-lg"
 );
 
-export const ProjectCard: React.FC<Props> = ({ project }) => {
+export const ProjectCard: React.FC<Props> = ({ project, children }) => {
   const { t } = useTranslation();
 
   return (
@@ -38,7 +39,9 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             ))}
           </div>
         </Link>
-        <Routlet route={`/projects/${project.key}`} />
+        {children}
+        {/* <Outlet/> */}
+        {/* <Routlet route={`/projects/${project.key}`} /> */}
 
         <div className="flex gap-2 py-4 px-2 w-full">
           {project.url && (

@@ -5,6 +5,8 @@ import Title from "~/components/Title";
 import constants from "~/refs/constants";
 
 import projects from "~/data/projects";
+import Routlet from "~/components/Routlet/Routlet";
+import { Outlet } from "@remix-run/react";
 
 type Props = {};
 
@@ -35,7 +37,9 @@ export const Index: React.FC<Props> = ({}) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 my-4 gap-4">
             {projects.map((project) => (
               <div key={project.key}>
-                <ProjectCard project={project} />
+                <ProjectCard project={project}>
+                  <Routlet route={`/projects/${project.key}`}/>
+                </ProjectCard>
               </div>
             ))}
           </div>
