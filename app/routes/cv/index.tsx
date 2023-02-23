@@ -1,22 +1,14 @@
-import React from "react";
-import Hobbies from "~/components/Hobbies";
-import Skills from "~/components/Skills";
-import Timeline from "~/components/Timeline";
-import WorkingValues from "~/components/WorkingValues";
+import { Outlet } from '@remix-run/react';
+import React from 'react';
 
-type Props = {};
-
-export const Index: React.FC<Props> = ({}) => {
-  return (
-    <>
-      <WorkingValues />
-      <Skills />
-      <Timeline />
-      <Hobbies />
-    </>
-  );
+type Props = {
 };
 
-Index.defaultProps = {};
+export const Index: React.FC<Props> = ({}) => {
+  return (<><Outlet /></>);
+}
+
+Index.defaultProps = {
+};
 
 export default Index;

@@ -2,7 +2,7 @@ import Backend from "i18next-fs-backend";
 import { resolve } from "node:path";
 import { RemixI18Next } from "remix-i18next";
 
-export const supportedLanguages = ["fr"];
+export const supportedLanguages = ["fr", "en"];
 
 export let i18n = new RemixI18Next({
   detection: {

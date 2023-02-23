@@ -1,0 +1,138 @@
+{
+  "contact": {
+    "name": {
+      "title": "Name",
+      "value": "Valentin THOMAS"
+    },
+    "address": {
+      "title": "Adress",
+      "value": "1B rue Émilien Jarton 16000 Angoulême"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+33 7 68 26 76 20"
+    },
+    "email": {
+      "title": "Email",
+      "value": "me@valentin-thomas.com"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": {
+      "title": "Languages",
+      "french": {
+        "title": "French",
+        "level": "native language"
+      },
+      "english": {
+        "title": "English",
+        "level": "intermediate level"
+      }
+    },
+    "cs": {
+      "advanced": {
+        "title": "Advanced computer skills",
+        "level": "React, NodeJS"
+      },
+      "middle": {
+        "title": "Intermediate computer skills",
+        "level": "Typescript, Express, Remix.run, Craftmanship, Docker, Meteor, MongoDB, MySQL, Agile, Git"
+      },
+      "beginner": {
+        "title": "Beginner computer skills",
+        "level": "Web3"
+      }
+    },
+    "driving": {
+      "title": "Driving license B (Car)",
+      "level": "Obtained"
+    },
+    "problem_solving": {
+      "title": "Ability to solve problems",
+      "level": "Able to find effective solutions to problems that arise, allowing to work independently and make decisions quickly."
+    },
+    "leadership": {
+      "title": "Sense of leadership",
+      "level": "Able to lead in a difficult situation for the well-being of all."
+    },
+    "pedagogy": {
+      "title": "Pedagogy",
+      "level": "Able to clearly teach technical principles to facilitate understanding and reinforce knowledge in both others and self."
+    }
+  },
+  "studies": {
+    "title": "Studies / Training",
+    "college": {
+      "title": "Fontaine des Eaux High School, Dinan, FRANCE, from September 2012 à July 2015",
+      "level": "Baccalaureate diploma, specialty science and technology and sustainable development"
+    },
+    "university": {
+      "title": "School 42, Paris, FRANCE, from November 2015 to August 2017",
+      "level": "Intensive and autonomous training in software development, with intensive learning of C and PHP"
+    }
+  },
+  "experiences": {
+    "title": "Professional experience",
+    "items": [
+      {
+        "title": "Eboueur, Community of communes of Plancoêt, Paris, FRANCE, July 2014",
+        "value": "As a garbage collector for the community of communes of Plancoët, I was responsible for the collection and treatment of household waste. I loaded the bins into the truck and took part in unloading them into the incinerator pit, while respecting safety standards."
+      },
+      {
+        "title": "Eboueur, Community of communes of Plancoêt, Paris, FRANCE, July 2014",
+        "value": "As a garbage collector for the community of communes of Plancoët, I was responsible for the collection and treatment of household waste. I loaded the bins into the truck and took part in unloading them into the incinerator pit, while respecting safety standards."
+      },
+      {
+        "title": "Fullstack Developer, MeilleurSCPI, Paris, FRANCE, from August 2017 to May 2018",
+        "value": "Work in PHP with a legacy framework and in Vue.js 2, learning Bootstrap and teamwork with Git."
+      },
+      {
+        "title": "Fullstack Developer, Solicis, Paris, FRANCE, from May 2018 to August 2018",
+        "value": "Deepening of knowledge in PHP to integrate a showcase site for a house selling agency, use of the Zend framework."
+      },
+      {
+        "title": "Fullstack Developer, Monbuilding, Paris, FRANCE, from August 2018 to October 2018",
+        "value": "Discovery of Meteor.js and ReactJS, immersion in the NodeJS universe and real-time applications."
+      },
+      {
+        "title": "C# software developer, Ededoc, Angoulême, FRANCE, from November 2018 to July 2020",
+        "value": "Learning C# code for the development of a virtual printer application, creation of an email delivery traceability system, integration of the electronic signature of documents in the printer workflow, development in JavaScript of a scrapping system to recover invoices."
+      },
+      {
+        "title": "Fullstack Developer, F.ASS.T, Angoulême, FRANCE, from July 2020 to now",
+        "value": "Development of Fullstack platform in ReactJS and GraphQL for insurers, development of backend services in Javascript as well as in Typescript to connect to a MongoDB database. Participation in the project architecture division and TechLead."
+      }
+    ]
+  },
+  "inactivity": {
+    "title": "Periods of inactivity",
+    "items": [
+      {
+        "title": "July 2015 to November 2015",
+        "value": "job search"
+      },
+      {
+        "title": "October 2018 to November 2018",
+        "value": "job search"
+      }
+    ]
+  },
+  "travels": {
+    "title": "Tourist trips",
+    "items": [
+      {
+        "title": "August 2019",
+        "value": "England (one week)"
+      },
+      {
+        "title": "August 2019",
+        "value": "Scotland (one week)"
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "value": "Video games, code, gym, blockchain"
+  }
+}

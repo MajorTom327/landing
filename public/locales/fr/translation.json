@@ -191,6 +191,9 @@
       ]
     }
   },
+  "cv": {
+    "printable": "Version imprimable"
+  },
   "contact": {
     "title": "Me contacter",
     "description": "Vous pouvez me contacter via le formulaire ci-dessous ou par email à l'adresse suivante :",

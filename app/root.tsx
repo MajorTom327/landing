@@ -23,6 +23,7 @@ import {
   createAuthenticityToken,
 } from "remix-utils";
 import { sessionStorage } from "~/services/session.server";
+import { useEffect } from "react";
 
 export function links() {
   return [
@@ -108,7 +109,9 @@ export let handle = {
 export const BasePage: React.FC<BasePageProps> = ({ children }) => {
   let { locale, csrf } = useLoaderData<LoaderData>() || { locale: "fr" };
   let { i18n } = useTranslation();
-  // useChangeLanguage(locale);
+  useEffect(() => {
+    i18n.changeLanguage(locale);
+  }, [locale])
 
   return (
     <html lang={locale} dir={i18n.dir()}>

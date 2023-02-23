@@ -184,6 +184,9 @@
       ]
     }
   },
+  "cv": {
+    "printable": "Printable version"
+  },
   "contact": {
     "title": "Contact me",
     "name": "Your name",
