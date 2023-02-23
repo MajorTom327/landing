@@ -199,6 +199,8 @@
     "message": "Votre message",
     "email": "Votre email de contact",
     "send": "Envoyer",
+    "captcha": "Captcha",
+    "captcha_label": "En raison d'un nombre de spams trop important, je vous demande de remplir ce simple captcha afin de pouvoir envoyer votre message. Merci de votre compréhension.",
     "submited": "Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais."
   },
   "hobbies": {

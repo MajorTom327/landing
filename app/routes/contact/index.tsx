@@ -1,7 +1,7 @@
-import type { ActionFunction } from "@remix-run/node";
+import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { redirect } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { Form, useTransition } from "@remix-run/react";
+import { Form, useLoaderData, useTransition } from "@remix-run/react";
 import { isNilOrEmpty, isNotNil } from "ramda-adjunct";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -14,10 +14,34 @@ import { sessionStorage } from "~/services/session.server";
 
 type Props = {};
 
+type LoaderData ={
+  captcha: string
+}
+
+const generateCaptcha = () => {
+  return ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 5)
+  .join('')
+}
+
+export const loader: LoaderFunction = async ({ request }) => {
+  const session = await sessionStorage.getSession(request.headers.get("Cookie"));
+
+  const captcha = generateCaptcha()
+
+  session.set("captcha", captcha);
+
+  return json<LoaderData>({captcha}, { headers: {
+      "Set-Cookie": await sessionStorage.commitSession(session),
+    }});
+}
+
 export const Index: React.FC<Props> = ({}) => {
   const { t } = useTranslation();
   const transition = useTransition();
   const [hasSubmited, setHasSubmited] = useState(false);
+  const { captcha } = useLoaderData<LoaderData>();
 
   useEffect(() => {
     const submission = transition.submission;
@@ -54,6 +78,16 @@ export const Index: React.FC<Props> = ({}) => {
               required
             />
 
+            <div className="flex flex-col gap-1 py-4">
+              <div className="">
+                {t("contact.captcha_label")}
+              </div>
+              <div className="flex justify-center">
+                <div className="text-center text-xl text-secondary font-semibold bg-slate-300 rounded px-4 py-2">{captcha}</div>
+              </div>
+              <Input type="text" name="captcha" label="contact.captcha" required/>
+            </div>
+
             {hasSubmited && <Alert>{t("contact.submited")}</Alert>}
 
             <div className="mt-8">
@@ -83,6 +117,11 @@ export const action: ActionFunction = async ({ request }) => {
   const subject = formData.get("subject")?.toString();
   const email = formData.get("email")?.toString();
   const message = formData.get("message")?.toString();
+
+  const captcha = formData.get("captcha")?.toString();
+  if (captcha !== session.get("captcha")) {
+    return redirect("/contact", 400);
+  }
 
   if ([name, subject, email, message].some((value) => isNilOrEmpty(value))) {
     return redirect("/contact");
