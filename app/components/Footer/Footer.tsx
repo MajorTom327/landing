@@ -38,7 +38,7 @@ export const Footer: React.FC<Props> = ({}) => {
       </div>
 
       <div className="flex justify-center gap-4">
-        {/* <WebsiteCarbonBadge /> */}
+        <WebsiteCarbonBadge />
       </div>
     </div>
   );
