@@ -61,6 +61,8 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Valentin Thomas",
   viewport: "width=device-width,initial-scale=1",
+  description:
+    "Valentin THOMAS is a developper and here you can find his experiences and his CV",
 });
 
 type EnvironmentData = {
