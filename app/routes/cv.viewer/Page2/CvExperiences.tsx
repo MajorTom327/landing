@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const items = Array.from({length: 7 }, (_, i) => `experiences.items.${i}`);
+const items = Array.from({ length: 6 }, (_, i) => `experiences.items.${i}`);
 
 export const CvExperiences: React.FC<Props> = ({}) => {
 
