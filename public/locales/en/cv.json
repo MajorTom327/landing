@@ -9,8 +9,14 @@
       "value": "1B rue Émilien Jarton 16000 Angoulême"
     },
     "phone": {
-      "title": "Phone",
-      "value": "+33 7 68 26 76 20"
+      "fr": {
+        "title": "Phone",
+        "value": "+33 7 68 26 76 20"
+      },
+      "ca": {
+        "title": "Phone",
+        "value": "+1 (778) 776-9536"
+      }
     },
     "email": {
       "title": "Email",

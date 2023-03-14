@@ -29,11 +29,12 @@ export const CvContact: React.FC<Props> = ({}) => {
   });
 
   const fields = [
-    'contact.name',
-    'contact.address',
-    'contact.phone',
-    'contact.email',
-  ]
+    "contact.name",
+    "contact.address",
+    "contact.phone.fr",
+    "contact.phone.ca",
+    "contact.email",
+  ];
   return (<>
   <View style={style.container}>
     {fields.map((field) => (
