@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "label": "App run",
+      "type": "process",
+      "command": "npm",
+      "args": [
+        "run",
+        "dev"
+      ],
+      "problemMatcher": [],
+      "detail": "remix build && run-p \"dev:*\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

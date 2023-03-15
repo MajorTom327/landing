@@ -50,7 +50,7 @@ export const projects: Project[] = [
     key: "andromeda",
     title: "projects.andromeda.title",
     techs: ["skills.react", "skills.node", "skills.meteor"],
-    // url: 'https://andromeda.styx-sys.com',
+    repo: "https://github.com/MajorTom327/andromeda",
     image: andromedaAsset,
     description: [
       "projects.andromeda.description.0",
@@ -61,7 +61,11 @@ export const projects: Project[] = [
     key: "styx",
     title: "projects.styx.title",
     techs: ["skills.php", "skills.mysql"],
-    description: ["projects.styx.description.0"],
+    description: [
+      "projects.styx.description.0",
+      "projects.styx.description.1",
+      "projects.styx.description.2",
+    ],
   },
 ];
 

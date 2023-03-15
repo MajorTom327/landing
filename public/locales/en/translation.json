@@ -159,13 +159,15 @@
     },
     "deadsafe": {
       "title": "The DeadSafe",
+      "link": "https://the-deadsafe.com",
       "description": [
-        "The DeadSafe is an ambitious decentralized management game project based on NFTs whose goal is to unlock access to a safe.",
-        "DeadSafe is in the process of being created."
+        "The DeadSafe project is an ambitious decentralized management game based on NFTs, with the aim of unlocking access to a safe.",
+        "DeadSafe is currently being developed. However, partial documentation of the project is already available on the website."
       ]
     },
     "basemint": {
       "title": "BaseMint",
+      "link": "https://github.com/MajorTom327/basemint",
       "description": [
         "The Basemint project is a fan art whose goal is to learn about using web3 and interacting with an Ethereum contract. In this case, the contract is for VirtueAnimation's BaseMint Buds NFT.",
         "I was able to learn how to display the basic information of a contract and interact with it through JavaScript."
@@ -173,6 +175,7 @@
     },
     "andromeda": {
       "title": "Andromeda",
+      "link": "https://github.com/MajorTom327/andromeda",
       "description": [
         "Andromeda is an application designed to help developers better manage their time and remember what they accomplished the previous day. It offers an easy-to-use Kanban interface that allows developers to track their work day and recall what they accomplished during their Daily. This application is developed in Meteor with React and uses MongoDB as its database. It enables developers to better organize their work and track their progress effectively.",
         "I was able to take advantage of creating this application to work on an interface that provides a visual state of things through page animations."
@@ -181,7 +184,9 @@
     "styx": {
       "title": "Styx",
       "description": [
-        "Styx is a customer management application for crematoriums, it simply allows managing the deceased and associated information."
+        "Styx is a client management application for crematoriums. It allows easy management of deceased clients and associated information.",
+        "This application is a complete SaaS developed independently to quickly meet a need. It required a long development time but is still in production with regular updates to continue to meet the needs.",
+        "The current version is in PHP with MariaDB, but developments are focused on implementation through a TypeScript stack using Remix, TailwindCSS, and Postgresql."
       ]
     }
   },

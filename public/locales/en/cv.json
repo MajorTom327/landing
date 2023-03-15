@@ -83,32 +83,52 @@
     "items": [
       {
         "title": "Eboueur, Community of communes of Plancoët, Plancoët, FRANCE, July 2014 & July 2015",
-        "value": "As a garbage collector for the community of communes of Plancoët, I was responsible for the collection and treatment of household waste. I loaded the bins into the truck and took part in unloading them into the incinerator pit, while respecting safety standards."
+        "value": [
+          "As a garbage collector for the community of communes of Plancoët, I was responsible for the collection and treatment of household waste. I loaded the bins into the truck and took part in unloading them into the incinerator pit, while respecting safety standards."
+        ]
       },
       {
         "title": "Fullstack Developer, MeilleurSCPI, Paris, FRANCE, from August 2017 to May 2018",
-        "value": "Work in PHP with a legacy framework and in Vue.js 2, learning Bootstrap and teamwork with Git."
+        "value": [
+          "At MeilleureSCPI, I was able to enter the workforce as an intern and then start as a first hire. I had the opportunity to work on an investment portfolio management platform in SCPI as well as web scraping projects.",
+          "I worked in PHP with a legacy framework and in Vue.js 2, and I was able to learn Bootstrap and teamwork with Git."
+        ]
+
       },
       {
-        "title": "Fullstack Developer, Solicis, Paris, FRANCE, from May 2018 to August 2018",
-        "value": "Deepening of knowledge in PHP to integrate a showcase site for a house selling agency, use of the Zend framework."
+        "title": "Fullstack Developer, Solicis, Angoulême, FRANCE, from May 2018 to August 2018",
+        "value": [
+          "Deepening of knowledge in PHP to integrate a showcase site for a house selling agency, use of the Zend framework."
+        ]
       },
       {
         "title": "Fullstack Developer, Monbuilding, Paris, FRANCE, from August 2018 to October 2018",
-        "value": "Discovery of Meteor.js and ReactJS, immersion in the NodeJS universe and real-time applications."
+        "value": [
+          "Discovery of Meteor.js and ReactJS, immersion in the world of Node.js and real-time applications.",
+          "This experience has been important for me as it allowed me to discover a new framework and work in a dynamic and international environment. I have developed a particular interest in Node.js and reactive applications."
+        ]
       },
       {
         "title": "C# software developer, Ededoc, Angoulême, FRANCE, from November 2018 to July 2020",
-        "value": "Learning C# code for the development of a virtual printer application, creation of an email delivery traceability system, integration of the electronic signature of documents in the printer workflow, development in JavaScript of a scrapping system to recover invoices."
+        "value": [
+          "Learning C# code for the development of a virtual printer application, creation of an email delivery traceability system, integration of the electronic signature of documents in the printer workflow, development in JavaScript of a scrapping system to recover invoices."
+        ]
       },
       {
         "title": "Fullstack Developer, F.ASS.T, Angoulême, FRANCE, from July 2020 to now",
-        "value": "Development of Fullstack platform in ReactJS and GraphQL for insurers, development of backend services in Javascript as well as in Typescript to connect to a MongoDB database. Participation in the project architecture division and TechLead."
+        "value": [
+          "Development of a Full-stack Node.js platform using React.js and GraphQL for insurers, development of backend services using JavaScript and TypeScript connected to a MongoDB database. I was integrated into the project architecture team as a Tech Lead in order to standardize project design and architectures before transitioning to an architect position in early 2023 to have a greater impact on the company's overall architecture.",
+          "I also had the opportunity to demonstrate my security skills by identifying critical points in applications.",
+          "I contributed to the company's growth from a start-up of 8 people to a team of over 50 and played a role in improving work methods within the company as well as in the training of new employees."
+        ]
       }
     ]
   },
+  "projects": {
+    "title": "Personal projects"
+  },
   "hobbies": {
     "title": "Hobbies",
-    "value": "Video games, code, gym, blockchain"
+    "value": "I like to play video games, I am passionate about coding, I do fitness, and currently I am particularly interested in blockchain technology."
   }
 }

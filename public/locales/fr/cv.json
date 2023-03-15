@@ -83,32 +83,51 @@
     "items": [
       {
         "title": "Eboueur, Communautée de communes de Plancoët, Plancoët, FRANCE, Juillet 2014 & Juillet 2015",
-        "value": "En tant qu'éboueur pour la communauté de communes de Plancoët, j'ai été responsable de la collecte et du traitement des déchets ménagers. J'ai chargé les poubelles dans le camion et participé à leur décharge dans la fosse de l'incinérateur, tout en respectant les normes de sécurité."
+        "value": [
+          "En tant qu'éboueur pour la communauté de communes de Plancoët, j'ai été responsable de la collecte et du traitement des déchets ménagers. J'ai chargé les poubelles dans le camion et participé à leur décharge dans la fosse de l'incinérateur, tout en respectant les normes de sécurité."
+        ]
       },
       {
         "title": "Développeur Fullstack, MeilleureSCPI, Paris, FRANCE, de Août 2017 à Mai 2018",
-        "value": "Travail en PHP avec un framework legacy et en Vue.js 2, apprentissage de Bootstrap et travail en équipe avec Git."
+        "value": [
+          "Au sein de MeilleureSCPI, j'ai pu entrer dans le monde du travail en tant que stagiaire puis commencer en premier emploi. J'ai eu l'occasion de travailler sur une plateforme de gestion de portefeuille d'investissement en SCPI ainsi que sur du scraping de sites internet.",
+          "J'ai travaillé en PHP avec un framework legacy et en Vue.js 2, j'ai pu apprendre Bootstrap et le travail en équipe avec Git."
+        ]
       },
       {
-        "title": "Développeur Fullstack, Solicis, Paris, FRANCE, de Mai 2018 à Août 2018",
-        "value": "Approfondissement des connaissances en PHP pour intégrer un site vitrine pour une agence de vente de maisons, utilisation du framework Zend."
+        "title": "Développeur Fullstack, Solicis, Angoulême, FRANCE, de Mai 2018 à Août 2018",
+        "value": [
+          "Approfondissement des connaissances en PHP pour intégrer un site vitrine pour une agence de vente de maisons, utilisation du framework Zend."
+        ]
       },
       {
         "title": "Développeur Fullstack, Monbuilding, Paris, FRANCE, de Août 2018 à Octobre 2018",
-        "value": "Découverte de Meteor.js et ReactJS, immersion dans l'univers NodeJS et les applications temps-réel."
+        "value": [
+          "Découverte de Meteor.js et ReactJS, immersion dans l'univers de Node.js et des applications temps-réel.",
+          "Cette expérience aura été importante pour moi car elle m'a permis de découvrir un nouveau framework et de travailler dans un environnement dynamique et international. J'ai pu découvrir un attrait particulier pour Node.js et les applications réactives."
+        ]
       },
       {
         "title": "Développeur logiciel C#, Ededoc, Angoulême, FRANCE, de Novembre 2018 à Juillet 2020",
-        "value": "Apprentissage du code C# pour le développement d'une application d'imprimante virtuelle, création d’un système de traçabilité de la livraison des emails, intégration de la signature électronique de documents dans le flux de travail de l'imprimante, développement en JavaScript d'un système de scrapping pour récupérer des factures."
+        "value": [
+          "Apprentissage du code C# pour le développement d'une application d'imprimante virtuelle, création d’un système de traçabilité de la livraison des emails, intégration de la signature électronique de documents dans le flux de travail de l'imprimante, développement en JavaScript d'un système de scrapping pour récupérer des factures."
+        ]
       },
       {
         "title": "Développeur Fullstack, F.ASS.T, Angoulême, FRANCE, de Juillet 2020 à maintenant",
-        "value": "Développement de plateforme Fullstack en ReactJS et GraphQL pour les assureurs, développement de services backend en Javascript ainsi qu’en Typescript connecter a une base MongoDB. Participation au sein du pôle d’architecture projets et TechLead."
+        "value": [
+          "Développement d'une plateforme Full-stack Node.js en React.js et GraphQL pour les assureurs, développement de services backend en JavaScript ainsi qu'en TypeScript connectés à une base MongoDB. J'ai été intégré au sein du pôle d'architecture de projets en tant que Tech Lead afin d'uniformiser la conception et les architectures de projets avant de passer au poste d'architecte début 2023, afin d'avoir un impact plus global sur l'architecture de l'entreprise.",
+          "J'ai également eu l'occasion de démontrer mes compétences en sécurité en identifiant des points critiques dans des applications.",
+          "J'ai participé à l'évolution de la société, passant d'une start-up de 8 personnes à une entreprise de plus de 50 personnes, et j'ai contribué à l'amélioration des méthodes de travail au sein de l'entreprise ainsi qu'à la formation de nouveaux arrivants."
+        ]
       }
     ]
   },
+  "projects": {
+    "title": "Projets personnels"
+  },
   "hobbies": {
     "title": "Hobbies",
-    "value": "Jeux vidéos, code, gym, blockchain"
+    "value": "J'aime jouer aux jeux vidéo, je suis passionné par la programmation, je fais du fitness, et actuellement je suis particulièrement intéressé par la technologie de la blockchain."
   }
 }

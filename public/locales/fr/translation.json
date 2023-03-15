@@ -165,13 +165,16 @@
     },
     "deadsafe": {
       "title": "The DeadSafe",
+      "link": "https://the-deadsafe.com",
       "description": [
-        "The DeadSafe c'est un projet ambitieux de jeux decentralise de gestion basé sur les NFTs dont le but est de deverrouiller l'acces a un coffre fort.",
-        "DeadSafe est en cours de création."
+        "Le projet DeadSafe est un jeu ambitieux de gestion décentralisée basé sur les NFTs, dont le but est de déverrouiller l'accès à un coffre-fort.",
+        "DeadSafe est en cours de développement. Cependant, une partie de la documentation du projet est déjà disponible sur le site web."
+
       ]
     },
     "basemint": {
       "title": "BaseMint",
+      "link": "https://github.com/MajorTom327/basemint",
       "description": [
         "Le projet de basemint est un fanart dont l'objectif est d'apprendre l'utilisation du web3 et les interractions avec un contrat ethereum. Dans le cas ci present, le contrat de VirtueAnimation pour leur NFT BaseMint Buds.",
         "J'ai pu ainsi apprendre a afficher les informations de base d'un contrat et interagir avec au travers de javascript"
@@ -179,6 +182,7 @@
     },
     "andromeda": {
       "title": "Andromeda",
+      "link": "https://github.com/MajorTom327/andromeda",
       "description": [
         "Andromeda est une application conçue pour aider les développeurs à mieux gérer leur temps et à se souvenir de ce qu'ils ont accompli la veille. Elle offre une interface Kanban facile à utiliser qui permet aux développeurs de suivre leur journée de travail et de se remémorer ce qu'ils ont accompli lors de leur Daily. Cette application est développée en Meteor avec React et utilise MongoDB comme base de données. Elle permet aux développeurs de mieux organiser leur travail et de suivre leur progression de manière efficace.",
         "J'ai pu profiter de la creation de cette application pour pouvoir travailler sur une interface donnant un etat visuel des choses a travers des animations de la page."
@@ -187,7 +191,9 @@
     "styx": {
       "title": "Styx",
       "description": [
-        "Styx est une application de gestion de client pour crématorium, elle permet simplement de gérer les defunts et les informations associée. "
+        "Styx est une application de gestion de clients pour crématorium. Elle permet de gérer facilement les défunts et les informations associées.",
+        "Cette application est un SaaS complet développé en autonomie pour répondre rapidement à un besoin. Elle a demandé un long temps de développement mais est toujours en production avec des mises à jour régulières afin de continuer à répondre aux besoins.",
+        "La version actuelle est en PHP avec MariaDB, mais les développements se concentrent sur l'implémentation à travers une stack TypeScript en utilisant Remix, TailwindCSS et Postgresql."
       ]
     }
   },

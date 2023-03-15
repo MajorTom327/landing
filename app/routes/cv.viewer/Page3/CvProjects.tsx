@@ -1,10 +1,13 @@
 import { View, StyleSheet } from "@react-pdf/renderer";
-import React from "react";
+import { isNilOrEmpty } from "ramda-adjunct";
+import React, { useMemo } from "react";
+import PdfProjects from "~/components/PdfProjects";
 import PdfTitle from "~/components/PdfTitle";
 import { textSizes } from "../config";
-import PdfExperiences from "~/components/PdfExperiences";
 
-type Props = {};
+type Props = {
+  projects: string[];
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -19,20 +22,20 @@ const styles = StyleSheet.create({
   },
 });
 
-const items = Array.from({ length: 6 }, (_, i) => `experiences.items.${i}`);
+export const CvProjects: React.FC<Props> = ({ projects }) => {
+  const items = useMemo(() => {
+    return projects.map((item) => `projects.${item}`);
+  }, [projects]);
 
-export const CvExperiences: React.FC<Props> = ({}) => {
+  if (isNilOrEmpty(items)) return null;
   return (
     <>
       <View style={styles.container}>
-        <PdfTitle>experiences.title</PdfTitle>
+        <PdfTitle>projects.title</PdfTitle>
 
         <View style={styles.expContainer}>
           {items.map((item) => (
-            <PdfExperiences
-              key={item}
-              item={{ title: `${item}.title`, content: `${item}.value` }}
-            />
+            <PdfProjects key={item + ".cv_project"} project={item} />
           ))}
         </View>
       </View>
@@ -40,6 +43,6 @@ export const CvExperiences: React.FC<Props> = ({}) => {
   );
 };
 
-CvExperiences.defaultProps = {};
+CvProjects.defaultProps = {};
 
-export default CvExperiences;
+export default CvProjects;

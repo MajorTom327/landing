@@ -110,7 +110,7 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
   let { i18n } = useTranslation();
   useEffect(() => {
     i18n.changeLanguage(locale);
-  }, [locale]);
+  }, [locale, i18n]);
 
   return (
     <html lang={locale} dir={i18n.dir()}>

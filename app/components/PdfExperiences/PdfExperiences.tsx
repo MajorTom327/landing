@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
+import { is } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { documentStyle } from "~/refs/constants";
@@ -35,19 +36,29 @@ const styles = StyleSheet.create({
   },
 });
 
-export const PdfList: React.FC<Props> = ({ item }) => {
+export const PdfExperiences: React.FC<Props> = ({ item }) => {
   const { t } = useTranslation("cv");
+
+  const experiences = t(item.content, { returnObjects: true });
+
+  if (!is(Array, experiences)) {
+    return null;
+  }
 
   return (
     <>
       <View style={styles.blockGroup} wrap={false}>
         <Text style={styles.blockTitle}>{t(item.title)}</Text>
-        <Text style={styles.blockContent}>{t(item.content)}</Text>
+        {(experiences as string[]).map((item, index) => (
+          <Text key={item} style={styles.blockContent}>
+            {item}
+          </Text>
+        ))}
       </View>
     </>
   );
 };
 
-PdfList.defaultProps = {};
+PdfExperiences.defaultProps = {};
 
-export default PdfList;
+export default PdfExperiences;
