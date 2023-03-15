@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { useTranslation } from "react-i18next";
-import Title from '../Title'
+import Title from "../Title";
 type Props = {
-  value: string
+  value: string;
 };
 
 export const ValueItem: React.FC<Props> = ({ value }) => {
@@ -19,9 +19,8 @@ export const ValueItem: React.FC<Props> = ({ value }) => {
       </div>
     </>
   );
-}
-
-ValueItem.defaultProps = {
 };
+
+ValueItem.defaultProps = {};
 
 export default ValueItem;

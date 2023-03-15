@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const chroma = require('chroma-js');
+const chroma = require("chroma-js");
 
 const colors = {
   primary: "#1d3557",
@@ -29,25 +29,22 @@ const getContentColor = (color) =>
   chroma.contrast(color, colors.light) > 4 ? colors.light : colors.dark;
 
 module.exports = {
-  content: [
-    "./index.html",
-    "./app/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         ...Object.keys(colors).reduce((acc, color) => {
-          return ({
+          return {
             ...acc,
             [`${color}`]: colors[color],
             [`${color}-focus`]: toLight(colors[color]),
             [`${color}-lighten`]: toLight(colors[color]),
             [`${color}-darken`]: toDark(colors[color]),
             [`${color}-content`]: getContentColor(colors[color]),
-          })
+          };
         }, {}),
-      }
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
-}
+};

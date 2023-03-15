@@ -6,13 +6,10 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
   useLoaderData,
-  useMatches,
 } from "@remix-run/react";
 import Layout from "./components/Layout";
 
-import { useChangeLanguage } from "remix-i18next";
 import { useTranslation } from "react-i18next";
 import i18next from "~/services/i18n.server";
 
@@ -113,7 +110,7 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
   let { i18n } = useTranslation();
   useEffect(() => {
     i18n.changeLanguage(locale);
-  }, [locale])
+  }, [locale]);
 
   return (
     <html lang={locale} dir={i18n.dir()}>

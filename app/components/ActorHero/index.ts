@@ -1,1 +1,1 @@
-export { ActorHero, ActorHero as default } from './ActorHero';
+export { ActorHero, ActorHero as default } from "./ActorHero";

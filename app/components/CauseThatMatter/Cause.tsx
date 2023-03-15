@@ -4,7 +4,7 @@ import Title from "../Title";
 
 type Props = {
   title: string;
-  rows: number
+  rows: number;
 };
 
 export const Cause: React.FC<Props> = ({ title, rows }) => {

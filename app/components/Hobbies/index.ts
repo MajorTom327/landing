@@ -1,1 +1,1 @@
-export { Hobbies, Hobbies as default } from './Hobbies';
+export { Hobbies, Hobbies as default } from "./Hobbies";

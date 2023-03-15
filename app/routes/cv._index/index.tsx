@@ -9,12 +9,13 @@ import WorkingValues from "~/components/WorkingValues";
 type Props = {};
 
 export const Index: React.FC<Props> = ({}) => {
-
   const { t } = useTranslation();
 
   return (
     <>
-    <div className="flex justify-center py-2"><Button to="/cv/viewer">{t('cv.printable')}</Button></div>
+      <div className="flex justify-center py-2">
+        <Button to="/cv/viewer">{t("cv.printable")}</Button>
+      </div>
       <WorkingValues />
       <Skills />
       <Timeline />

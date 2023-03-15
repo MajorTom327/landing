@@ -14,28 +14,72 @@ import { sessionStorage } from "~/services/session.server";
 
 type Props = {};
 
-type LoaderData ={
-  captcha: string
-}
+type LoaderData = {
+  captcha: string;
+};
 
 const generateCaptcha = () => {
-  return ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-  .sort(() => Math.random() - 0.5)
-  .slice(0, 5)
-  .join('')
-}
+  return [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+  ]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 5)
+    .join("");
+};
 
 export const loader: LoaderFunction = async ({ request }) => {
-  const session = await sessionStorage.getSession(request.headers.get("Cookie"));
+  const session = await sessionStorage.getSession(
+    request.headers.get("Cookie")
+  );
 
-  const captcha = generateCaptcha()
+  const captcha = generateCaptcha();
 
   session.set("captcha", captcha);
 
-  return json<LoaderData>({captcha}, { headers: {
-      "Set-Cookie": await sessionStorage.commitSession(session),
-    }});
-}
+  return json<LoaderData>(
+    { captcha },
+    {
+      headers: {
+        "Set-Cookie": await sessionStorage.commitSession(session),
+      },
+    }
+  );
+};
 
 export const Index: React.FC<Props> = ({}) => {
   const { t } = useTranslation();
@@ -79,13 +123,18 @@ export const Index: React.FC<Props> = ({}) => {
             />
 
             <div className="flex flex-col gap-1 py-4">
-              <div className="">
-                {t("contact.captcha_label")}
-              </div>
+              <div className="">{t("contact.captcha_label")}</div>
               <div className="flex justify-center">
-                <div className="text-center text-xl text-secondary font-semibold bg-slate-300 rounded px-4 py-2">{captcha}</div>
+                <div className="text-center text-xl text-secondary font-semibold bg-slate-300 rounded px-4 py-2">
+                  {captcha}
+                </div>
               </div>
-              <Input type="text" name="captcha" label="contact.captcha" required/>
+              <Input
+                type="text"
+                name="captcha"
+                label="contact.captcha"
+                required
+              />
             </div>
 
             {hasSubmited && <Alert>{t("contact.submited")}</Alert>}

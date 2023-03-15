@@ -5,8 +5,7 @@ export const environment: EnvConfiguration = {
     NODE_ENV: "Execution environnement",
     COOKIES_SECRET: "Secret for the cookies",
   },
-  optional: {
-  }
-}
+  optional: {},
+};
 
 export default environment;

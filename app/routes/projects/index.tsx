@@ -38,7 +38,7 @@ export const Index: React.FC<Props> = ({}) => {
             {projects.map((project) => (
               <div key={project.key}>
                 <ProjectCard project={project}>
-                  <Routlet route={`/projects/${project.key}`}/>
+                  <Routlet route={`/projects/${project.key}`} />
                 </ProjectCard>
               </div>
             ))}

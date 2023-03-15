@@ -1,10 +1,9 @@
-import { StyleSheet,Text, View } from '@react-pdf/renderer';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { documentStyle } from '~/refs/constants';
+import { StyleSheet, Text, View } from "@react-pdf/renderer";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { documentStyle } from "~/refs/constants";
 
-type Props = {
-};
+type Props = {};
 
 export const CvContact: React.FC<Props> = ({}) => {
   const { t } = useTranslation("cv");
@@ -15,17 +14,16 @@ export const CvContact: React.FC<Props> = ({}) => {
       padding: documentStyle.padding,
     },
     section: {
-      flexDirection: 'row',
+      flexDirection: "row",
       gap: 10,
-
     },
     title: {
       fontSize: 14,
-      textDecoration: 'underline',
+      textDecoration: "underline",
     },
     value: {
       fontSize: 14,
-    }
+    },
   });
 
   const fields = [
@@ -35,19 +33,20 @@ export const CvContact: React.FC<Props> = ({}) => {
     "contact.phone.ca",
     "contact.email",
   ];
-  return (<>
-  <View style={style.container}>
-    {fields.map((field) => (
-    <View key={field} style={style.section}>
-      <Text style={style.title}>{t(`${field}.title`)} :</Text>
-      <Text style={style.value}>{t(`${field}.value`)}</Text>
-    </View>
-    ))}
-  </View>
-  </>);
-}
-
-CvContact.defaultProps = {
+  return (
+    <>
+      <View style={style.container}>
+        {fields.map((field) => (
+          <View key={field} style={style.section}>
+            <Text style={style.title}>{t(`${field}.title`)} :</Text>
+            <Text style={style.value}>{t(`${field}.value`)}</Text>
+          </View>
+        ))}
+      </View>
+    </>
+  );
 };
+
+CvContact.defaultProps = {};
 
 export default CvContact;

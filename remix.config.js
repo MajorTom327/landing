@@ -9,5 +9,5 @@ module.exports = {
     v2_routeConvention: true,
     unstable_postcss: true,
     unstable_tailwind: true,
-  }
+  },
 };

@@ -1,1 +1,1 @@
-export { PdfTitle, default } from './PdfTitle'
+export { PdfTitle, default } from "./PdfTitle";

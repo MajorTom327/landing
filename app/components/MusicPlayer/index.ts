@@ -1,1 +1,1 @@
-export { MusicPlayer, MusicPlayer as default } from './MusicPlayer';
+export { MusicPlayer, MusicPlayer as default } from "./MusicPlayer";

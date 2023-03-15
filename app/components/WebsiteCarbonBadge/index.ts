@@ -1,1 +1,4 @@
-export { WebsiteCarbonBadge, WebsiteCarbonBadge as default } from './WebsiteCarbonBadge';
+export {
+  WebsiteCarbonBadge,
+  WebsiteCarbonBadge as default,
+} from "./WebsiteCarbonBadge";

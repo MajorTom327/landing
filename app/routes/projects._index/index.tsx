@@ -1,7 +1,7 @@
-import React from 'react';
-import type { ActionFunction, LoaderFunction } from '@remix-run/node';
+import React from "react";
+import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 
-type LoaderData = {}
+type LoaderData = {};
 
 export const loader: LoaderFunction = async ({ request }) => {
   return null;

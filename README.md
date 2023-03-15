@@ -1,6 +1,6 @@
 # Landing Page
-[valentin-thomas.com](https://valentin-thomas.com)
 
+[valentin-thomas.com](https://valentin-thomas.com)
 
 ## Development
 
@@ -49,8 +49,5 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
-
-
-
 
 https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
