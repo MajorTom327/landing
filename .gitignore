@@ -5,3 +5,9 @@ node_modules
 /public/build
 .env
 .DS_Store
+.vercel
+
+.output
+
+/api/index.js
+/api/index.js.map
