@@ -21,6 +21,7 @@ import {
 } from "remix-utils";
 import { sessionStorage } from "~/services/session.server";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export function links() {
   return [
@@ -64,12 +65,13 @@ export const meta: MetaFunction = () => ({
 
 type EnvironmentData = {
   NODE_ENV: string;
+  VERCEL_ANALYTICS_ID: string;
 };
 
 type LoaderData = {
   locale: string;
   csrf: string;
-  environment: EnvironmentData;
+  ENV: EnvironmentData;
 };
 
 type BasePageProps = {
@@ -89,8 +91,9 @@ export const loader: LoaderFunction = async ({ request }) => {
     {
       locale,
       csrf: token,
-      environment: {
+      ENV: {
         NODE_ENV: process.env.NODE_ENV,
+        VERCEL_ANALYTICS_ID: process.env.VERCEL_ANALYTICS_ID!,
       },
     },
     {
@@ -106,7 +109,7 @@ export let handle = {
 };
 
 export const BasePage: React.FC<BasePageProps> = ({ children }) => {
-  let { locale, csrf } = useLoaderData<LoaderData>() || { locale: "fr" };
+  let { locale, csrf, ENV } = useLoaderData<LoaderData>() || { locale: "fr" };
   let { i18n } = useTranslation();
   useEffect(() => {
     i18n.changeLanguage(locale);
@@ -122,10 +125,16 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
         <AuthenticityTokenProvider token={csrf}>
           <Layout>{children}</Layout>
           {/* <ScrollRestoration /> */}
+          <Analytics />
           <Scripts />
           <LiveReload />
         </AuthenticityTokenProvider>
       </body>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.ENV = ${JSON.stringify(ENV)}`,
+        }}
+      />
     </html>
   );
 };

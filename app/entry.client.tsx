@@ -12,6 +12,9 @@ import { getInitialNamespaces } from "remix-i18next";
 import { Duration } from "luxon";
 import { supportedLanguages } from "./services/i18n.server";
 
+import reportWebVitals from "./reportWebVitals";
+import { sendToVercelAnalytics } from "./vitals";
+
 const backends = [HttpBackend, LocalStorageBackend];
 
 const cacheDuration = Duration.fromObject({ minutes: 1 });
@@ -61,3 +64,5 @@ if (window.requestIdleCallback) {
   // https://caniuse.com/requestidlecallback
   window.setTimeout(hydrate, 1);
 }
+
+reportWebVitals(sendToVercelAnalytics);
