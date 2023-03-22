@@ -5,8 +5,7 @@ import { ClientOnly } from "remix-utils";
 import bgmUrl from "~/assets/bgm.mp3";
 
 import { FaPlayCircle, FaPauseCircle } from "react-icons/fa";
-import Play from "./Play";
-import Pause from "./Pause";
+import { isNilOrEmpty } from "ramda-adjunct";
 
 type Props = {};
 
@@ -14,6 +13,7 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
   const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = React.useRef<HTMLAudioElement>(null);
+  const [currentUrl, setCurrentUrl] = useState<string | undefined>(undefined);
 
   const onToggle = () => {
     if (audioRef.current) {
@@ -27,6 +27,10 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
     }
   };
 
+  const handleHover = () => {
+    if (isNilOrEmpty(currentUrl)) setCurrentUrl(bgmUrl);
+  };
+
   return (
     <>
       <ClientOnly fallback={<></>}>
@@ -35,6 +39,7 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
             <button
               className="justify-center items-center flex flex-col text-md font-normal"
               onClick={onToggle}
+              onMouseEnter={handleHover}
             >
               <div className="flex gap-2 items-center">
                 <div>{t("music.title")}</div>
@@ -47,7 +52,7 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
                 </div>
               )}
             </button>
-            <audio ref={audioRef} src={bgmUrl} loop />
+            <audio ref={audioRef} src={currentUrl} loop />
           </>
         )}
       </ClientOnly>
