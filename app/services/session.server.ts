@@ -1,4 +1,4 @@
-import { createCookieSessionStorage } from "@remix-run/node";
+import { createCookieSessionStorage } from "@vercel/remix";
 import assert from "node:assert";
 import { isNil, path } from "ramda";
 import { isProduction } from "~/lib/isEnv";

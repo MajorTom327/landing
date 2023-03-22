@@ -1,6 +1,6 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { redirect } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { ActionFunction, LoaderFunction } from "@vercel/remix";
+import { redirect } from "@vercel/remix";
+import { json } from "@vercel/remix";
 import { Form, useLoaderData, useTransition } from "@remix-run/react";
 import { isNilOrEmpty, isNotNil } from "ramda-adjunct";
 import React, { useEffect, useState } from "react";

@@ -1,5 +1,5 @@
 import React from "react";
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
+import type { ActionFunction, LoaderFunction } from "@vercel/remix";
 
 type LoaderData = {};
 
