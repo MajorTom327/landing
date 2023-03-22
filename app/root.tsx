@@ -21,6 +21,8 @@ import {
 } from "remix-utils";
 import { sessionStorage } from "~/services/session.server";
 import { useEffect } from "react";
+import reportWebVitals from "./lib/reportWebVitals";
+import { sendToVercelAnalytics } from "./lib/vitals";
 
 export function links() {
   return [
@@ -137,3 +139,5 @@ export default function App() {
     </BasePage>
   );
 }
+
+reportWebVitals(sendToVercelAnalytics);
