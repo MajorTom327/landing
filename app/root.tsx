@@ -125,16 +125,16 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
         <AuthenticityTokenProvider token={csrf}>
           <Layout>{children}</Layout>
           {/* <ScrollRestoration /> */}
-          <Analytics />
           <Scripts />
           <LiveReload />
         </AuthenticityTokenProvider>
+        <Analytics />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.ENV = ${JSON.stringify(ENV)}`,
+          }}
+        />
       </body>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `window.ENV = ${JSON.stringify(ENV)}`,
-        }}
-      />
     </html>
   );
 };
