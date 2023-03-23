@@ -7061,10 +7061,10 @@ raw-body@^2.2.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-carbonbadge@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-carbonbadge/-/react-carbonbadge-1.0.1.tgz#6bc374f6c2cd208ea5eeb918e72a149a21773098"
-  integrity sha512-5/hgs/4Sv8aJLnjA9Qbcel+wu1uN64Q0tpNlYdb0k36kgOzFBRVmG0GL8X8LaAPWuSBoNeDEyWmy3vDlKascJA==
+react-carbonbadge@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-carbonbadge/-/react-carbonbadge-2.0.0.tgz#41777b2a6ca53d43480375a79f9ab6c715766bae"
+  integrity sha512-KzKUYsL0qtGyvZopVGB/+furoQ0kZytLLdXd/apnr/QsM8zzKabnPq3IHe2b8oenHUBSSrE1oVAFdxIQEl5TzQ==
 
 react-dom@^18.2.0:
   version "18.2.0"
