@@ -14,7 +14,7 @@
     "@remix-run/serve": "^1.14.3",
     "@remix-run/vercel": "^1.14.3",
     "@vercel/analytics": "^0.1.11",
-    "@vercel/node": "^2.9.13",
+    "@vercel/node": "^2.9.14",
     "@vercel/remix": "^1.14.3-patch.1",
     "classnames": "^2.3.2",
     "compression": "^1.7.4",
