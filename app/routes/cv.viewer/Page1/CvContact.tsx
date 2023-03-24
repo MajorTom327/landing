@@ -30,7 +30,6 @@ export const CvContact: React.FC<Props> = ({}) => {
     "contact.name",
     "contact.address",
     "contact.phone.fr",
-    "contact.phone.ca",
     "contact.email",
   ];
   return (
