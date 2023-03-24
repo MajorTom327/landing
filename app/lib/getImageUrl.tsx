@@ -13,7 +13,7 @@ export const getImageUrl = (src: string, options?: Options) => {
   params.append("w", propOr(1920, "width", options).toString());
   // @ts-ignore
   params.append("q", propOr(75, "quality", options).toString());
-  return `/_next/image?${params}`;
+  return `/_vercel/image?${params}`;
 };
 
 export default getImageUrl;
