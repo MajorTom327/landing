@@ -8,7 +8,7 @@ import {
   Scripts,
   useLoaderData,
 } from "@remix-run/react";
-import Layout from "./components/Layout";
+import Layout from "~/components/Layout";
 
 import { useTranslation } from "react-i18next";
 import i18next from "~/services/i18n.server";

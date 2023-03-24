@@ -1,11 +1,11 @@
 import React from "react";
 import type { ActionFunction, LoaderFunction } from "@vercel/remix";
 
-type LoaderData = {};
-
-export const loader: LoaderFunction = async ({ request }) => {
-  return null;
-};
+export function headers() {
+  return {
+    "Cache-Control": "s-maxage=60",
+  };
+}
 
 export const Projects = () => {
   return (
@@ -15,8 +15,5 @@ export const Projects = () => {
   );
 };
 
-export const action: ActionFunction = async ({ request }) => {
-  return null;
-};
 
 export default Projects;

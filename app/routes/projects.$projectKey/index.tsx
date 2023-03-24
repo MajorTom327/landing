@@ -7,7 +7,13 @@ import projects from "~/data/projects";
 
 type Props = {};
 
-export const $project: React.FC<Props> = ({}) => {
+export function headers() {
+  return {
+    "Cache-Control": "s-maxage=60",
+  };
+}
+
+export const ProjectByIdPage: React.FC<Props> = ({}) => {
   const { projectKey } = useParams();
   const { t } = useTranslation();
 
@@ -34,6 +40,6 @@ export const $project: React.FC<Props> = ({}) => {
   );
 };
 
-$project.defaultProps = {};
+ProjectByIdPage.defaultProps = {};
 
-export default $project;
+export default ProjectByIdPage;

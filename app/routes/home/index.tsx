@@ -6,6 +6,12 @@ import Divider from "~/components/Divider";
 
 type Props = {};
 
+export function headers() {
+  return {
+    "Cache-Control": "s-maxage=60",
+  };
+}
+
 export const Home: React.FC<Props> = ({}) => {
   return (
     <>
