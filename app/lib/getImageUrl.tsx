@@ -10,7 +10,7 @@ export const getImageUrl = (src: string, options?: Options) => {
 
   params.append("url", src);
   // @ts-ignore
-  params.append("w", propOr(1920, "width", options).toString());
+  params.append("w", propOr(1200, "width", options).toString());
   // @ts-ignore
   params.append("q", propOr(75, "quality", options).toString());
   return `/_vercel/image?${params}`;
