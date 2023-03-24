@@ -116,7 +116,7 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
   }, [locale, i18n]);
 
   return (
-    <html lang={locale} dir={i18n.dir()}>
+    <html lang={locale} dir={"ltr"}>
       <head>
         <Meta />
         <Links />
