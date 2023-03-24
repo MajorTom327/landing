@@ -8,7 +8,7 @@ type Options = Partial<{
 export const getImageUrl = (src: string, options?: Options) => {
   const params = new URLSearchParams({});
 
-  params.append("url", encodeURIComponent(src));
+  params.append("url", src);
   // @ts-ignore
   params.append("w", propOr(1920, "width", options).toString());
   // @ts-ignore
