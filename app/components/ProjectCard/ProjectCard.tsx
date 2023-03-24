@@ -6,6 +6,7 @@ import Routlet from "../Routlet/Routlet";
 import classNames from "classnames";
 import Title from "../Title";
 import TechBadge from "./TechBadge";
+import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {
   project: Project;
@@ -26,7 +27,11 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
         <Link prefetch="intent" to={`/projects/${project.key}`}>
           {project.image && (
             <div className="-mt-4 -mx-4 h-32 rounded-t-xl overflow-y-hidden grayscale group-hover:grayscale-0 transition">
-              <img src={project.image} alt="" className="w-full" />
+              <img
+                src={getImageUrl(project.image, { width: 512 })}
+                alt=""
+                className="w-full"
+              />
             </div>
           )}
           <Title center lg>

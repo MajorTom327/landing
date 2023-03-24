@@ -4,6 +4,7 @@ import { find, propEq, T } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import projects from "~/data/projects";
+import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
 
@@ -33,7 +34,7 @@ export const ProjectByIdPage: React.FC<Props> = ({}) => {
 
       {project.image && (
         <div className="transition hover:motion-safe:scale-110 lg:hover:motion-safe:scale-125 shadow hover:shadow-xl rounded-lg overflow-hidden">
-          <img src={project.image} alt="" className="w-full" />
+          <img src={getImageUrl(project.image)} alt="" className="w-full" />
         </div>
       )}
     </div>
