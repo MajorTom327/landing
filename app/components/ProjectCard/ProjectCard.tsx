@@ -28,7 +28,7 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
           {project.image && (
             <div className="-mt-4 -mx-4 h-32 rounded-t-xl overflow-y-hidden grayscale group-hover:grayscale-0 transition">
               <img
-                src={getImageUrl(project.image, { width: 640 })}
+                src={getImageUrl(project.image, { width: 750 })}
                 alt=""
                 className="w-full"
               />

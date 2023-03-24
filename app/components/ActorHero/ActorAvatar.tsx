@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import avatarLink from "~/assets/avatar.jpg";
+import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
 
@@ -13,7 +14,7 @@ export const ActorAvatar: React.FC<Props> = ({}) => {
     <>
       <div
         className={classes}
-        style={{ backgroundImage: `url(${avatarLink})` }}
+        style={{ backgroundImage: `url(${getImageUrl(avatarLink)})` }}
       >
         {/* <img src={avatarLink} alt="Avatar" /> */}
       </div>

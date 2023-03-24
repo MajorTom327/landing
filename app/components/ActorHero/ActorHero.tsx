@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Title from "../Title";
 import ActorAvatar from "./ActorAvatar";
 import winterLink from "~/assets/winter.jpg";
+import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
 
@@ -12,7 +13,7 @@ export const ActorHero: React.FC<Props> = ({}) => {
     <>
       <div
         className="w-full p-8 bg-cover bg-center"
-        style={{ backgroundImage: `url(${winterLink})` }}
+        style={{ backgroundImage: `url(${getImageUrl(winterLink)})` }}
       >
         <div className="flex justify-center">
           <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-neutral/40 backdrop-blur p-8 w-full md:w-4/5 shadow-xl">
