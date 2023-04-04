@@ -7303,10 +7303,10 @@ remark-rehype@^9.0.0:
     mdast-util-to-hast "^11.0.0"
     unified "^10.0.0"
 
-remix-i18next@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/remix-i18next/-/remix-i18next-5.1.0.tgz#72b0dec8c0ad758533a9a4ce7bd909655d5a38a2"
-  integrity sha512-Mgu7fJL8kdb6qTl4PDk9xoHj5OSk2K69hE8T4RtVy2/2c6R5BIJTdAJLf35aK73OJEvu0kusQX4tRj7ajEjzoQ==
+remix-i18next@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/remix-i18next/-/remix-i18next-5.1.1.tgz#a84ca8414c64910da11ae69e6f47afa3b157129b"
+  integrity sha512-2a9YnbTtF4Povyo396AvK+1pwP+FFclwkOeJtpFENIX+D/nBggoUy17ARq5q8maza7zplfdHWNODwNBEyMIEzg==
   dependencies:
     accept-language-parser "^1.5.0"
     intl-parse-accept-language "^1.0.0"
