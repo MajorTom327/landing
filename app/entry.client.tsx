@@ -29,7 +29,7 @@ function hydrate() {
       supportedLngs: supportedLanguages,
       fallbackLng: "fr",
       defaultNS: "translation",
-      react: { useSuspense: false },
+      react: { useSuspense: true },
       ns: getInitialNamespaces(),
       backend: {
         backends,
