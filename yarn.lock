@@ -1756,7 +1756,7 @@
   dependencies:
     "@remix-run/node" "1.15.0"
 
-"@remix-run/node@1.14.3", "@remix-run/node@^1.13.0":
+"@remix-run/node@1.14.3":
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.14.3.tgz#c1c3bad464bf67b7a6d41ccc1b0b6d88122e5dea"
   integrity sha512-Mq0wUtgJtGwMQEBr/8p9XpdPBm7N+lby5CEbW6IKV59UC9N3VMGY3snfrsphBCq3sNZfbhIpaDdu2W+8EoqfnQ==
@@ -1771,7 +1771,7 @@
     source-map-support "^0.5.21"
     stream-slice "^0.1.2"
 
-"@remix-run/node@1.15.0":
+"@remix-run/node@1.15.0", "@remix-run/node@^1.13.0":
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.15.0.tgz#55058094dcb9ac4c37bccd30c10a82381560892e"
   integrity sha512-CS0p8T6A2KvMoAW5zzLA/BtNNCsv34A5RJoouJvXK9/o6MriAQ/YSugg6ldS5mec49neSep+CGeL1RS6tL+3NQ==
@@ -2350,14 +2350,14 @@
     ts-node "10.9.1"
     typescript "4.3.4"
 
-"@vercel/remix@^1.14.3-patch.1":
-  version "1.14.3-patch.1"
-  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.14.3-patch.1.tgz#178943149ed4dff39a1a7ecb4c3d4406c6934c9c"
-  integrity sha512-TBI/FS77HYZqjbgeABi7Rbg7RVQ1YLHcXm4/zroV4zl0nVbcXM2jVR3SXm0EuQKze+NZ0p3VBUz4I/xocTvq0w==
+"@vercel/remix@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.15.0.tgz#1d73def407db0e489c3aee59c63b8180d4834475"
+  integrity sha512-IS4K9u6M8oCc9VKxnS308+B0l+PHWxmBS6/o0aI2yBRQiG+yxxXn/UfPPvNDNJsfGsdcTmW/VR9dbN5EskY32g==
   dependencies:
-    "@remix-run/node" "1.14.3"
-    "@remix-run/server-runtime" "1.14.3"
-    isbot "3.6.6"
+    "@remix-run/node" "1.15.0"
+    "@remix-run/server-runtime" "1.15.0"
+    isbot "3.6.7"
 
 "@vercel/static-config@2.0.14":
   version "2.0.14"
@@ -5331,12 +5331,7 @@ isarray@~1.0.0:
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==
 
-isbot@3.6.6:
-  version "3.6.6"
-  resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.6.6.tgz#3ae163dee8dc158322c025f9105d16b050e97192"
-  integrity sha512-98aGl1Spbx1led422YFrusDJ4ZutSNOymb2avZ2V4BCCjF3MqAF2k+J2zoaLYahubaFkb+3UyvbVDVlk/Ngrew==
-
-isbot@^3.6.7:
+isbot@3.6.7, isbot@^3.6.7:
   version "3.6.7"
   resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.6.7.tgz#38bd4792542291500e355da7798e7afae31802ec"
   integrity sha512-SXNUQaNZlj/+9jdrGnAp6WW0YoHe3MIwwc6oRIYuhhERBUt7/L6I7JkMiA2sX9fcvS7gZ2C7GWgmDZfOOU4I5g==
