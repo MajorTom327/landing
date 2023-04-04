@@ -1669,10 +1669,10 @@
   dependencies:
     "@babel/runtime" "^7.20.13"
 
-"@remix-run/dev@^1.13.0":
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/@remix-run/dev/-/dev-1.14.3.tgz#f231a5716d5cf66c8fcc203c17ac961a865d08cd"
-  integrity sha512-46mmwiA/k9YDkg0UrP90UB3azVVWRXw16NLHRSbZiaaYe8XgUkddEtBnH/nBp/IrVCtzUL3LObplUe5sFk5Z9Q==
+"@remix-run/dev@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/dev/-/dev-1.15.0.tgz#6e719c0a8f4f4dbf6f8a203087812ad1872b72f7"
+  integrity sha512-BsE1GN6WM9PhN+agZi4TqUIuYzoHYZrufEdXLg3ZEYxWXqvtRKUNfhsYSDlEhrW+D5fyVQhJrs61wQ83sEXHLQ==
   dependencies:
     "@babel/core" "^7.18.6"
     "@babel/generator" "^7.18.6"
@@ -1685,8 +1685,8 @@
     "@babel/types" "^7.20.2"
     "@esbuild-plugins/node-modules-polyfill" "^0.1.4"
     "@npmcli/package-json" "^2.0.0"
-    "@remix-run/server-runtime" "1.14.3"
-    "@vanilla-extract/integration" "^6.0.2"
+    "@remix-run/server-runtime" "1.15.0"
+    "@vanilla-extract/integration" "^6.2.0"
     arg "^5.0.1"
     cacache "^15.0.5"
     chalk "^4.1.2"
@@ -1699,14 +1699,15 @@
     fast-glob "3.2.11"
     fs-extra "^10.0.0"
     get-port "^5.1.1"
+    glob-to-regexp "0.4.1"
     gunzip-maybe "^1.4.2"
     inquirer "^8.2.1"
     jsesc "3.0.2"
-    json5 "^2.2.1"
+    json5 "^2.2.2"
     lodash "^4.17.21"
     lodash.debounce "^4.0.8"
     lru-cache "^7.14.1"
-    minimatch "^3.0.4"
+    minimatch "^3.0.5"
     node-fetch "^2.6.7"
     ora "^5.4.1"
     postcss "^8.4.19"
@@ -2294,7 +2295,7 @@
     media-query-parser "^2.0.2"
     outdent "^0.8.0"
 
-"@vanilla-extract/integration@^6.0.2":
+"@vanilla-extract/integration@^6.2.0":
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.2.1.tgz#e87849ed3d8e9ddd2703b8b8597fdbff08cf62ad"
   integrity sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==
@@ -4575,6 +4576,11 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
+glob-to-regexp@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz#c75297087c851b9a578bd217dd59a92f59fe546e"
+  integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
+
 glob@7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
@@ -5428,7 +5434,7 @@ json5@^1.0.2:
   dependencies:
     minimist "^1.2.0"
 
-json5@^2.1.2, json5@^2.2.1, json5@^2.2.2:
+json5@^2.1.2, json5@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
