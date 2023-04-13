@@ -103,7 +103,7 @@ function handleBrowserRequest(
         supportedLngs: supportedLanguages,
         fallbackLng: "fr",
         defaultNS: "translation",
-        react: { useSuspense: false },
+        react: { useSuspense: true },
         backend: {
           loadPath: resolve(__dirname, "../public/locales/{{lng}}/{{ns}}.json"),
         },
