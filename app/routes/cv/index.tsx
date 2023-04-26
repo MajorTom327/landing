@@ -1,5 +1,6 @@
 import { Outlet } from "@remix-run/react";
 import React from "react";
+import ErrorView from "~/components/ErrorView";
 
 type Props = {};
 
@@ -16,6 +17,8 @@ export const Index: React.FC<Props> = ({}) => {
     </>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 Index.defaultProps = {};
 

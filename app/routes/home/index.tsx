@@ -3,6 +3,7 @@ import ActorHero from "~/components/ActorHero";
 import CauseThatMatter from "~/components/CauseThatMatter";
 import MyValues from "~/components/MyValues";
 import Divider from "~/components/Divider";
+import ErrorView from "~/components/ErrorView";
 
 type Props = {};
 
@@ -29,6 +30,8 @@ export const Home: React.FC<Props> = ({}) => {
     </>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 Home.defaultProps = {};
 

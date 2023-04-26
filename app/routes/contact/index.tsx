@@ -11,6 +11,7 @@ import Button from "~/components/Button";
 import Input from "~/components/Input/Input";
 import mailer from "~/services/mailer.server";
 import { sessionStorage } from "~/services/session.server";
+import ErrorView from "~/components/ErrorView";
 
 type Props = {};
 
@@ -155,6 +156,8 @@ export const Index: React.FC<Props> = ({}) => {
     </>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.clone().formData();

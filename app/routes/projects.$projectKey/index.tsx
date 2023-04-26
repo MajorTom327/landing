@@ -3,6 +3,7 @@ import { useParams } from "@remix-run/react";
 import { find, propEq, T } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import ErrorView from "~/components/ErrorView";
 import projects from "~/data/projects";
 import getImageUrl from "~/lib/getImageUrl";
 
@@ -61,6 +62,8 @@ export const ProjectByIdPage: React.FC<Props> = ({}) => {
     </div>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 ProjectByIdPage.defaultProps = {};
 
