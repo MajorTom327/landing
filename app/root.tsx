@@ -1,4 +1,8 @@
-import type { LoaderFunction, MetaFunction } from "@vercel/remix";
+import type {
+  LoaderFunction,
+  MetaFunction,
+  V2_MetaFunction,
+} from "@vercel/remix";
 import { json } from "@vercel/remix";
 import {
   Links,
@@ -22,6 +26,7 @@ import {
 import { sessionStorage } from "~/services/session.server";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import ErrorView from "./components/ErrorView";
 
 export function links() {
   return [
@@ -55,13 +60,18 @@ export function links() {
   ];
 }
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "Valentin Thomas",
-  viewport: "width=device-width,initial-scale=1",
-  description:
-    "Valentin THOMAS is a developper and here you can find his experiences and his CV",
-});
+export const meta: V2_MetaFunction = () => {
+  return [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width,initial-scale=1" },
+    { title: "Valentin Thomas" },
+    {
+      name: "description",
+      content:
+        "Valentin THOMAS is a developper and here you can find his experiences and his CV",
+    },
+  ];
+};
 
 type EnvironmentData = {
   NODE_ENV: string;
@@ -146,3 +156,5 @@ export default function App() {
     </BasePage>
   );
 }
+
+export const ErrorBoundary = () => <ErrorView />;

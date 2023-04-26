@@ -4,6 +4,7 @@ import posixUrl from "~/assets/posix.jpg";
 import { T } from "ramda";
 import { useTranslation } from "react-i18next";
 import Divider from "~/components/Divider";
+import ErrorView from "~/components/ErrorView";
 
 type Props = {};
 
@@ -41,6 +42,8 @@ export const SpaCause: React.FC<Props> = ({}) => {
     </>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 SpaCause.defaultProps = {};
 

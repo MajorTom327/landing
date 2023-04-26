@@ -229,5 +229,13 @@
       "title": "La bienveillance",
       "description": "L'apprentissage est un long parcours. Tout le monde apprend et a son rythme. Tout le monde a quelque chose à apprendre aux autres. Je préfère partir du principe que les personnes avec qui j'interagis ont quelque chose à m'apporter. C'est quelque chose qui me permet de rester ouvert, d'apporter mon aide tout en apprenant de mes interlocuteurs."
     }
+  },
+  "errors": {
+    "title": "Quelque chose s'est mal passé",
+    "description": "Essayez de nous contacter pour nous en informer.",
+    "404": "La page que vous recherchez n'existe pas.",
+    "401": "Vous n'êtes pas autorisé à accéder à cette page.",
+    "403": "Vous n'êtes pas autorisé à accéder à cette page.",
+    "500": "Une erreur interne est survenue. Essayez de nous contacter pour nous en informer."
   }
 }

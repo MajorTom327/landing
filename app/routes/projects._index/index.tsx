@@ -1,5 +1,4 @@
 import React from "react";
-import type { ActionFunction, LoaderFunction } from "@vercel/remix";
 
 export function headers() {
   return {
@@ -14,6 +13,5 @@ export const Projects = () => {
     </div>
   );
 };
-
 
 export default Projects;

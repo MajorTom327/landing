@@ -1,6 +1,7 @@
 import { useParams } from "@remix-run/react";
 import React from "react";
 import { Cause } from "~/components/CauseThatMatter";
+import ErrorView from "~/components/ErrorView";
 
 type Props = {};
 
@@ -20,6 +21,8 @@ export const CausePreview: React.FC<Props> = ({}) => {
     </>
   );
 };
+
+export const ErrorBoundary = () => <ErrorView />;
 
 CausePreview.defaultProps = {};
 
