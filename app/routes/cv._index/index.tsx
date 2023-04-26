@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import { ClientOnly } from "remix-utils";
 import Button from "~/components/Button";
 import Hobbies from "~/components/Hobbies";
 import Skills from "~/components/Skills";
@@ -19,9 +20,15 @@ export const Index: React.FC<Props> = ({}) => {
 
   return (
     <>
-      <div className="flex justify-center py-2">
-        <Button to="/cv/viewer">{t("cv.printable")}</Button>
-      </div>
+      <Suspense fallback={<></>}>
+        <ClientOnly>
+          {() => (
+            <div className="flex justify-center py-2">
+              <Button to="/cv/viewer">{t("cv.printable")}</Button>
+            </div>
+          )}
+        </ClientOnly>
+      </Suspense>
       <WorkingValues />
       <Skills />
       <Timeline />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Document } from "@react-pdf/renderer";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
@@ -18,9 +18,15 @@ export const CvDocument: React.FC<Props> = ({}) => {
         creator="Valentin THOMAS"
         producer="Valentin THOMAS"
       >
-        <Page1 />
-        <Page2 />
-        <Page3 />
+        <Suspense fallback={<></>}>
+          <Page1 />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Page2 />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Page3 />
+        </Suspense>
       </Document>
     </>
   );
