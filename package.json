@@ -39,8 +39,7 @@
     "react-icons": "^4.7.1",
     "remix-i18next": "^5.1.1",
     "remix-utils": "^6.1.0",
-    "ts-pattern": "^4.2.2",
-    "web-vitals": "^3.3.0"
+    "ts-pattern": "^4.2.2"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.15.0",
