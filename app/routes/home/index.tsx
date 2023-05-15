@@ -5,15 +5,13 @@ import MyValues from "~/components/MyValues";
 import Divider from "~/components/Divider";
 import ErrorView from "~/components/ErrorView";
 
-type Props = {};
-
 export function headers() {
   return {
     "Cache-Control": "s-maxage=60",
   };
 }
 
-export const Home: React.FC<Props> = ({}) => {
+export const Home: React.FC = () => {
   return (
     <>
       <ActorHero />

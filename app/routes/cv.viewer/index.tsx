@@ -1,14 +1,7 @@
 import React, { Suspense } from "react";
-import type { ActionFunction, LoaderFunction } from "@vercel/remix";
 import { PDFViewer } from "@react-pdf/renderer";
 import CvDocument from "./CvDocument";
 import { ClientOnly } from "remix-utils";
-
-type LoaderData = {};
-
-export const loader: LoaderFunction = async ({ request }) => {
-  return null;
-};
 
 export let handle = {
   i18n: "cv",
@@ -33,10 +26,6 @@ export const CvViewer = () => {
       </Suspense>
     </div>
   );
-};
-
-export const action: ActionFunction = async ({ request }) => {
-  return null;
 };
 
 export default CvViewer;
