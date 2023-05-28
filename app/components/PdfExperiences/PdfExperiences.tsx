@@ -3,7 +3,7 @@ import { is } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { documentStyle } from "~/refs/constants";
-import { textSizes } from "../../routes/cv.viewer/config";
+import { textSizes } from "~/refs/PdfConfig";;
 
 type Item = {
   title: string;

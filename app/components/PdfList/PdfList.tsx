@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "@react-pdf/renderer";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { documentStyle } from "~/refs/constants";
-import { textSizes } from "../../routes/cv.viewer/config";
+import { textSizes } from "~/refs/PdfConfig";;
 
 type Item = {
   title: string;

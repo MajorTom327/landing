@@ -3,9 +3,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import PdfTitle from "~/components/PdfTitle";
 import { documentStyle } from "~/refs/constants";
-import pageStyles, { pageSizeConfig, textSizes } from "../config";
-import CvExperiences from "./CvExperiences";
-import CvStudies from "./CvStudies";
+import pageStyles, { pageSizeConfig, textSizes } from "../../../refs/PdfConfig";
+import CvProjects from "./CvProjects";
 
 type Props = {};
 
@@ -25,6 +24,8 @@ const styles = StyleSheet.create({
   },
 });
 
+const projects = ["deadsafe", "basemint", "andromeda", "styx"];
+
 export const Index: React.FC<Props> = ({}) => {
   const { t } = useTranslation("cv");
 
@@ -32,8 +33,12 @@ export const Index: React.FC<Props> = ({}) => {
     <>
       <Page size={pageSizeConfig} style={pageStyles.page} wrap>
         <View style={styles.container}>
-          <CvStudies />
-          <CvExperiences />
+          <CvProjects projects={projects} />
+
+          <View style={styles.group}>
+            <PdfTitle>hobbies.title</PdfTitle>
+            <Text style={styles.contentText}>{t("hobbies.value")}</Text>
+          </View>
         </View>
       </Page>
     </>

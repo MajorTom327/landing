@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { textSizes } from "~/routes/cv.viewer/config";
+import { textSizes } from "~/refs/PdfConfig";
 import { Text, StyleSheet } from "@react-pdf/renderer";
 
 type Props = {

@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import PdfTitle from "~/components/PdfTitle";
 import { documentStyle } from "~/refs/constants";
-import { textSizes } from "../config";
+import { textSizes } from "../../../refs/PdfConfig";
 import PdfList from "../../../components/PdfList/PdfList";
 
 type Props = {};

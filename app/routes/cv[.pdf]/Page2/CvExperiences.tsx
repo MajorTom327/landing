@@ -1,7 +1,7 @@
 import { View, StyleSheet } from "@react-pdf/renderer";
 import React from "react";
 import PdfTitle from "~/components/PdfTitle";
-import { textSizes } from "../config";
+import { textSizes } from "../../../refs/PdfConfig";
 import PdfExperiences from "~/components/PdfExperiences";
 
 type Props = {};
