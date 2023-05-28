@@ -21,13 +21,9 @@ export const Index: React.FC<Props> = ({}) => {
   return (
     <>
       <Suspense fallback={<></>}>
-        <ClientOnly>
-          {() => (
-            <div className="flex justify-center py-2">
-              <Button to="/cv/viewer">{t("cv.printable")}</Button>
-            </div>
-          )}
-        </ClientOnly>
+        <div className="flex justify-center py-2">
+          <Button to="/cv/viewer">{t("cv.printable")}</Button>
+        </div>
       </Suspense>
       <WorkingValues />
       <Skills />

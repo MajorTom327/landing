@@ -14,7 +14,8 @@
   "social": {
     "github": "GitHub",
     "twitter": "Twitter",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "wallet": "majortom327.eth"
   },
   "causes": {
     "title": "The causes that matter for me",
@@ -58,11 +59,11 @@
   "values": {
     "title": "My values",
     "openness": {
-      "title": "openness",
+      "title": "Openness",
       "description": "I am open to new experiences and new ideas. I am curious and enjoy learning new things."
     },
     "quality": {
-      "title": "Qualité",
+      "title": "Quality",
       "description": "I strive to do my best in everything I do. I am proud of my work and committed to delivering quality products. I am always looking for new ways to improve my skills and knowledge, whether it be in tools or languages."
     },
     "creativity": {
@@ -70,7 +71,7 @@
       "description": "I am creative and enjoy finding innovative solutions to problems. I am always looking for new ideas and ways of doing things. I enjoy creating things and am proud of my imagination. I appreciate seeing my ideas come to life and watching my creations come to life."
     },
     "honesty": {
-      "title": "Honnêteté",
+      "title": "Honesty",
       "description": "I am honest and committed to being transparent and keeping my promises. I am trustworthy and proud of my integrity. I appreciate both telling the truth and hearing it, whether it is positive or negative."
     }
   },
