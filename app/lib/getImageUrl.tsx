@@ -8,6 +8,9 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
+  if (process.env.NODE_ENV === "development") {
+    return src;
+  }
 
   const params = new URLSearchParams({});
 

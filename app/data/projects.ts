@@ -1,6 +1,7 @@
 import andromedaAsset from "../assets/andromeda.jpg";
 import basemintAsset from "../assets/basemint.jpg";
 import deadsafeAsset from "../assets/deadsafe.jpg";
+import bellzAsset from "../assets/bellz.png";
 
 export type Project = {
   key: string;
@@ -17,6 +18,7 @@ export const projects: Project[] = [
     key: "bellz",
     title: "projects.bellz.title",
     techs: ["skills.react", "skills.node", "skills.remix"],
+    image: bellzAsset,
     description: [
       "projects.bellz.description.0",
       "projects.bellz.description.1",

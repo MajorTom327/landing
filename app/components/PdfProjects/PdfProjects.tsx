@@ -1,11 +1,10 @@
 import { View, Text, StyleSheet, Link } from "@react-pdf/renderer";
 import { has, is } from "ramda";
-import { isNotNil, isNotNilOrEmpty } from "ramda-adjunct";
+import { isNotNil } from "ramda-adjunct";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaLink } from "react-icons/fa";
 import { documentStyle } from "~/refs/constants";
-import { textSizes } from "../../routes/cv.viewer/config";
+import { textSizes } from "~/refs/PdfConfig";
 
 type Item = {
   title: string;

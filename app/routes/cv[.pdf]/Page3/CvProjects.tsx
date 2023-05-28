@@ -3,7 +3,7 @@ import { isNilOrEmpty } from "ramda-adjunct";
 import React, { useMemo } from "react";
 import PdfProjects from "~/components/PdfProjects";
 import PdfTitle from "~/components/PdfTitle";
-import { textSizes } from "../config";
+import { textSizes } from "../../../refs/PdfConfig";
 
 type Props = {
   projects: string[];

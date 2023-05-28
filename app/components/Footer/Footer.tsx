@@ -35,11 +35,21 @@ export const Footer: React.FC<Props> = ({}) => {
         >
           {t("social.twitter")}
         </a>
+        <a
+          className="hover:text-gray-200"
+          href={constants.social.ethereum}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {t("social.wallet")}
+        </a>
       </div>
 
-      <div className="flex justify-center gap-4">
-        <WebsiteCarbonBadge />
-      </div>
+      {process.env.NODE_ENV !== "development" && (
+        <div className="flex justify-center gap-4">
+          <WebsiteCarbonBadge />
+        </div>
+      )}
     </div>
   );
 };

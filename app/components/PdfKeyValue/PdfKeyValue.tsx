@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import { useTranslation } from "react-i18next";
-import { textSizes } from "~/routes/cv.viewer/config";
+import { textSizes } from "~/refs/PdfConfig";
 
 type Props = {
   name: string;
