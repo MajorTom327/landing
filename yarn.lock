@@ -1769,21 +1769,6 @@
   dependencies:
     "@remix-run/node" "1.16.1"
 
-"@remix-run/node@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.16.0.tgz#c56762c1a71eac9cd1e36ca425c4e211ca0bf147"
-  integrity sha512-2JtU3sVWDkyLcZ2prLovSbp4/K/mjbei1r9Qv6D9+fKgJFu3YjCPKfPiSj+T4My5rCG7azuKs5KOtmnwKBavrA==
-  dependencies:
-    "@remix-run/server-runtime" "1.16.0"
-    "@remix-run/web-fetch" "^4.3.4"
-    "@remix-run/web-file" "^3.0.2"
-    "@remix-run/web-stream" "^1.0.3"
-    "@web3-storage/multipart-parser" "^1.0.0"
-    abort-controller "^3.0.0"
-    cookie-signature "^1.1.0"
-    source-map-support "^0.5.21"
-    stream-slice "^0.1.2"
-
 "@remix-run/node@1.16.1", "@remix-run/node@^1.13.0":
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.16.1.tgz#d370e8775e25c91d00e571973e6537204af20269"
@@ -2415,13 +2400,13 @@
     typescript "4.9.5"
     ws "8.13.0"
 
-"@vercel/remix@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.16.0.tgz#4d5356517fb5d604c63d484b208c44edac38c9f7"
-  integrity sha512-81eVD8QJfWsozeCjn8SIRVaAb4txY32wDb3tzTS/gNdh970uaHBFJutrzD4dG5O/hhbp1imvXAJGQAKp0y4zEg==
+"@vercel/remix@^1.16.1":
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.16.1.tgz#c70c9fcadf50767438ad4220dca6a2893b7deb58"
+  integrity sha512-WdQSSjpzr7IDO2zeGBxs+tDD45S8KtnOEWZQSrFL8ZyhpxAqfHWR04rlVAI3iU+/xF4+xJzqA40tRyA/y4N+UQ==
   dependencies:
-    "@remix-run/node" "1.16.0"
-    "@remix-run/server-runtime" "1.16.0"
+    "@remix-run/node" "1.16.1"
+    "@remix-run/server-runtime" "1.16.1"
     isbot "^3.6.8"
 
 "@vercel/static-config@2.0.17":
