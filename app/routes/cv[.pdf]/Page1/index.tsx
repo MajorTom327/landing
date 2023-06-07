@@ -3,6 +3,7 @@ import React from "react";
 import pageStyles, { pageSizeConfig } from "../../../refs/PdfConfig";
 import CvCompetences from "./CvCompetences";
 import CvContact from "./CvContact";
+import CvSynthese from "./CvSynthese";
 
 type Props = {};
 
@@ -11,6 +12,7 @@ export const Index: React.FC<Props> = ({}) => {
     <>
       <Page size={pageSizeConfig} style={pageStyles.page}>
         <CvContact />
+        <CvSynthese />
         <CvCompetences />
       </Page>
     </>

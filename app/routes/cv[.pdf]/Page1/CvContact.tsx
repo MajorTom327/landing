@@ -13,7 +13,8 @@ export const CvContact: React.FC<Props> = ({}) => {
 
   const style = StyleSheet.create({
     container: {
-      margin: documentStyle.margin,
+      marginHorizontal: documentStyle.margin,
+
       padding: documentStyle.padding,
     },
     section: {
