@@ -15,6 +15,9 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import translationEn from "../../../public/locales/en/cv.json";
 import translationFr from "../../../public/locales/fr/cv.json";
 
+import commonEn from "../../../public/locales/en/translation.json";
+import commonFr from "../../../public/locales/fr/translation.json";
+
 export const loader: LoaderFunction = async ({ request }) => {
   const locale = await i18n.getLocale(request);
 
@@ -36,8 +39,8 @@ export const loader: LoaderFunction = async ({ request }) => {
       defaultNS: "translation",
       react: { useSuspense: true },
       resources: {
-        en: { cv: translationEn },
-        fr: { cv: translationFr },
+        en: { cv: translationEn, translation: commonEn },
+        fr: { cv: translationFr, translation: commonFr },
       },
       detection: {
         order: ["htmlTag"],

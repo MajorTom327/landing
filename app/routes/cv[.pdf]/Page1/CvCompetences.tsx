@@ -27,7 +27,6 @@ export const CvCompetences: React.FC<Props> = ({}) => {
   const skillsGroup = [
     ["skills.languages.french", "skills.languages.english"],
     ["skills.cs.advanced", "skills.cs.middle", "skills.cs.beginner"],
-    ["skills.driving"],
     ["skills.problem_solving", "skills.leadership", "skills.pedagogy"],
   ];
 
