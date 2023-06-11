@@ -14,8 +14,6 @@ export const CvContact: React.FC<Props> = ({}) => {
       display: "flex",
       width: "100%",
       flexDirection: "row",
-      // // justifyContent: "space-between",
-      // justifyContent: "space-evenly",
       gap: 10,
     },
     socialItem: {
