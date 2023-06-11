@@ -1,6 +1,7 @@
 {
   "Valentin THOMAS": "Valentin THOMAS",
   "Fullstack Developer": "Fullstack Developer",
+  "C# software developer": "C# software developer",
   "me@valentin-thomas.com": "me@valentin-thomas.com",
   "LinkedIn": "LinkedIn",
   "Portfolio": "Portfolio",
@@ -16,86 +17,50 @@
   "Have already work with <1>Agile methodology</1> and associated tools like <2>Jira</2>, <3>Confluence</3> and <4>Trello</4>": "Have already work with <1>Agile methodology</1> and associated tools like <2>Jira</2>, <3>Confluence</3> and <4>Trello</4>",
   "Professional experience": "Professional experience",
 
-  "contact": {
-    "name": {
-      "title": "Name",
-      "value": "Valentin THOMAS"
-    },
-    "address": {
-      "title": "Adress",
-      "value": "16000 Angoulême"
-    },
-    "phone": {
-      "fr": {
-        "title": "Phone",
-        "value": "+33 7 68 26 76 20"
-      },
-      "ca": {
-        "title": "Phone",
-        "value": ""
-      }
-    },
-    "email": {
-      "title": "Email",
-      "value": "me@valentin-thomas.com"
-    }
-  },
-  "synthese": [
-    "I have had the opportunity to work on projects such as a client portal for insurance companies and a clients management application for a Crematorium in various environments. These experiences demonstrate my adaptability and my area of expertise.",
-    "My objective is to be part of a team where we collaborate to create high-quality products, and where my passion for software development and ability to find solutions in the face of unexpected challenges play a role in the overall success of the company."
-  ],
+  "Today": "Today",
+  "Trash collector": "Trash collector",
+  "Community of communes of Plancoët": "Community of communes of Plancoët",
+  "France": "France",
+  "July 2014 & July 2015": "July 2014 & July 2015",
+  "I was responsible for the collection and treatment of household waste.": "I was responsible for the collection and treatment of household waste.",
+  "August 2017 - May 2018": "August 2017 - May 2018",
+  "MeilleurSCPI": "MeilleurSCPI",
+  "Real estate investment platform": "Real estate investment platform",
+  "I had the opportunity to work on an investment portfolio management platform in SCPI.": "I had the opportunity to work on an investment portfolio management platform in SCPI.",
+  "Development of a <1>Scrapping service</1> to retrieve public datas.": "Development of a <1>Scrapping service</1> to retrieve public datas.",
+  "Programming in <1>PHP</1> with a legacy framework and integration of <2>VueJS 2</2>.": "Programming in <1>PHP</1> with a legacy framework and integration of <2>VueJS 2</2>.",
+  "Working on improving the developer experience with <1>Docker containerization</1> and <2>Unit Testing</2>.": "Working on improving the developer experience with <1>Docker containerization</1> and <2>Unit Testing</2>.",
+  "<1>startup environment</1> and <2>small team</2>": "<1>startup environment</1> and <2>small team</2>",
+  "May 2018 - August 2018": "May 2018 - August 2018",
+  "Solicis": "Solicis",
+  "Society of prestations in IT": "Society of prestations in IT",
+  "Deepening of knowledge in <1>PHP</1>": "Deepening of knowledge in <1>PHP</1>",
+  "Sarting to learn the development with the <1>Zend Framework</1>": "Sarting to learn the development with the <1>Zend Framework</1>",
+  "August 2018 - October 2018": "August 2018 - October 2018",
+  "MonBuilding": "MonBuilding",
+  "Startup building a platform to manage buildings and their occupants": "Startup building a platform to manage buildings and their occupants",
+  "I started to work in <1>NodeJS</1> with <2>Meteor</2> and <3>React</3>.": "I started to work in <1>NodeJS</1> with <2>Meteor</2> and <3>React</3>.",
+  "This experience was important to me as it allowed me to discover the <1>Realtime interfaces</1> and <2>MongoDB</2>": "This experience was important to me as it allowed me to discover the <1>Realtime interfaces</1> and <2>MongoDB</2>",
+  "Working in an <1>International team</1> with <2>remote work</2> and coworker located in Peru": "Working in an <1>International team</1> with <2>remote work</2> and coworker located in Peru",
 
 
+  "November 2018 - July 2020": "November 2018 - July 2020",
+  "Ededoc": "Ededoc",
+  "Society in charge of developing a virtual printer to manage the dematerialization of documents": "Society in charge of developing a virtual printer to manage the dematerialization of documents",
+  "Learning <1>C#</1> and <2>.NET framework</2> with the SOLID principles.": "Learning <1>C#</1> and <2>.NET framework</2> with the SOLID principles.",
+  "Development of a service for <1>Email Tracking</1> and <2>document electronic signing</2> in the workflows": "Development of a service for <1>Email Tracking</1> and <2>document electronic signing</2> in the workflows",
+  "Development of a <1>NodeJS</1> scrapping service to recover invoices.": "Development of a <1>NodeJS</1> scrapping service to recover invoices.",
 
-  "skills": {
-    "title": "Skills",
-    "items": [
-      "Native french speaker and intermediate english speaker",
-      "Advanced computer skills",
-      "<1>Autonomous</1> and able to work in a team"
-    ],
-    "languages": {
-      "title": "Languages",
-      "french": {
-        "title": "French",
-        "level": "native language"
-      },
-      "english": {
-        "title": "English",
-        "level": "intermediate level"
-      }
-    },
-    "cs": {
-      "advanced": {
-        "title": "Advanced computer skills",
-        "level": "React, NodeJS"
-      },
-      "middle": {
-        "title": "Intermediate computer skills",
-        "level": "Typescript, Express, Remix.run, Craftmanship, Docker, Meteor, MongoDB, MySQL, Agile, Git"
-      },
-      "beginner": {
-        "title": "Beginner computer skills",
-        "level": "Web3"
-      }
-    },
-    "driving": {
-      "title": "Driving license B (Car)",
-      "level": "Obtained"
-    },
-    "problem_solving": {
-      "title": "Ability to solve problems",
-      "level": "Able to find effective solutions to problems that arise, allowing to work independently and make decisions quickly."
-    },
-    "leadership": {
-      "title": "Sense of leadership",
-      "level": "Able to lead in a difficult situation for the well-being of all."
-    },
-    "pedagogy": {
-      "title": "Pedagogy",
-      "level": "Able to clearly teach technical principles to facilitate understanding and reinforce knowledge in both others and self."
-    }
-  },
+  "July 2020 to now": "July 2020 to now",
+  "F.ASS.T": "F.ASS.T",
+  "Startup developing platforms for insurers and their customers": "Startup developing platforms for insurers and their customers",
+  "Development of services in <1>NodeJS</1> with <2>Typescript</2>": "Development of services in <1>NodeJS</1> with <2>Typescript</2>",
+  "Working on a platform for an insurer <1>from the early stage to production</1>": "Working on a platform for an insurer <1>from the early stage to production</1>",
+  "<1>Joining the architect's team</1> to help structure the multiples projects of the enterprise and <2>make the developers work easier</2>.": "<1>Joining the architect's team</1> to help structure the multiples projects of the enterprise and <2>make the developers work easier</2>.",
+  "<1>Animation of multiples workshops</1> to share knowledge between the teams members.": "<1>Animation of multiples workshops</1> to share knowledge between the teams members.",
+  "Presentation of the society and the projects to students and <1>managing the formation</1> of the new employees.": "Presentation of the society and the projects to students and <1>managing the formation</1> of the new employees.",
+  "Studies / Training": "Studies / Training",
+
   "studies": {
     "title": "Studies / Training",
     "college": {
@@ -110,39 +75,6 @@
   "experiences": {
     "title": "Professional experience",
     "items": [
-      {
-        "title": "Eboueur, Community of communes of Plancoët, Plancoët, FRANCE, July 2014 & July 2015",
-        "value": [
-          "As a garbage collector for the community of communes of Plancoët, I was responsible for the collection and treatment of household waste. I loaded the bins into the truck and took part in unloading them into the incinerator pit, while respecting safety standards."
-        ]
-      },
-      {
-        "title": "Fullstack Developer, MeilleurSCPI, Paris, FRANCE, from August 2017 to May 2018",
-        "value": [
-          "At MeilleureSCPI, I was able to enter the workforce as an intern and then start as a first hire. I had the opportunity to work on an investment portfolio management platform in SCPI as well as web scraping projects.",
-          "I worked in PHP with a legacy framework and in Vue.js 2, and I was able to learn Bootstrap and teamwork with Git."
-        ]
-
-      },
-      {
-        "title": "Fullstack Developer, Solicis, Angoulême, FRANCE, from May 2018 to August 2018",
-        "value": [
-          "Deepening of knowledge in PHP to integrate a showcase site for a house selling agency, use of the Zend framework."
-        ]
-      },
-      {
-        "title": "Fullstack Developer, Monbuilding, Paris, FRANCE, from August 2018 to October 2018",
-        "value": [
-          "Discovery of Meteor.js and ReactJS, immersion in the world of Node.js and real-time applications.",
-          "This experience has been important for me as it allowed me to discover a new framework and work in a dynamic and international environment. I have developed a particular interest in Node.js and reactive applications."
-        ]
-      },
-      {
-        "title": "C# software developer, Ededoc, Angoulême, FRANCE, from November 2018 to July 2020",
-        "value": [
-          "Learning C# code for the development of a virtual printer application, creation of an email delivery traceability system, integration of the electronic signature of documents in the printer workflow, development in JavaScript of a scrapping system to recover invoices."
-        ]
-      },
       {
         "title": "Fullstack Developer, F.ASS.T, Angoulême, FRANCE, from July 2020 to now",
         "value": [

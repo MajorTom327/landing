@@ -5,7 +5,8 @@ import CvContact from "./CvContact";
 import CvSynthese from "./CvSynthese";
 import CvSkillsSummary from "./CvSkillsSummary";
 import PdfRuler from "~/components/PdfRuler";
-import CvExperience from "./CvExperience";
+import CvExperiences from "./CvExperiences";
+import CvStudies from "../Page2/CvStudies";
 
 type Props = {};
 
@@ -19,7 +20,9 @@ export const Index: React.FC<Props> = ({}) => {
         <PdfRuler />
         <CvSkillsSummary />
         <PdfRuler />
-        <CvExperience />
+        <CvExperiences />
+        <PdfRuler />
+        <CvStudies />
       </Page>
     </>
   );

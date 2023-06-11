@@ -5,6 +5,7 @@ export const textSizes = {
   title: 14,
   subtitle: 12,
   content: 10,
+  small: 8,
 };
 
 export const pageStyles = StyleSheet.create({
