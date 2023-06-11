@@ -6,9 +6,12 @@ import CvSynthese from "./CvSynthese";
 import CvSkillsSummary from "./CvSkillsSummary";
 import PdfRuler from "~/components/PdfRuler";
 import CvExperiences from "./CvExperiences";
-import CvStudies from "../Page2/CvStudies";
+import CvStudies from "./CvStudies";
+import CvProjects from "./CvProjects";
 
 type Props = {};
+
+const projects = ["deadsafe", "basemint", "andromeda", "styx"];
 
 export const Index: React.FC<Props> = ({}) => {
   return (
@@ -23,6 +26,8 @@ export const Index: React.FC<Props> = ({}) => {
         <CvExperiences />
         <PdfRuler />
         <CvStudies />
+        <PdfRuler />
+        <CvProjects projects={projects} />
       </Page>
     </>
   );

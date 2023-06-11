@@ -15,15 +15,17 @@
   "<1>Curious</1> of new technologies": "<1>Curious</1> of new technologies",
   "Bring a <1>creative</1> and <2>innovative</2> vision": "Bring a <1>creative</1> and <2>innovative</2> vision",
   "Have already work with <1>Agile methodology</1> and associated tools like <2>Jira</2>, <3>Confluence</3> and <4>Trello</4>": "Have already work with <1>Agile methodology</1> and associated tools like <2>Jira</2>, <3>Confluence</3> and <4>Trello</4>",
-  "Professional experience": "Professional experience",
+  "Experience": "Experience",
 
-  "Today": "Today",
+
   "Trash collector": "Trash collector",
   "Community of communes of Plancoët": "Community of communes of Plancoët",
   "France": "France",
   "July 2014 & July 2015": "July 2014 & July 2015",
   "I was responsible for the collection and treatment of household waste.": "I was responsible for the collection and treatment of household waste.",
   "August 2017 - May 2018": "August 2017 - May 2018",
+
+
   "MeilleurSCPI": "MeilleurSCPI",
   "Real estate investment platform": "Real estate investment platform",
   "I had the opportunity to work on an investment portfolio management platform in SCPI.": "I had the opportunity to work on an investment portfolio management platform in SCPI.",
@@ -32,11 +34,15 @@
   "Working on improving the developer experience with <1>Docker containerization</1> and <2>Unit Testing</2>.": "Working on improving the developer experience with <1>Docker containerization</1> and <2>Unit Testing</2>.",
   "<1>startup environment</1> and <2>small team</2>": "<1>startup environment</1> and <2>small team</2>",
   "May 2018 - August 2018": "May 2018 - August 2018",
+
+
   "Solicis": "Solicis",
   "Society of prestations in IT": "Society of prestations in IT",
   "Deepening of knowledge in <1>PHP</1>": "Deepening of knowledge in <1>PHP</1>",
   "Sarting to learn the development with the <1>Zend Framework</1>": "Sarting to learn the development with the <1>Zend Framework</1>",
   "August 2018 - October 2018": "August 2018 - October 2018",
+
+
   "MonBuilding": "MonBuilding",
   "Startup building a platform to manage buildings and their occupants": "Startup building a platform to manage buildings and their occupants",
   "I started to work in <1>NodeJS</1> with <2>Meteor</2> and <3>React</3>.": "I started to work in <1>NodeJS</1> with <2>Meteor</2> and <3>React</3>.",
@@ -51,6 +57,7 @@
   "Development of a service for <1>Email Tracking</1> and <2>document electronic signing</2> in the workflows": "Development of a service for <1>Email Tracking</1> and <2>document electronic signing</2> in the workflows",
   "Development of a <1>NodeJS</1> scrapping service to recover invoices.": "Development of a <1>NodeJS</1> scrapping service to recover invoices.",
 
+
   "July 2020 to now": "July 2020 to now",
   "F.ASS.T": "F.ASS.T",
   "Startup developing platforms for insurers and their customers": "Startup developing platforms for insurers and their customers",
@@ -59,37 +66,13 @@
   "<1>Joining the architect's team</1> to help structure the multiples projects of the enterprise and <2>make the developers work easier</2>.": "<1>Joining the architect's team</1> to help structure the multiples projects of the enterprise and <2>make the developers work easier</2>.",
   "<1>Animation of multiples workshops</1> to share knowledge between the teams members.": "<1>Animation of multiples workshops</1> to share knowledge between the teams members.",
   "Presentation of the society and the projects to students and <1>managing the formation</1> of the new employees.": "Presentation of the society and the projects to students and <1>managing the formation</1> of the new employees.",
-  "Studies / Training": "Studies / Training",
 
-  "studies": {
-    "title": "Studies / Training",
-    "college": {
-      "title": "Fontaine des Eaux High School, Dinan, FRANCE, from September 2012 to July 2015",
-      "level": "Baccalaureate diploma, specialty science and technology and sustainable development"
-    },
-    "university": {
-      "title": "School 42, Paris, FRANCE, from November 2015 to August 2017",
-      "level": "Intensive and autonomous training in software development, with intensive learning of C and PHP"
-    }
-  },
-  "experiences": {
-    "title": "Professional experience",
-    "items": [
-      {
-        "title": "Fullstack Developer, F.ASS.T, Angoulême, FRANCE, from July 2020 to now",
-        "value": [
-          "Development of a Full-stack Node.js platform using React.js and GraphQL for insurers, development of backend services using JavaScript and TypeScript connected to a MongoDB database. I was integrated into the project architecture team as a Tech Lead in order to standardize project design and architectures before transitioning to an architect position in early 2023 to have a greater impact on the company's overall architecture.",
-          "I also had the opportunity to demonstrate my security skills by identifying critical points in applications.",
-          "I contributed to the company's growth from a start-up of 8 people to a team of over 50 and played a role in improving work methods within the company as well as in the training of new employees."
-        ]
-      }
-    ]
-  },
-  "projects": {
-    "title": "Personal projects"
-  },
-  "hobbies": {
-    "title": "Hobbies",
-    "value": "I like to play video games, I am passionate about coding, I do fitness, and currently I am particularly interested in blockchain technology."
-  }
+"Education": "Education",
+"Fontaine des Eaux High School, Dinan, France": "Fontaine des Eaux High School, Dinan, France",
+"September 2012 - July 2015": "September 2012 - July 2015",
+"Baccalaureate diploma, specialty science and technology and sustainable development": "Baccalaureate diploma, specialty science and technology and sustainable development",
+"School 42, Paris, FRANCE": "School 42, Paris, France",
+"November 2015 - August 2017": "November 2015 - August 2017",
+"Intensive and autonomous training in software development, with intensive learning of C and PHP": "Intensive and autonomous training in software development, with intensive learning of C and PHP",
+"Personal projects": "Personal projects"
 }

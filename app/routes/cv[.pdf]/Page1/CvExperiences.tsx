@@ -16,7 +16,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
   return (
     <>
       <PdfContainer>
-        <PdfTitle>Professional experience</PdfTitle>
+        <PdfTitle>Experience</PdfTitle>
         <View style={styles.container}>
           <CvExperienceItem
             title={"Trash collector"}

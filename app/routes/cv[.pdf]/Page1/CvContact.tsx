@@ -14,14 +14,20 @@ export const CvContact: React.FC<Props> = ({}) => {
       display: "flex",
       width: "100%",
       flexDirection: "row",
-      justifyContent: "space-between",
+      // // justifyContent: "space-between",
+      // justifyContent: "space-evenly",
       gap: 10,
+    },
+    socialItem: {
+      width: "33.33%",
+      textAlign: "center",
     },
     civility: {
       fontSize: textSizes.title,
       width: "100%",
       textAlign: "center",
       marginBottom: 10,
+      marginTop: 35,
     },
     subtitle: {
       fontSize: textSizes.subtitle,
@@ -39,15 +45,15 @@ export const CvContact: React.FC<Props> = ({}) => {
           </Text>
         </View>
         <View style={style.section}>
-          <Text>
+          <Text style={style.socialItem}>
             <Trans>me@valentin-thomas.com</Trans>
           </Text>
-          <Text>
+          <Text style={style.socialItem}>
             <Link src={linkedinUrl}>
               <Trans>LinkedIn</Trans>
             </Link>
           </Text>
-          <Text>
+          <Text style={style.socialItem}>
             <Link src={portfolioUrl}>
               <Trans>Portfolio</Trans>
             </Link>

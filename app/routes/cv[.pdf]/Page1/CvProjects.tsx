@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import PdfProjects from "~/components/PdfProjects";
 import PdfTitle from "~/components/PdfTitle";
 import { textSizes } from "../../../refs/PdfConfig";
+import PdfContainer from "~/components/PdfContainer/PdfContainer";
 
 type Props = {
   projects: string[];
@@ -30,15 +31,15 @@ export const CvProjects: React.FC<Props> = ({ projects }) => {
   if (isNilOrEmpty(items)) return null;
   return (
     <>
-      <View style={styles.container}>
-        <PdfTitle>projects.title</PdfTitle>
+      <PdfContainer>
+        <PdfTitle>Personal projects</PdfTitle>
 
         <View style={styles.expContainer}>
           {items.map((item) => (
             <PdfProjects key={item + ".cv_project"} project={item} />
           ))}
         </View>
-      </View>
+      </PdfContainer>
     </>
   );
 };
