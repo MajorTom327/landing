@@ -9,6 +9,7 @@ export const ethereumUrl =
 export const documentStyle = {
   padding: 10,
   margin: 10,
+  gap: 5,
 };
 
 export default {

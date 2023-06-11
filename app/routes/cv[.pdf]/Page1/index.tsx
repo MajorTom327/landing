@@ -1,9 +1,10 @@
 import { Page } from "@react-pdf/renderer";
 import React from "react";
 import pageStyles, { pageSizeConfig } from "../../../refs/PdfConfig";
-import CvCompetences from "./CvCompetences";
 import CvContact from "./CvContact";
 import CvSynthese from "./CvSynthese";
+import CvSkillsSummary from "./CvSkillsSummary";
+import PdfRuler from "~/components/PdfRuler";
 
 type Props = {};
 
@@ -12,8 +13,10 @@ export const Index: React.FC<Props> = ({}) => {
     <>
       <Page size={pageSizeConfig} style={pageStyles.page}>
         <CvContact />
+        <PdfRuler />
         <CvSynthese />
-        <CvCompetences />
+        <PdfRuler />
+        <CvSkillsSummary />
       </Page>
     </>
   );

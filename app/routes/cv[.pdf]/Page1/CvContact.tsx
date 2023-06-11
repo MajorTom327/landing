@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Link } from "@react-pdf/renderer";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { documentStyle, portfolioUrl } from "~/refs/constants";
 import FontSizes from "../FontSizes";
 import { linkedinUrl } from "~/refs/constants";
@@ -8,9 +8,6 @@ import { linkedinUrl } from "~/refs/constants";
 type Props = {};
 
 export const CvContact: React.FC<Props> = ({}) => {
-  const { t } = useTranslation("cv");
-  const { t: tCommon } = useTranslation("translation");
-
   const style = StyleSheet.create({
     container: {
       marginHorizontal: documentStyle.margin,
@@ -36,37 +33,33 @@ export const CvContact: React.FC<Props> = ({}) => {
     subtitle: {
       fontSize: FontSizes.subtitle,
     },
-    ruler: {
-      width: "100%",
-      height: 1,
-      backgroundColor: "black",
-      marginVertical: 8,
-    },
   });
-
-  const fields = [
-    "contact.name",
-    // "contact.address",
-    // "contact.phone.fr",
-    "contact.email",
-  ];
   return (
     <>
       <View style={style.container}>
         <View style={style.civility}>
-          <Text>{t("contact.name.value")}</Text>
-          <Text style={style.subtitle}>{tCommon("jobs.fullstack")}</Text>
+          <Text>
+            <Trans>Valentin THOMAS</Trans>
+          </Text>
+          <Text style={style.subtitle}>
+            <Trans>Fullstack Developer</Trans>
+          </Text>
         </View>
         <View style={style.section}>
-          <Text style={style.title}>{t("contact.email.value")}</Text>
           <Text style={style.title}>
-            <Link src={linkedinUrl}>{tCommon("social.linkedin")}</Link>
+            <Trans>me@valentin-thomas.com</Trans>
           </Text>
           <Text style={style.title}>
-            <Link src={portfolioUrl}>{tCommon("social.portfolio")}</Link>
+            <Link src={linkedinUrl}>
+              <Trans>LinkedIn</Trans>
+            </Link>
+          </Text>
+          <Text style={style.title}>
+            <Link src={portfolioUrl}>
+              <Trans>Portfolio</Trans>
+            </Link>
           </Text>
         </View>
-        <View style={style.ruler} />
       </View>
     </>
   );
