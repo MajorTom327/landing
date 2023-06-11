@@ -2,21 +2,23 @@ import React from "react";
 import { View, StyleSheet } from "@react-pdf/renderer";
 import { documentStyle } from "~/refs/constants";
 
-type Props = {};
+type Props = {
+  large?: boolean;
+  color?: string;
+};
 
-const style = StyleSheet.create({
-  container: {
-    paddingHorizontal: documentStyle.padding + documentStyle.margin,
-  },
-  ruler: {
-    width: "100%",
-    height: 1,
-    backgroundColor: "black",
-    marginVertical: 2,
-  },
-});
-
-export const PdfRuler: React.FC<Props> = ({}) => {
+export const PdfRuler: React.FC<Props> = ({ large, color }) => {
+  const style = StyleSheet.create({
+    container: {
+      paddingHorizontal: documentStyle.padding + documentStyle.margin,
+    },
+    ruler: {
+      width: "100%",
+      height: large ? 2 : 1,
+      backgroundColor: color || "#d0d0d0",
+      marginVertical: 4,
+    },
+  });
   return (
     <>
       <View style={style.container}>

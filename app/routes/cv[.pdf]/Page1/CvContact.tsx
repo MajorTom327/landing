@@ -1,19 +1,15 @@
 import { StyleSheet, Text, View, Link } from "@react-pdf/renderer";
 import React from "react";
 import { Trans } from "react-i18next";
-import { documentStyle, portfolioUrl } from "~/refs/constants";
-import FontSizes from "../FontSizes";
+import PdfContainer from "~/components/PdfContainer/PdfContainer";
+import { textSizes } from "~/refs/PdfConfig";
+import { portfolioUrl } from "~/refs/constants";
 import { linkedinUrl } from "~/refs/constants";
 
 type Props = {};
 
 export const CvContact: React.FC<Props> = ({}) => {
   const style = StyleSheet.create({
-    container: {
-      marginHorizontal: documentStyle.margin,
-
-      padding: documentStyle.padding,
-    },
     section: {
       display: "flex",
       width: "100%",
@@ -21,22 +17,19 @@ export const CvContact: React.FC<Props> = ({}) => {
       justifyContent: "space-between",
       gap: 10,
     },
-    title: {
-      fontSize: FontSizes.body,
-    },
     civility: {
-      fontSize: FontSizes.title,
+      fontSize: textSizes.title,
       width: "100%",
       textAlign: "center",
       marginBottom: 10,
     },
     subtitle: {
-      fontSize: FontSizes.subtitle,
+      fontSize: textSizes.subtitle,
     },
   });
   return (
     <>
-      <View style={style.container}>
+      <PdfContainer>
         <View style={style.civility}>
           <Text>
             <Trans>Valentin THOMAS</Trans>
@@ -46,21 +39,21 @@ export const CvContact: React.FC<Props> = ({}) => {
           </Text>
         </View>
         <View style={style.section}>
-          <Text style={style.title}>
+          <Text>
             <Trans>me@valentin-thomas.com</Trans>
           </Text>
-          <Text style={style.title}>
+          <Text>
             <Link src={linkedinUrl}>
               <Trans>LinkedIn</Trans>
             </Link>
           </Text>
-          <Text style={style.title}>
+          <Text>
             <Link src={portfolioUrl}>
               <Trans>Portfolio</Trans>
             </Link>
           </Text>
         </View>
-      </View>
+      </PdfContainer>
     </>
   );
 };

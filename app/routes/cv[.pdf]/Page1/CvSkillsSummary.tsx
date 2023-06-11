@@ -1,26 +1,20 @@
 import React from "react";
-import { View, Text, StyleSheet } from "@react-pdf/renderer";
-import { documentStyle } from "~/refs/constants";
-import FontSizes from "../FontSizes";
+import { Text, StyleSheet } from "@react-pdf/renderer";
 import { PdfBold } from "~/components/PdfBold";
 import { Trans } from "react-i18next";
+import { textSizes } from "~/refs/PdfConfig";
+import { PdfTitle } from "~/components/PdfTitle";
+import PdfContainer from "~/components/PdfContainer/PdfContainer";
 
 type Props = {};
 
 const style = StyleSheet.create({
-  container: {
-    marginHorizontal: documentStyle.margin,
-    padding: documentStyle.padding,
-    flex: 1,
-    flexDirection: "column",
-    gap: 5,
-  },
   line: {
-    fontSize: FontSizes.body,
+    fontSize: textSizes.content,
     textAlign: "justify",
   },
   title: {
-    fontSize: FontSizes.title,
+    fontSize: textSizes.title,
     marginBottom: 5,
   },
 });
@@ -28,10 +22,9 @@ const style = StyleSheet.create({
 export const CvSkillsSummary: React.FC<Props> = ({}) => {
   return (
     <>
-      <View style={style.container}>
-        <Text style={style.title}>
-          <Trans>Skills</Trans>
-        </Text>
+      <PdfContainer>
+        <PdfTitle>Skills</PdfTitle>
+
         <Text style={style.line}>
           &bull;{" "}
           <Trans>
@@ -65,10 +58,11 @@ export const CvSkillsSummary: React.FC<Props> = ({}) => {
           &bull;{" "}
           <Trans>
             Have already work with <PdfBold>Agile methodology</PdfBold> and
-            associated tools like <PdfBold>Jira</PdfBold>
+            associated tools like <PdfBold>Jira</PdfBold>,{" "}
+            <PdfBold>Confluence</PdfBold> and <PdfBold>Trello</PdfBold>
           </Trans>
         </Text>
-      </View>
+      </PdfContainer>
     </>
   );
 };

@@ -5,6 +5,7 @@ import CvContact from "./CvContact";
 import CvSynthese from "./CvSynthese";
 import CvSkillsSummary from "./CvSkillsSummary";
 import PdfRuler from "~/components/PdfRuler";
+import CvExperience from "./CvExperience";
 
 type Props = {};
 
@@ -13,10 +14,12 @@ export const Index: React.FC<Props> = ({}) => {
     <>
       <Page size={pageSizeConfig} style={pageStyles.page}>
         <CvContact />
-        <PdfRuler />
+        <PdfRuler large color="#505050" />
         <CvSynthese />
         <PdfRuler />
         <CvSkillsSummary />
+        <PdfRuler />
+        <CvExperience />
       </Page>
     </>
   );
