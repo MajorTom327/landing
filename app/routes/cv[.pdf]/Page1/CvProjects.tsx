@@ -18,11 +18,11 @@ type Project = {
 };
 
 const orderedProjects: ProjectName[] = [
-  "The DeadSafe",
-  "BaseMint",
-  "Andromeda",
   "Styx",
   "Bellz",
+  "Andromeda",
+  "The DeadSafe",
+  "BaseMint",
 ];
 
 const projects: Project[] = [
