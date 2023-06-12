@@ -62,7 +62,9 @@ export const CvExperienceItem: React.FC<Props> = ({
               </Text>
             </View>
           </View>
-          <PdfBold>{date}</PdfBold>
+          <PdfBold>
+            <Trans>{date}</Trans>
+          </PdfBold>
         </View>
         <Text style={style.societyDescription}>
           <Trans>{societyDescription}</Trans>

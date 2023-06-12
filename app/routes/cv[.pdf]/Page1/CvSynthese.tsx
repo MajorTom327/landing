@@ -27,7 +27,7 @@ export const CvSynthese: React.FC<Props> = ({}) => {
 
         <Text style={style.line}>
           <Trans>
-            As a <PdfBold>Fullstack Developper</PdfBold>, I have had the
+            As a <PdfBold>Fullstack Developer</PdfBold>, I have had the
             opportunity to work on projects such as a{" "}
             <PdfBold>client portal</PdfBold> for insurance companies and a{" "}
             <PdfBold>clients management application</PdfBold> for a Crematorium

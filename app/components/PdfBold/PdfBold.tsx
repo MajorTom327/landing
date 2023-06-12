@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, StyleSheet } from "@react-pdf/renderer";
+import { Trans } from "react-i18next";
 
 type Props = {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ export const PdfBold: React.FC<Props> = ({ children }) => {
     </>
   );
 };
+
 
 PdfBold.defaultProps = {};
 

@@ -1,16 +1,10 @@
 import { View, Text, StyleSheet, Link } from "@react-pdf/renderer";
-import { has, is } from "ramda";
 import { isNotNil } from "ramda-adjunct";
 import type { ReactNode } from "react";
 import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { documentStyle } from "~/refs/constants";
 import { textSizes } from "~/refs/PdfConfig";
-
-type Item = {
-  title: string;
-  content: string;
-};
 
 type Props = {
   title: string;

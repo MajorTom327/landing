@@ -11,12 +11,11 @@ import { I18nextProvider, initReactI18next } from "react-i18next";
 import i18next from "i18next";
 
 import LanguageDetector from "i18next-browser-languagedetector";
+import Backend from "i18next-fs-backend";
 
 import translationEn from "../../../public/locales/en/cv.json";
 import translationFr from "../../../public/locales/fr/cv.json";
-
-import commonEn from "../../../public/locales/en/translation.json";
-import commonFr from "../../../public/locales/fr/translation.json";
+import { isDevelopment } from "~/lib/isEnv";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const locale = await i18n.getLocale(request);
@@ -27,24 +26,32 @@ export const loader: LoaderFunction = async ({ request }) => {
     "locales/{{lng}}/{{ns}}.json"
   );
 
-  console.log("Resolved path is", loadPath);
-
+  // @ts-ignore
   return i18next
     .use(initReactI18next)
     .use(LanguageDetector)
+    .use(Backend)
     .init({
+      debug: isDevelopment(),
+      saveMissing: isDevelopment(),
       supportedLngs: supportedLanguages,
       lng: locale,
-      fallbackLng: "fr",
-      defaultNS: "translation",
-      react: { useSuspense: true },
-      resources: {
-        en: { cv: translationEn, translation: commonEn },
-        fr: { cv: translationFr, translation: commonFr },
-      },
+      fallbackLng: "en",
+      defaultNS: "cv",
+      keySeparator: false,
+      react: { useSuspense: false },
+      // resources: {
+      //   en: { cv: translationEn },
+      //   fr: { cv: translationFr },
+      // },
       detection: {
         order: ["htmlTag"],
         caches: [],
+      },
+
+      backend: {
+        loadPath: loadPath,
+        addPath: loadPath.replace(".json", ".missing.json"),
       },
     })
     .then(() => {
