@@ -13,8 +13,6 @@ import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-fs-backend";
 
-import translationEn from "../../../public/locales/en/cv.json";
-import translationFr from "../../../public/locales/fr/cv.json";
 import { isDevelopment } from "~/lib/isEnv";
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -40,10 +38,6 @@ export const loader: LoaderFunction = async ({ request }) => {
       defaultNS: "cv",
       keySeparator: false,
       react: { useSuspense: false },
-      // resources: {
-      //   en: { cv: translationEn },
-      //   fr: { cv: translationFr },
-      // },
       detection: {
         order: ["htmlTag"],
         caches: [],
