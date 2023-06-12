@@ -27,7 +27,7 @@ export const Index: React.FC<Props> = ({}) => {
         <PdfRuler />
         <CvStudies />
         <PdfRuler />
-        <CvProjects projects={projects} />
+        <CvProjects />
       </Page>
     </>
   );
