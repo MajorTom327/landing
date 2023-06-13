@@ -1,47 +1,63 @@
-import { StyleSheet, Text, View } from "@react-pdf/renderer";
+import { StyleSheet, Text, View, Link } from "@react-pdf/renderer";
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { documentStyle } from "~/refs/constants";
+import { Trans } from "react-i18next";
+import PdfContainer from "~/components/PdfContainer/PdfContainer";
+import { textSizes } from "~/refs/PdfConfig";
+import { portfolioUrl } from "~/refs/constants";
+import { linkedinUrl } from "~/refs/constants";
 
 type Props = {};
 
 export const CvContact: React.FC<Props> = ({}) => {
-  const { t } = useTranslation("cv");
-
   const style = StyleSheet.create({
-    container: {
-      margin: documentStyle.margin,
-      padding: documentStyle.padding,
-    },
     section: {
+      display: "flex",
+      width: "100%",
       flexDirection: "row",
       gap: 10,
     },
-    title: {
-      fontSize: 14,
-      textDecoration: "underline",
+    socialItem: {
+      width: "33.33%",
+      textAlign: "center",
     },
-    value: {
-      fontSize: 14,
+    civility: {
+      fontSize: textSizes.title,
+      width: "100%",
+      textAlign: "center",
+      marginBottom: 10,
+      marginTop: 35,
+    },
+    subtitle: {
+      fontSize: textSizes.subtitle,
     },
   });
-
-  const fields = [
-    "contact.name",
-    "contact.address",
-    "contact.phone.fr",
-    "contact.email",
-  ];
   return (
     <>
-      <View style={style.container}>
-        {fields.map((field) => (
-          <View key={field} style={style.section}>
-            <Text style={style.title}>{t(`${field}.title`)} :</Text>
-            <Text style={style.value}>{t(`${field}.value`)}</Text>
-          </View>
-        ))}
-      </View>
+      <PdfContainer>
+        <View style={style.civility}>
+          <Text>
+            <Trans>Valentin THOMAS</Trans>
+          </Text>
+          <Text style={style.subtitle}>
+            <Trans>Fullstack Developer</Trans>
+          </Text>
+        </View>
+        <View style={style.section}>
+          <Text style={style.socialItem}>
+            <Trans>me@valentin-thomas.com</Trans>
+          </Text>
+          <Text style={style.socialItem}>
+            <Link src={linkedinUrl}>
+              <Trans>LinkedIn</Trans>
+            </Link>
+          </Text>
+          <Text style={style.socialItem}>
+            <Link src={portfolioUrl}>
+              <Trans>Portfolio</Trans>
+            </Link>
+          </Text>
+        </View>
+      </PdfContainer>
     </>
   );
 };

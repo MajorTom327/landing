@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { textSizes } from "~/refs/PdfConfig";
 import { Text, StyleSheet } from "@react-pdf/renderer";
 
 type Props = {
-  children: string;
+  children: string | React.ReactNode;
 };
 
 const styles = StyleSheet.create({
@@ -15,10 +15,11 @@ const styles = StyleSheet.create({
 });
 
 export const PdfTitle: React.FC<Props> = ({ children }) => {
-  const { t } = useTranslation("cv");
   return (
     <>
-      <Text style={styles.title}>{t(children)}</Text>
+      <Text style={styles.title}>
+        <Trans>{children}</Trans>
+      </Text>
     </>
   );
 };

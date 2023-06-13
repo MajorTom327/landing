@@ -1,18 +1,15 @@
 import { View, Text, StyleSheet, Link } from "@react-pdf/renderer";
-import { has, is } from "ramda";
 import { isNotNil } from "ramda-adjunct";
+import type { ReactNode } from "react";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import { documentStyle } from "~/refs/constants";
 import { textSizes } from "~/refs/PdfConfig";
 
-type Item = {
-  title: string;
-  content: string;
-};
-
 type Props = {
-  project: string;
+  title: string;
+  to?: string;
+  children: React.ReactNode;
 };
 
 const styles = StyleSheet.create({
@@ -43,38 +40,34 @@ const styles = StyleSheet.create({
   },
 });
 
-export const PdfProjects: React.FC<Props> = ({ project }) => {
-  const { t } = useTranslation();
-
-  const projectDescription = t(`${project}.description`, {
-    returnObjects: true,
-  }) as string[];
-
-  if (!is(Array, projectDescription)) {
-    return null;
-  }
-
-  const link = has("link", t(`${project}`, { returnObjects: true }))
-    ? t(`${project}.link`)
-    : undefined;
+export const PdfProjects: React.FC<Props> = ({ title, to, children }) => {
+  const link = to;
 
   return (
     <>
       <View style={styles.blockGroup} wrap={false}>
         {isNotNil(link) ? (
           <Link src={link} style={styles.linkStyle}>
-            {t(`${project}.title`)}
+            <Trans>{title}</Trans>
           </Link>
         ) : (
-          <Text style={styles.blockTitle}>{t(`${project}.title`)}</Text>
-        )}
-        {(projectDescription || []).map((item) => (
-          <Text key={item} style={styles.blockContent}>
-            {item}
+          <Text style={styles.blockTitle}>
+            <Trans>{title}</Trans>
           </Text>
-        ))}
+        )}
+        {children}
       </View>
     </>
+  );
+};
+
+export const PdfProjectsDescription: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
+  return (
+    <Text style={styles.blockContent}>
+      <Trans>{children}</Trans>
+    </Text>
   );
 };
 

@@ -1,13 +1,14 @@
 import React from "react";
 import { Document } from "@react-pdf/renderer";
 import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
 import { useTranslation } from "react-i18next";
+import type CvPart from "~/refs/CvPart";
 
-type Props = {};
+type Props = {
+  hidePart?: Array<CvPart>;
+};
 
-export const CvDocument: React.FC<Props> = ({}) => {
+export const CvDocument: React.FC<Props> = ({ hidePart }) => {
   const { i18n } = useTranslation();
   return (
     <>
@@ -19,9 +20,7 @@ export const CvDocument: React.FC<Props> = ({}) => {
         creator="Valentin THOMAS"
         producer="Valentin THOMAS"
       >
-        <Page1 />
-        <Page2 />
-        <Page3 />
+        <Page1 hidePart={hidePart} />
       </Document>
     </>
   );

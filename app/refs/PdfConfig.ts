@@ -1,19 +1,24 @@
 import { documentStyle } from "~/refs/constants";
 import { StyleSheet } from "@react-pdf/renderer";
 
+export const textSizes = {
+  title: 14,
+  subtitle: 12,
+  content: 10,
+  small: 8,
+};
+
 export const pageStyles = StyleSheet.create({
   page: {
     flexDirection: "column",
+    fontFamily: "Helvetica",
+    fontSize: textSizes.content,
     backgroundColor: "#FFFFFF",
     padding: documentStyle.padding,
+    fontWeight: "normal",
   },
 });
 
-export const textSizes = {
-  title: 18,
-  subtitle: 16,
-  content: 14,
-};
 
 export const pageSizeConfig = "LETTER";
 
