@@ -23,6 +23,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   const hidePart = url.searchParams.get("hide");
   const hidePartArray = zod
     .array(zod.nativeEnum(CvPart))
+    .optional()
     .parse(hidePart ? hidePart.split(",") : []);
 
   const loadPath = path.resolve(

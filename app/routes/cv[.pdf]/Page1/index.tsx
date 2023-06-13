@@ -9,10 +9,10 @@ import PdfRuler from "~/components/PdfRuler";
 import CvExperiences from "./CvExperiences";
 import CvStudies from "./CvStudies";
 import CvProjects from "./CvProjects";
-import type CvPart from "~/refs/CvPart";
+import CvPart from "~/refs/CvPart";
 
 type Props = {
-  hidePart: CvPart[];
+  hidePart?: CvPart[];
 };
 
 const parts: Array<{ key: CvPart; component: ReactElement }> = [
@@ -28,24 +28,13 @@ export const Index: React.FC<Props> = ({ hidePart }) => {
     <>
       <Page size={pageSizeConfig} style={pageStyles.page}>
         {parts
-          .filter(({ key }) => !hidePart.includes(key))
+          .filter(({ key }) => !(hidePart || []).includes(key))
           .map(({ key, component }) => (
             <React.Fragment key={key}>
               {component}
               <PdfRuler />
             </React.Fragment>
           ))}
-        {/* <CvContact />
-        <PdfRuler large color="#505050" />
-        <CvSynthese />
-        <PdfRuler />
-        <CvSkillsSummary />
-        <PdfRuler />
-        <CvExperiences />
-        <PdfRuler />
-        <CvStudies />
-        <PdfRuler />
-        <CvProjects /> */}
       </Page>
     </>
   );

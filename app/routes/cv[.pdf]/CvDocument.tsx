@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import type CvPart from "~/refs/CvPart";
 
 type Props = {
-  hidePart: Array<CvPart>;
+  hidePart?: Array<CvPart>;
 };
 
 export const CvDocument: React.FC<Props> = ({ hidePart }) => {
