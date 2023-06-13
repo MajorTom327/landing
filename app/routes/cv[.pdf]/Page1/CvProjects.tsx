@@ -112,6 +112,7 @@ const projects: Project[] = [
   },
   {
     title: "Bellz",
+    to: "https://bellz.styx-sys.com",
     description: [
       // eslint-disable-next-line react/jsx-key
       <PdfProjectsDescription>
@@ -140,6 +141,11 @@ const projects: Project[] = [
           project foundation based on Remix, TailwindCSS, and Revolut
         </PdfBold>{" "}
         in order to have a complete and performant SaaS service template.
+      </PdfProjectsDescription>,
+      // eslint-disable-next-line react/jsx-key
+      <PdfProjectsDescription>
+        This application is currently in production and used by my family to
+        manage the budget and finances.
       </PdfProjectsDescription>,
     ],
   },

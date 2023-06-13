@@ -4,8 +4,7 @@ import CvDocument from "./CvDocument";
 import { pdf } from "remix-utils";
 import path from "node:path";
 
-
-
+import zod from "zod";
 import { i18n, supportedLanguages } from "~/services/i18n.server";
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import i18next from "i18next";
@@ -14,9 +13,17 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-fs-backend";
 
 import { isDevelopment } from "~/lib/isEnv";
+import CvPart from "~/refs/CvPart";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const locale = await i18n.getLocale(request);
+
+  const url = new URL(request.url);
+
+  const hidePart = url.searchParams.get("hide");
+  const hidePartArray = zod
+    .array(zod.nativeEnum(CvPart))
+    .parse(hidePart ? hidePart.split(",") : []);
 
   const loadPath = path.resolve(
     __dirname,
@@ -51,7 +58,7 @@ export const loader: LoaderFunction = async ({ request }) => {
     .then(() => {
       return renderToBuffer(
         <I18nextProvider i18n={i18next}>
-          <CvDocument />
+          <CvDocument hidePart={hidePartArray} />
         </I18nextProvider>
       );
     })
