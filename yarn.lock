@@ -7451,10 +7451,10 @@ remix-i18next@^5.1.1:
     lru-cache "^7.14.1"
     use-consistent-value "^1.0.0"
 
-remix-utils@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-6.3.0.tgz#e5ec6e426664cad38c496b60b34c0af75a775ddb"
-  integrity sha512-ivtBYxsToXYFFzvkVPJiw21a5bbzucJslK2H3McJDjkaGvivSGULdyUmSWwmDhzuAXdUxNOV/MBoWtBnNLCIOg==
+remix-utils@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-6.4.1.tgz#5d5f07fc54bcfe020f74be4f41d776c18fac1a5c"
+  integrity sha512-qIm4bLArf7Np7rhCyI5vRT2dToNIQjModkJyiri6ydflnz6CkRHf4FokbtW187F4tqmXe/0oNyZ7rhaxY7VP8Q==
   dependencies:
     intl-parse-accept-language "^1.0.0"
     is-ip "^3.1.0"
