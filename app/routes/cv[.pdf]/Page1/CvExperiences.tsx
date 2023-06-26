@@ -108,7 +108,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
               Deepening of knowledge in <PdfBold>PHP</PdfBold>
             </PdfBulletLine>
             <PdfBulletLine>
-              Sarting to learn the development with the{" "}
+              Starting to learn the development with the{" "}
               <PdfBold>Zend Framework</PdfBold>
             </PdfBulletLine>
           </CvExperienceItem>
