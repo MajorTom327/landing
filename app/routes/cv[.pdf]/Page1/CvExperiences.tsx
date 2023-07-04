@@ -83,7 +83,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
             country={"France"}
           >
             <PdfBulletLine>
-              I started to work in <PdfBold>NodeJS</PdfBold> with{" "}
+              I learning of <PdfBold>NodeJS</PdfBold> with{" "}
               <PdfBold>Meteor</PdfBold> and <PdfBold>React</PdfBold>.
             </PdfBulletLine>
             <PdfBulletLine>
