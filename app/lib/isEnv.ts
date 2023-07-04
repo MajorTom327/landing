@@ -1,6 +1,4 @@
 import { pathEq } from "ramda";
 
-export const isDevelopment = () =>
-  pathEq(["env", "NODE_ENV"], "development", process);
-export const isProduction = () =>
-  pathEq(["env", "NODE_ENV"], "production", process);
+export const isDevelopment = () => pathEq("development", ["env", "NODE_ENV"], process);
+export const isProduction = () => pathEq("production", ["env", "NODE_ENV"], process);

@@ -94,8 +94,8 @@ export const CvExperiences: React.FC<Props> = ({}) => {
               <PdfBold>Meteor</PdfBold> and <PdfBold>React</PdfBold>.
             </PdfBulletLine>
             <PdfBulletLine>
-              This experience was important to me as it allowed me to discover
-              the <PdfBold>Realtime interfaces</PdfBold> and{" "}
+              Discovering the development of{" "}
+              <PdfBold>Realtime interfaces</PdfBold> and{" "}
               <PdfBold>MongoDB</PdfBold>
             </PdfBulletLine>
             <PdfBulletLine>
@@ -128,8 +128,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
             country={"France"}
           >
             <PdfBulletLine>
-              I had the opportunity to work on an investment portfolio
-              management platform in SCPI.
+              Working on an investment portfolio management platform
             </PdfBulletLine>
             <PdfBulletLine>
               Developing a <PdfBold>Scrapping service</PdfBold> to retrieve
