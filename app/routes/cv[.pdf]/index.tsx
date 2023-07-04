@@ -9,11 +9,13 @@ import { i18n, supportedLanguages } from "~/services/i18n.server";
 import { I18nextProvider, initReactI18next } from "react-i18next";
 import i18next from "i18next";
 
-import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-fs-backend";
 
 import { isDevelopment } from "~/lib/isEnv";
 import CvPart from "~/refs/CvPart";
+
+import frTranslationCv from "~/../public/locales/fr/cv.json";
+import enTranslationCv from "~/../public/locales/en/cv.json";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const locale = await i18n.getLocale(request);
@@ -26,16 +28,8 @@ export const loader: LoaderFunction = async ({ request }) => {
     .optional()
     .parse(hidePart ? hidePart.split(",") : []);
 
-  const loadPath = path.resolve(
-    __dirname,
-    "../public",
-    "locales/{{lng}}/{{ns}}.json"
-  );
-
-  // @ts-ignore
-  return i18next
+  await i18next
     .use(initReactI18next)
-    .use(LanguageDetector)
     .use(Backend)
     .init({
       debug: isDevelopment(),
@@ -50,21 +44,17 @@ export const loader: LoaderFunction = async ({ request }) => {
         order: ["htmlTag"],
         caches: [],
       },
-
-      backend: {
-        loadPath: loadPath,
-        addPath: loadPath.replace(".json", ".missing.json"),
+      resources: {
+        fr: { cv: frTranslationCv },
+        en: { cv: enTranslationCv },
       },
-    })
-    .then(() => {
-      return renderToBuffer(
-        <I18nextProvider i18n={i18next}>
-          <CvDocument hidePart={hidePartArray} />
-        </I18nextProvider>
-      );
-    })
-
-    .then((buffer) => {
-      return pdf(buffer);
     });
+
+  return renderToBuffer(
+    <I18nextProvider i18n={i18next} defaultNS={"cv"}>
+      <CvDocument hidePart={hidePartArray} />
+    </I18nextProvider>
+  ).then((buffer) => {
+    return pdf(buffer);
+  });
 };

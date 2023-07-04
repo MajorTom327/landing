@@ -30,14 +30,12 @@ const projects: Project[] = [
     title: "The DeadSafe",
     to: "https://the-deadsafe.com",
     description: [
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key={"deadsafe-0"}>
         The DeadSafe project is an ambitious{" "}
         <PdfBold>decentralized management game based on NFTs</PdfBold>, with the
         aim of unlocking access to a safe.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key={"deadsafe-1"}>
         DeadSafe is currently being developed. However, partial documentation of
         the project is already available on the website
       </PdfProjectsDescription>,
@@ -47,15 +45,14 @@ const projects: Project[] = [
     title: "BaseMint",
     to: "https://github.com/MajorTom327/basemint",
     description: [
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key={"basemint-0"}>
         The Basemint project is a fan art whose goal is to learn about using{" "}
         <PdfBold>web3</PdfBold> and interacting with an{" "}
         <PdfBold>Ethereum contract</PdfBold>. In this case, the contract is for
         VirtueAnimation's BaseMint Buds NFT.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+
+      <PdfProjectsDescription key={"basemint-1"}>
         I was able to learn how to display the basic information of a contract
         and interact with it through <PdfBold>JavaScript.</PdfBold>
       </PdfProjectsDescription>,
@@ -65,8 +62,7 @@ const projects: Project[] = [
     title: "Andromeda",
     to: "https://github.com/MajorTom327/andromeda",
     description: [
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key="andromeda-0">
         Andromeda is an application designed to help developers better manage
         their time and remember what they accomplished the previous day. It
         offers an <PdfBold>easy-to-use Kanban interface</PdfBold> that allows
@@ -76,8 +72,8 @@ const projects: Project[] = [
         It enables developers to better organize their work and{" "}
         <PdfBold>track their progress effectively.</PdfBold>
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+
+      <PdfProjectsDescription key="andromeda-1">
         I was able to take advantage of creating this application to work on an
         interface that provides a visual state of things through page
         animations.
@@ -87,21 +83,19 @@ const projects: Project[] = [
   {
     title: "Styx",
     description: [
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key="styx-0">
         Styx is a <PdfBold>client management application</PdfBold> for
         crematoriums. It allows easy management of deceased clients and
         associated information.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+
+      <PdfProjectsDescription key="styx-1">
         This application is a <PdfBold>complete SaaS</PdfBold> developed
         independently to quickly meet a need. It required a long development
         time but is still in production with regular updates to continue to meet
         the needs.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key={"styx-2"}>
         The current version is in PHP with MariaDB, but developments are focused
         on implementation through a{" "}
         <PdfBold>
@@ -114,8 +108,7 @@ const projects: Project[] = [
     title: "Bellz",
     to: "https://bellz.styx-sys.com",
     description: [
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key="bellz-0">
         Bellz is a <PdfBold>personal accounting management application</PdfBold>{" "}
         that helps individuals better manage their finances. It lists
         transactions and accounts in an organized manner, facilitating financial
@@ -126,24 +119,23 @@ const projects: Project[] = [
         application, individuals can more efficiently and effectively reach
         their financial goals."
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+      <PdfProjectsDescription key="bellz-1">
         This application was built around <PdfBold>Remix</PdfBold> to learn how
         to use this framework as well as learn some optimization techniques to
         reduce loading time and make the application as fast as possible. It was
         designed to allow for <PdfBold>JavaScript-free</PdfBold> use on the
         front-end as well as in highly degraded network conditions.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+
+      <PdfProjectsDescription key="bellz-2">
         It also allowed me to create a{" "}
         <PdfBold>
           project foundation based on Remix, TailwindCSS, and Revolut
         </PdfBold>{" "}
         in order to have a complete and performant SaaS service template.
       </PdfProjectsDescription>,
-      // eslint-disable-next-line react/jsx-key
-      <PdfProjectsDescription>
+
+      <PdfProjectsDescription key="bellz-3">
         This application is currently in production and used by my family to
         manage the budget and finances.
       </PdfProjectsDescription>,

@@ -28,7 +28,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
             country={"France"}
           >
             <PdfBulletLine>
-              Development of services in <PdfBold>NodeJS</PdfBold> with{" "}
+              Developing services in <PdfBold>NodeJS</PdfBold> with{" "}
               <PdfBold>Typescript</PdfBold>
             </PdfBulletLine>
             <PdfBulletLine>
@@ -41,17 +41,20 @@ export const CvExperiences: React.FC<Props> = ({}) => {
               <PdfBold>make the developers work easier</PdfBold>.
             </PdfBulletLine>
             <PdfBulletLine>
-              <PdfBold>Animation of multiples workshops</PdfBold> to share
-              knowledge between the teams members.
+              <PdfBold>Handling the animation of multiples workshops</PdfBold>{" "}
+              to share knowledge between the teams members and{" "}
+              <PdfBold>in charge of promoting</PdfBold> internal monthly{" "}
+              workshops events.
             </PdfBulletLine>
             <PdfBulletLine>
-              Presentation of the society and the projects to students and
-              <PdfBold>managing the formation</PdfBold> of the new employees.
+              Making the presentation of the society and the projects to
+              students and <PdfBold>managing the formation</PdfBold> of the new
+              employees.
             </PdfBulletLine>
           </CvExperienceItem>
 
           <CvExperienceItem
-            title={"C# software developer"}
+            title={"C# Software Developer"}
             date={"November 2018 - July 2020"}
             society={"Ededoc"}
             societyDescription={
@@ -64,12 +67,16 @@ export const CvExperiences: React.FC<Props> = ({}) => {
               <PdfBold>.NET framework</PdfBold> with the SOLID principles.
             </PdfBulletLine>
             <PdfBulletLine>
-              Development of a service for <PdfBold>Email Tracking</PdfBold> and{" "}
+              Developing a service for <PdfBold>Email Tracking</PdfBold> and{" "}
               <PdfBold>document electronic signing</PdfBold> in the workflows
             </PdfBulletLine>
             <PdfBulletLine>
-              Development of a <PdfBold>NodeJS</PdfBold> scrapping service to
+              Developing a <PdfBold>NodeJS</PdfBold> scrapping service to
               recover invoices.
+            </PdfBulletLine>
+            <PdfBulletLine>
+              Developing a notification system for users to subscribe to the
+              platform news with <PdfBold>NodeJS and postgresql</PdfBold>
             </PdfBulletLine>
           </CvExperienceItem>
 
@@ -83,7 +90,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
             country={"France"}
           >
             <PdfBulletLine>
-              I learning of <PdfBold>NodeJS</PdfBold> with{" "}
+              Learning of <PdfBold>NodeJS</PdfBold> with{" "}
               <PdfBold>Meteor</PdfBold> and <PdfBold>React</PdfBold>.
             </PdfBulletLine>
             <PdfBulletLine>
@@ -125,7 +132,7 @@ export const CvExperiences: React.FC<Props> = ({}) => {
               management platform in SCPI.
             </PdfBulletLine>
             <PdfBulletLine>
-              Development of a <PdfBold>Scrapping service</PdfBold> to retrieve
+              Developing a <PdfBold>Scrapping service</PdfBold> to retrieve
               public datas.
             </PdfBulletLine>
             <PdfBulletLine>

@@ -87,12 +87,11 @@ function handleBrowserRequest(
   remixContext: EntryContext
 ) {
   return new Promise<ti18n>(async (_resolve) => {
-    let instance = createInstance();
+    const instance = createInstance();
 
-    let lng = await i18n.getLocale(request);
-    let ns = i18n.getRouteNamespaces(remixContext);
+    const lng = await i18n.getLocale(request);
+    const ns = i18n.getRouteNamespaces(remixContext);
 
-    // @ts-ignore
     await instance
       .use(initReactI18next)
       .use(Backend)

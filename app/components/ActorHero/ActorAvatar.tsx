@@ -15,9 +15,7 @@ export const ActorAvatar: React.FC<Props> = ({}) => {
       <div
         className={classes}
         style={{ backgroundImage: `url(${getImageUrl(avatarLink)})` }}
-      >
-        {/* <img src={avatarLink} alt="Avatar" /> */}
-      </div>
+      ></div>
     </>
   );
 };

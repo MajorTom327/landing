@@ -4,16 +4,14 @@ import { RemixI18Next } from "remix-i18next";
 
 export const supportedLanguages = ["fr", "en"];
 
-export let i18n = new RemixI18Next({
+export const i18n = new RemixI18Next({
   detection: {
     supportedLanguages,
     fallbackLanguage: "fr",
   },
   i18next: {
-    // @ts-ignore
     backend: { loadPath: resolve("./public/locales/{{lng}}/{{ns}}.json") },
   },
-  // @ts-ignore
   backend: Backend,
 });
 

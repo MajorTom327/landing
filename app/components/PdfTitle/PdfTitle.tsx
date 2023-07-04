@@ -11,6 +11,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: textSizes.title,
     marginBottom: 5,
+    backgroundColor: "#eaeaea",
+    color: "#000",
+    textTransform: "uppercase",
+    textAlign: "center",
+    padding: 5,
   },
 });
 

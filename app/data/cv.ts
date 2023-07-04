@@ -55,13 +55,14 @@ const originalCV: CVItem[] = [
   },
 ];
 
-// @ts-ignore
+// @ts-expect-error Compose is not typed
 export const cv: TimelineItemData[] = compose(
   reverse,
   sortBy((item: TimelineItemData) =>
     DateTime.fromJSDate(item.startOf).toSeconds()
   ),
   map(
+    // @ts-expect-error Compose is not typed
     evolve({
       startOf: (d: string) => DateTime.fromISO(d).toJSDate(),
       endOf: when(isNotNil, (d: string) => DateTime.fromISO(d).toJSDate()),
