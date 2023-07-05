@@ -2,6 +2,7 @@ import andromedaAsset from "../assets/andromeda.jpg";
 import basemintAsset from "../assets/basemint.jpg";
 import deadsafeAsset from "../assets/deadsafe.jpg";
 import bellzAsset from "../assets/bellz.png";
+import styxAsset from "../assets/styx.png";
 
 export type Project = {
   key: string;
@@ -62,6 +63,7 @@ export const projects: Project[] = [
   {
     key: "styx",
     title: "projects.styx.title",
+    image: styxAsset,
     techs: ["skills.php", "skills.mysql"],
     description: [
       "projects.styx.description.0",
