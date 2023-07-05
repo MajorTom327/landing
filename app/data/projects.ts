@@ -65,6 +65,7 @@ export const projects: Project[] = [
     title: "projects.styx.title",
     image: styxAsset,
     techs: ["skills.php", "skills.mysql"],
+    url: "https://doc.styx-sys.com",
     description: [
       "projects.styx.description.0",
       "projects.styx.description.1",
