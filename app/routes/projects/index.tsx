@@ -6,7 +6,6 @@ import constants from "~/refs/constants";
 
 import projects from "~/data/projects";
 import Routlet from "~/components/Routlet/Routlet";
-import { Outlet } from "@remix-run/react";
 import ErrorView from "~/components/ErrorView";
 
 type Props = {};

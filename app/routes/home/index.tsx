@@ -4,6 +4,7 @@ import CauseThatMatter from "~/components/CauseThatMatter";
 import MyValues from "~/components/MyValues";
 import Divider from "~/components/Divider";
 import ErrorView from "~/components/ErrorView";
+import SomeProject from "./SomeProject";
 
 export function headers() {
   return {
@@ -24,6 +25,12 @@ export const Home: React.FC = () => {
         </div>
 
         <MyValues />
+
+        <div className="container mx-auto">
+          <Divider />
+        </div>
+
+        <SomeProject />
       </div>
     </>
   );

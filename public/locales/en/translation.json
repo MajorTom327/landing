@@ -146,6 +146,7 @@
     }
   },
   "inspect": {
+    "more": "See some more",
     "repository": "Open the repository",
     "website": "Open the website"
   },
@@ -189,6 +190,13 @@
         "Styx is a client management application for crematoriums. It allows easy management of deceased clients and associated information.",
         "This application is a complete SaaS developed independently to quickly meet a need. It required a long development time but is still in production with regular updates to continue to meet the needs.",
         "The current version is in PHP with MariaDB, but developments are focused on implementation through a TypeScript stack using Remix, TailwindCSS, and Postgresql."
+      ]
+    },
+    "emdr": {
+      "title": "EMDR-Dinan",
+      "description": [
+        "This website was developed for a client who wanted to have a showcase website for his EMDR practice. It was developed in JS with the Remix.run. It is a simple website that allows the client to present his practice and his contact information.",
+        "There is an important point put on the SEO of the website and the optimization of the loading time plus the ecological impact of the website."
       ]
     }
   },

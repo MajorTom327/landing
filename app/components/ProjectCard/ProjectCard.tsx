@@ -45,8 +45,6 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
           </div>
         </Link>
         {children}
-        {/* <Outlet/> */}
-        {/* <Routlet route={`/projects/${project.key}`} /> */}
 
         <div className="flex gap-2 py-4 px-2 w-full">
           {project.url && (

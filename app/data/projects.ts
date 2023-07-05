@@ -3,6 +3,7 @@ import basemintAsset from "../assets/basemint.jpg";
 import deadsafeAsset from "../assets/deadsafe.jpg";
 import bellzAsset from "../assets/bellz.png";
 import styxAsset from "../assets/styx.png";
+import emdrAsset from "../assets/emdr.png";
 
 export type Project = {
   key: string;
@@ -64,13 +65,21 @@ export const projects: Project[] = [
     key: "styx",
     title: "projects.styx.title",
     image: styxAsset,
-    techs: ["skills.php", "skills.mysql"],
+    techs: ["skills.node", "skills.react", "skills.remix"],
     url: "https://doc.styx-sys.com",
     description: [
       "projects.styx.description.0",
       "projects.styx.description.1",
       "projects.styx.description.2",
     ],
+  },
+  {
+    key: "emdr",
+    image: emdrAsset,
+    title: "projects.emdr.title",
+    techs: ["skills.node", "skills.react", "skills.remix"],
+    url: "https://www.emdr-dinan.fr/",
+    description: ["projects.emdr.description.0", "projects.emdr.description.1"],
   },
 ];
 

@@ -1,6 +1,6 @@
 import { useParams } from "@remix-run/react";
 
-import { find, propEq, T } from "ramda";
+
 import React from "react";
 import { useTranslation } from "react-i18next";
 import ErrorView from "~/components/ErrorView";
@@ -32,8 +32,6 @@ export const ProjectByIdPage: React.FC<Props> = ({}) => {
           {t(p)}
         </p>
       ))}
-
-      {/* 640 | 750 | 828 | 1080 | 1200 */}
 
       {project.image && (
         <div className="transition hover:motion-safe:scale-110 lg:hover:motion-safe:scale-125 shadow hover:shadow-xl rounded-lg overflow-hidden">

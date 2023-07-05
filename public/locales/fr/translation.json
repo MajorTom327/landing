@@ -152,6 +152,7 @@
     }
   },
   "inspect": {
+    "more": "En voir plus",
     "repository": "Voir le code source",
     "website": "Voir le site web"
   },
@@ -196,6 +197,13 @@
         "Styx est une application de gestion de clients pour crématorium. Elle permet de gérer facilement les défunts et les informations associées.",
         "Cette application est un SaaS complet développé en autonomie pour répondre rapidement à un besoin. Elle a demandé un long temps de développement mais est toujours en production avec des mises à jour régulières afin de continuer à répondre aux besoins.",
         "La version actuelle est en PHP avec MariaDB, mais les développements se concentrent sur l'implémentation à travers une stack TypeScript en utilisant Remix, TailwindCSS et Postgresql."
+      ]
+    },
+    "emdr": {
+      "title": "EMDR-Dinan",
+      "description": [
+        "Ce site web a été développé pour un client qui souhaitait avoir un site de présentation pour sa pratique de l'EMDR. Il a été développé en JavaScript avec Remix.run. Il s'agit d'un site web simple qui permet au client de présenter sa pratique et ses coordonnées de contact.",
+        "Une attention particulière a été accordée à l'optimisation du référencement (SEO) du site, au temps de chargement et à l'impact écologique du site."
       ]
     }
   },

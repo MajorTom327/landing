@@ -7,8 +7,8 @@ import Skill from "./Skill";
 type Props = {};
 
 const skills: SkillProps[] = [
-  { duration: 4, unit: "years", level: "advanced", title: "skills.react" },
-  { duration: 5, unit: "years", level: "advanced", title: "skills.node" },
+  { duration: 5, unit: "years", level: "advanced", title: "skills.react" },
+  { duration: 6, unit: "years", level: "advanced", title: "skills.node" },
 
   {
     duration: 2,
@@ -17,14 +17,14 @@ const skills: SkillProps[] = [
     title: "skills.typescript",
   },
   {
-    duration: 2,
+    duration: 3,
     unit: "years",
     level: "intermediate",
     title: "skills.express",
   },
   {
-    duration: 10,
-    unit: "months",
+    duration: 1.5,
+    unit: "years",
     level: "intermediate",
     title: "skills.remix",
   },
@@ -39,8 +39,8 @@ const skills: SkillProps[] = [
     title: "skills.mysql",
   },
   { duration: 2, unit: "years", level: "intermediate", title: "skills.agile" },
-  { duration: 6, unit: "years", level: "intermediate", title: "skills.git" },
-  { duration: 2, unit: "months", level: "beginner", title: "skills.web3" },
+  { duration: 7, unit: "years", level: "intermediate", title: "skills.git" },
+  { duration: 8, unit: "months", level: "intermediate", title: "skills.web3" },
 ];
 
 export const Skills: React.FC<Props> = ({}) => {
