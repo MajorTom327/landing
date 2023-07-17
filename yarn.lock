@@ -1669,21 +1669,6 @@
   dependencies:
     "@remix-run/node" "1.18.1"
 
-"@remix-run/node@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.18.0.tgz#e7a084af44c7da596763d33028c49483c7fa4bf1"
-  integrity sha512-RRsGS+19tpYj2EXid8PP+bV8Zj6P/4yT6pMkRCIlw1uY0uRUiA3PocnyGmgl6TsqsqaahC7KdDAxhVayt4tdZA==
-  dependencies:
-    "@remix-run/server-runtime" "1.18.0"
-    "@remix-run/web-fetch" "^4.3.4"
-    "@remix-run/web-file" "^3.0.2"
-    "@remix-run/web-stream" "^1.0.3"
-    "@web3-storage/multipart-parser" "^1.0.0"
-    abort-controller "^3.0.0"
-    cookie-signature "^1.1.0"
-    source-map-support "^0.5.21"
-    stream-slice "^0.1.2"
-
 "@remix-run/node@1.18.1", "@remix-run/node@^1.13.0":
   version "1.18.1"
   resolved "https://registry.yarnpkg.com/@remix-run/node/-/node-1.18.1.tgz#ad63dee8d84f610d571a777819658b4424964952"
@@ -1707,11 +1692,6 @@
     "@remix-run/router" "1.7.1"
     react-router-dom "6.14.1"
 
-"@remix-run/router@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.7.0.tgz#550a8d5760b78efc5d60f62b5829b0f74c1fde81"
-  integrity sha512-Eu1V3kz3mV0wUpVTiFHuaT8UD1gj/0VnoFHQYX35xlslQUpe8CuYoKFn9d4WZFHm3yDywz6ALZuGdnUPKrNeAw==
-
 "@remix-run/router@1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.7.1.tgz#fea7ac35ae4014637c130011f59428f618730498"
@@ -1727,18 +1707,6 @@
     compression "^1.7.4"
     express "^4.17.1"
     morgan "^1.10.0"
-
-"@remix-run/server-runtime@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/server-runtime/-/server-runtime-1.18.0.tgz#76b8e3bcc4883a8bdec9bae603db9ea0e09c396b"
-  integrity sha512-iiSKgGIWMkvf4ftnjGBmIJpgqxRwv8XQilAINapaYsx1zEM6egZGYE6WvaxLuRQSceZZNgLAYzL48TmK+DAU5g==
-  dependencies:
-    "@remix-run/router" "1.7.0"
-    "@types/cookie" "^0.4.1"
-    "@web3-storage/multipart-parser" "^1.0.0"
-    cookie "^0.4.1"
-    set-cookie-parser "^2.4.8"
-    source-map "^0.7.3"
 
 "@remix-run/server-runtime@1.18.1":
   version "1.18.1"
@@ -2192,13 +2160,13 @@
   resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.0.1.tgz#38308a626c91866cb00a249c08bf65251e9b9d81"
   integrity sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==
 
-"@vercel/remix@^1.16.1":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.18.0.tgz#2398a18b5f1a68268a2780a3920c013191d3fc6d"
-  integrity sha512-zmzbBZJWB2BbOP8HRatD/dHTXdsfhmbtLPclFEBfFl6bwgnYA5hHySbWQbUHh59G7ZJMPoFhAO7MUK0dtJyMcg==
+"@vercel/remix@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-1.18.1.tgz#5f11f8ce38a91f6a49d0cb8ca17881d2da3a927e"
+  integrity sha512-xwzeOZfEC/qgNuTOQtPjEe0blvex45hlYqtKD8NCAiyAO6CG8JpV+NWoQf48VTcpy0wqWjTJMvAwfLgYhX+4uQ==
   dependencies:
-    "@remix-run/node" "1.18.0"
-    "@remix-run/server-runtime" "1.18.0"
+    "@remix-run/node" "1.18.1"
+    "@remix-run/server-runtime" "1.18.1"
     isbot "^3.6.8"
 
 "@web3-storage/multipart-parser@^1.0.0":
