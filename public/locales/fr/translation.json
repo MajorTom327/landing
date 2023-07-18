@@ -108,7 +108,8 @@
     "agile": "Agile",
     "craft": "Craftmanship",
     "git": "Git",
-    "docker": "Docker"
+    "docker": "Docker",
+    "solidity": "Solidity"
   },
   "timeline": {
     "title": "Mon parcours"
@@ -180,6 +181,13 @@
         "Le projet DeadSafe est un jeu ambitieux de gestion décentralisée basé sur les NFTs, dont le but est de déverrouiller l'accès à un coffre-fort.",
         "DeadSafe est en cours de développement. Cependant, une partie de la documentation du projet est déjà disponible sur le site web."
 
+      ]
+    },
+    "decentralizedblog": {
+      "title": "The Decentralized Blog",
+      "link": "http://blog.majortom327.eth",
+      "description": [
+        "Ce projet est un blog décentralisé qui exploite IPFS comme système de stockage de contenu et Ethereum comme blockchain pour stocker la liste des articles."
       ]
     },
     "basemint": {

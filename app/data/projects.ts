@@ -5,6 +5,7 @@ import bellzAsset from "../assets/bellz.png";
 import styxAsset from "../assets/styx.png";
 import emdrAsset from "../assets/emdr.png";
 import portfolioAsset from "../assets/portfolio.png";
+import blogAsset from "../assets/blog.png";
 
 export type Project = {
   key: string;
@@ -48,6 +49,21 @@ export const projects: Project[] = [
       "projects.deadsafe.description.0",
       "projects.deadsafe.description.1",
     ],
+  },
+  {
+    key: "decentralizedblog",
+    title: "projects.decentralizedblog.title",
+    techs: [
+      "skills.react",
+      "skills.node",
+      "skills.remix",
+      "skills.web3",
+      "skills.solidity",
+    ],
+    image: blogAsset,
+    url: "https://blog.majortom327.eth",
+    repo: "https://github.com/MajorTom327/the-decentralized-blog",
+    description: [],
   },
   {
     key: "basemint",
