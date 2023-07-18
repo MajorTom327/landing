@@ -6,9 +6,10 @@ import type CvPart from "~/refs/CvPart";
 
 type Props = {
   hidePart?: Array<CvPart>;
+  hideFooter?: boolean;
 };
 
-export const CvDocument: React.FC<Props> = ({ hidePart }) => {
+export const CvDocument: React.FC<Props> = ({ hidePart, hideFooter }) => {
   const { i18n } = useTranslation();
   return (
     <>
@@ -20,7 +21,7 @@ export const CvDocument: React.FC<Props> = ({ hidePart }) => {
         creator="Valentin THOMAS"
         producer="Valentin THOMAS"
       >
-        <Page1 hidePart={hidePart} />
+        <Page1 hidePart={hidePart} hideFooter={hideFooter} />
       </Document>
     </>
   );

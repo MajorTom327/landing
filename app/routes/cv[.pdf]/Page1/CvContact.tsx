@@ -3,8 +3,7 @@ import React from "react";
 import { Trans } from "react-i18next";
 import PdfContainer from "~/components/PdfContainer/PdfContainer";
 import { textSizes } from "~/refs/PdfConfig";
-import { portfolioUrl } from "~/refs/constants";
-import { linkedinUrl } from "~/refs/constants";
+import { portfolioUrl, linkedinUrl, githubUrl } from "~/refs/constants";
 
 type Props = {};
 
@@ -52,8 +51,8 @@ export const CvContact: React.FC<Props> = ({}) => {
             </Link>
           </Text>
           <Text style={style.socialItem}>
-            <Link src={portfolioUrl}>
-              <Trans>Portfolio</Trans>
+            <Link src={githubUrl}>
+              <Trans>Github</Trans>
             </Link>
           </Text>
         </View>

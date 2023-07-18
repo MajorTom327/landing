@@ -4,6 +4,7 @@
   "me@valentin-thomas.com": "me@valentin-thomas.com",
   "LinkedIn": "LinkedIn",
   "Portfolio": "Portfolio",
+  "Github": "Github",
   "Summary": "Sommaire",
   "France": "France",
   "As a <1>Fullstack Developer</1>, I have had the opportunity to work on projects such as a <4>client portal</4> for insurance companies and a <7>clients management application</7> for a Crematorium in various environments. These experiences demonstrate my adaptability and my area of expertise.": "En tant que <1>Fullstack Developer</1>, j'ai eu l'occasion de travailler sur des projets tels qu'un <4>portail client</4> pour des compagnies d'assurance et une <7>application de gestion des clients</7> pour un crématorium dans différents environnements. Ces expériences démontrent mon adaptabilité et mon domaine d'expertise.",
@@ -72,5 +73,6 @@
   "May 2018 - August 2018": "Mai 2018 - Août 2018",
   "August 2018 - October 2018": "Août 2018 - Octobe 2018",
   "November 2018 - July 2020": "Novembre 2018 - Juillet 2020",
-  "July 2020 to now": "Juillet 2020 à aujourd'hui"
+  "July 2020 to now": "Juillet 2020 à aujourd'hui",
+  "footer": "Ce CV a été générer en code sur https://valentin-thomas.com"
 }

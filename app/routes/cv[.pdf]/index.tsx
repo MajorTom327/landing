@@ -28,33 +28,38 @@ export const loader: LoaderFunction = async ({ request }) => {
     .optional()
     .parse(hidePart ? hidePart.split(",") : []);
 
-  await i18next
-    .use(initReactI18next)
-    .use(Backend)
-    .init({
-      debug: isDevelopment(),
-      saveMissing: isDevelopment(),
-      supportedLngs: supportedLanguages,
-      lng: locale,
-      fallbackLng: "en",
-      defaultNS: "cv",
-      keySeparator: false,
-      react: { useSuspense: false },
-      detection: {
-        order: ["htmlTag"],
-        caches: [],
-      },
-      resources: {
-        fr: { cv: frTranslationCv },
-        en: { cv: enTranslationCv },
-      },
-    });
 
-  return renderToBuffer(
-    <I18nextProvider i18n={i18next} defaultNS={"cv"}>
-      <CvDocument hidePart={hidePartArray} />
-    </I18nextProvider>
-  ).then((buffer) => {
-    return pdf(buffer);
-  });
+    const hideFooter = zod.coerce
+      .boolean()
+      .parse(url.searchParams.get("hideFooter"));
+
+    await i18next
+      .use(initReactI18next)
+      .use(Backend)
+      .init({
+        debug: isDevelopment(),
+        saveMissing: isDevelopment(),
+        supportedLngs: supportedLanguages,
+        lng: locale,
+        fallbackLng: "en",
+        defaultNS: "cv",
+        keySeparator: false,
+        react: { useSuspense: false },
+        detection: {
+          order: ["htmlTag"],
+          caches: [],
+        },
+        resources: {
+          fr: { cv: frTranslationCv },
+          en: { cv: enTranslationCv },
+        },
+      });
+
+    return renderToBuffer(
+      <I18nextProvider i18n={i18next} defaultNS={"cv"}>
+        <CvDocument hidePart={hidePartArray} hideFooter={hideFooter} />
+      </I18nextProvider>
+    ).then((buffer) => {
+      return pdf(buffer);
+    });
 };
