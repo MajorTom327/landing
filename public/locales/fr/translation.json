@@ -158,6 +158,13 @@
   },
   "projects": {
     "title": "Si vous voulez en voir plus vous pouvez toujours aller voir sur <0>mon $t(social.github)</0>",
+    "portfolio": {
+      "title": "Ce portfolio",
+      "link": "https://valentin-thomas.com",
+      "description": [
+        "Ce portfolio, ainsi que mon CV au format PDF, est un site entièrement développé par mes soins."
+      ]
+    },
     "bellz": {
       "title": "Bellz",
       "description": [

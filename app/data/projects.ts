@@ -4,6 +4,7 @@ import deadsafeAsset from "../assets/deadsafe.jpg";
 import bellzAsset from "../assets/bellz.png";
 import styxAsset from "../assets/styx.png";
 import emdrAsset from "../assets/emdr.png";
+import portfolioAsset from "../assets/portfolio.png";
 
 export type Project = {
   key: string;
@@ -16,6 +17,15 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    key: "portfolio",
+    title: "projects.portfolio.title",
+    techs: ["skills.react", "skills.typescript", "skills.remix"],
+    url: "https://valentin-thomas.com",
+    repo: "https://github.com/MajorTom327/landing",
+    image: portfolioAsset,
+    description: ["projects.portfolio.description.0"],
+  },
   {
     key: "bellz",
     title: "projects.bellz.title",
@@ -33,6 +43,7 @@ export const projects: Project[] = [
     techs: ["skills.react", "skills.node", "skills.remix", "skills.web3"],
     image: deadsafeAsset,
     url: "https://the-deadsafe.com",
+    repo: "https://github.com/MajorTom327/deadsafe-landing",
     description: [
       "projects.deadsafe.description.0",
       "projects.deadsafe.description.1",

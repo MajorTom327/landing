@@ -152,6 +152,13 @@
   },
   "projects": {
     "title": "If you want to see more, you still can go on <0>my $t(social.github)</0>",
+    "portfolio": {
+      "title": "This portfolio",
+      "link": "https://valentin-thomas.com",
+      "description": [
+        "This portfolio, along with my CV in PDF format, is a website completely developed by myself."
+      ]
+    },
     "bellz": {
       "title": "Bellz",
       "description": [
