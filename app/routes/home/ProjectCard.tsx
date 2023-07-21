@@ -28,7 +28,7 @@ export const ProjectCard: React.FC<Props> = ({ project, textLight }) => {
         <Title center lg>
           <Trans>{project.title}</Trans>
         </Title>
-        <div className="backdrop-blur rounded px-2 py-4 transition group-hover:backdrop-blur-xl">
+        <div className="backdrop-blur-lg lg:backdrop-blur rounded px-2 py-4 transition group-hover:backdrop-blur-xl">
           <div className="flex flex-wrap justify-center gap-2 my-4">
             {project.techs.map((skill) => (
               <TechBadge key={skill} skill={skill} />
