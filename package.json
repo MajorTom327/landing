@@ -34,7 +34,7 @@
     "react": "^18.2.0",
     "react-carbonbadge": "^1.0.1",
     "react-dom": "^18.2.0",
-    "react-i18next": "^13.0.2",
+    "react-i18next": "^13.0.3",
     "react-icons": "^4.9.0",
     "remix-i18next": "^5.1.1",
     "remix-utils": "^6.6.0",
