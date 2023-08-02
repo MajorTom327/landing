@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.1.12",
-    "@remix-run/node": "^1.13.0",
-    "@remix-run/react": "^1.19.1",
-    "@remix-run/serve": "^1.19.1",
+    "@remix-run/node": "1.19.1",
+    "@remix-run/react": "1.19.1",
+    "@remix-run/serve": "1.19.1",
     "@vercel/analytics": "^1.0.1",
     "@vercel/remix": "^1.19.1",
     "classnames": "^2.3.2",
@@ -42,8 +42,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.19.1",
-    "@remix-run/eslint-config": "^1.19.1",
+    "@remix-run/dev": "1.19.1",
+    "@remix-run/eslint-config": "1.19.1",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.8",
     "@types/i18next-fs-backend": "^1.1.2",
