@@ -1,8 +1,4 @@
-import type {
-  LoaderFunction,
-  MetaFunction,
-  V2_MetaFunction,
-} from "@vercel/remix";
+import type { LoaderFunction, V2_MetaFunction } from "@vercel/remix";
 import { json } from "@vercel/remix";
 import {
   Links,
@@ -27,6 +23,7 @@ import { sessionStorage } from "~/services/session.server";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import ErrorView from "./components/ErrorView";
+import getImageUrl from "./lib/getImageUrl";
 
 export function links() {
   return [
@@ -69,6 +66,16 @@ export const meta: V2_MetaFunction = () => {
       name: "description",
       content:
         "Valentin THOMAS is a developper and here you can find his experiences and his CV",
+    },
+
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: "Valentin Thomas" },
+    { property: "og:image", content: getImageUrl("/valentin-thomas.png") },
+    { property: "og:url", content: "https://valentin-thomas.com" },
+    { property: "og:site_name", content: "Valentin Thomas" },
+    {
+      property: "og:description",
+      content: `You're looking for a senior fullstack developper ? Maybe it's me, take a look at my CV and my experiences to know more about me.`,
     },
   ];
 };
