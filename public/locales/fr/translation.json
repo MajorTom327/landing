@@ -96,6 +96,8 @@
     "remix": "Remix.run",
     "react": "React",
     "node": "Node.js",
+    "next": "NextJS",
+    "javascript": "Javascript",
     "typescript": "Typescript",
     "express": "Express",
     "mongo": "MongoDB",
@@ -164,6 +166,18 @@
       "link": "https://valentin-thomas.com",
       "description": [
         "Ce portfolio, ainsi que mon CV au format PDF, est un site entièrement développé par mes soins."
+      ]
+    },
+    "tweaks": {
+      "title": "Tweaks Asylum",
+      "description": [
+        "J'ai eu l'opportunité de contribuer bénévolement au projet Twisted Tweaks, en travaillant sur l'intégration de fonctionnalités. J'ai particulièrement focalisé mes efforts sur la résolution de bugs et l'ajout du domaine ENS (Ethereum Name Service). Mon engagement m'a permis d'acquérir une expérience précieuse en programmation et en développement, tout en renforçant la communauté."
+      ]
+    },
+    "kwsn": {
+      "title": "Knights Who Say Nah",
+      "description": [
+        "Dans le projet \"Knights Who Say Nah\", j'ai activement résolu un bug bloquant les transactions blockchain après une victoire. J'ai volontairement apporté mon aide pour améliorer l'expérience des utilisateurs. Mon travail a abouti à la résolution du bug, offrant aux joueurs la possibilité de réaliser des transactions sans encombre après leurs succès. Cette expérience m'a rappelé l'impact positif de l'entraide dans des projets significatifs."
       ]
     },
     "bellz": {

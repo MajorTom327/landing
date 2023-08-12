@@ -6,6 +6,8 @@ import styxAsset from "../assets/styx.png";
 import emdrAsset from "../assets/emdr.png";
 import portfolioAsset from "../assets/portfolio.png";
 import blogAsset from "../assets/blog.png";
+import tweaksAsset from "../assets/tweaks.png";
+import kwsnAsset from "../assets/kwsn.png";
 
 export type Project = {
   key: string;
@@ -26,6 +28,22 @@ export const projects: Project[] = [
     repo: "https://github.com/MajorTom327/landing",
     image: portfolioAsset,
     description: ["projects.portfolio.description.0"],
+  },
+  {
+    key: "tweaks",
+    title: "projects.tweaks.title",
+    techs: ["skills.react", "skills.javascript", "skills.next", "skills.web3"],
+    image: tweaksAsset,
+    url: "https://www.tweaklabs.xyz/asylum",
+    description: ["projects.tweaks.description.0"],
+  },
+  {
+    key: "kwsn",
+    title: "projects.kwsn.title",
+    techs: ["skills.react", "skills.node", "skills.next", "skills.web3"],
+    image: kwsnAsset,
+    url: "https://slay.knightssaynah.com/",
+    description: ["projects.kwsn.description.0"],
   },
   {
     key: "bellz",

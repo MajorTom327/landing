@@ -96,6 +96,8 @@
     "remix": "Remix.run",
     "react": "React",
     "node": "Node.js",
+    "next": "NextJS",
+    "javascript": "Javascript",
     "typescript": "Typescript",
     "express": "Express",
     "mongo": "MongoDB",
@@ -160,6 +162,18 @@
         "This portfolio, along with my CV in PDF format, is a website completely developed by myself."
       ]
     },
+    "tweaks": {
+      "title": "Tweaks Asylum",
+      "description": [
+        "I had the opportunity to contribute voluntarily to the Twisted Tweaks project, focusing on feature integration. I particularly concentrated my efforts on bug resolution and the addition of the ENS (Ethereum Name Service) domain. My involvement allowed me to gain valuable experience in programming and development while enhancing the community."
+      ]
+    },
+    "kwsn": {
+      "title": "KWSN",
+      "description": [
+        "In the \"Knights Who Say Nah\" project, I actively resolved a bug that was blocking blockchain transactions after a victory. I volunteered to help improve user experience. My efforts led to the bug's resolution, allowing players to smoothly conduct transactions after their successes. This experience reinforced the positive impact of collaboration in meaningful projects."
+      ]
+    }
     "bellz": {
       "title": "Bellz",
       "description": [
