@@ -36,7 +36,7 @@ function hydrate() {
         ],
       },
       detection: {
-        order: ["htmlTag"],
+        order: ["navigator", "htmlTag"],
         caches: [],
       },
     })
