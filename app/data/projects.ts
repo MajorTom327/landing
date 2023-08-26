@@ -1,13 +1,13 @@
-import andromedaAsset from "../assets/andromeda.jpg";
-import basemintAsset from "../assets/basemint.jpg";
-import deadsafeAsset from "../assets/deadsafe.jpg";
-import bellzAsset from "../assets/bellz.png";
-import styxAsset from "../assets/styx.png";
-import emdrAsset from "../assets/emdr.png";
-import portfolioAsset from "../assets/portfolio.png";
-import blogAsset from "../assets/blog.png";
-import tweaksAsset from "../assets/tweaks.png";
-import kwsnAsset from "../assets/kwsn.png";
+import andromedaAsset from "../assets/andromeda.webp";
+import basemintAsset from "../assets/basemint.webp";
+import deadsafeAsset from "../assets/deadsafe.webp";
+import bellzAsset from "../assets/bellz.webp";
+import styxAsset from "../assets/styx.webp";
+import emdrAsset from "../assets/emdr.webp";
+import portfolioAsset from "../assets/portfolio.webp";
+import blogAsset from "../assets/blog.webp";
+import tweaksAsset from "../assets/tweaks.webp";
+import kwsnAsset from "../assets/kwsn.webp";
 
 export type Project = {
   key: string;

@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import avatarLink from "~/assets/avatar.jpg";
+import avatarLink from "~/assets/avatar.webp";
 import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};

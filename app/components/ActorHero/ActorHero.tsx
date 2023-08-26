@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Title from "../Title";
 import ActorAvatar from "./ActorAvatar";
-import winterLink from "~/assets/winter.jpg";
+import winterLink from "~/assets/winter.webp";
 import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
