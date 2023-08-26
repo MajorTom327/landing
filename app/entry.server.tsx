@@ -92,6 +92,7 @@ function handleBrowserRequest(
     const lng = await i18n.getLocale(request);
     const ns = i18n.getRouteNamespaces(remixContext);
 
+
     await instance
       .use(initReactI18next)
       .use(Backend)

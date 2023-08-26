@@ -143,7 +143,7 @@ export const BasePage: React.FC<BasePageProps> = ({ children }) => {
           <Layout>{children}</Layout>
           {/* <ScrollRestoration /> */}
           <Scripts />
-          <LiveReload />
+          {/* <LiveReload /> */}
         </AuthenticityTokenProvider>
         <Analytics />
         <script

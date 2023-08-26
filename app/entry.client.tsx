@@ -37,7 +37,8 @@ function hydrate() {
       },
       detection: {
         order: ["navigator", "htmlTag"],
-        caches: [],
+        caches: ["localStorage", "cookie"],
+        convertDetectedLanguage: (lng) => lng.split("-")[0],
       },
     })
     .then(() => {
