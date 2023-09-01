@@ -55,6 +55,7 @@ export const projects: Project[] = [
       "projects.bellz.description.1",
       "projects.bellz.description.2",
     ],
+    repo: "https://github.com/MajorTom327/bellz",
   },
   {
     key: "deadsafe",
