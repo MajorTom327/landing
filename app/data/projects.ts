@@ -72,13 +72,7 @@ export const projects: Project[] = [
   {
     key: "decentralizedblog",
     title: "projects.decentralizedblog.title",
-    techs: [
-      "skills.react",
-      "skills.node",
-      "skills.remix",
-      "skills.web3",
-      "skills.solidity",
-    ],
+    techs: ["skills.react", "skills.node", "skills.web3", "skills.solidity"],
     image: blogAsset,
     url: "https://blog.majortom327.eth",
     repo: "https://github.com/MajorTom327/the-decentralized-blog",
