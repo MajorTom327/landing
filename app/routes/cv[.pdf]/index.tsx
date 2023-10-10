@@ -2,7 +2,6 @@ import { renderToBuffer } from "@react-pdf/renderer";
 import type { LoaderFunction } from "@remix-run/node";
 import CvDocument from "./CvDocument";
 import { pdf } from "remix-utils";
-import path from "node:path";
 
 import zod from "zod";
 import { i18n, supportedLanguages } from "~/services/i18n.server";

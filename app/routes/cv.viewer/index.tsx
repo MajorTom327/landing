@@ -1,3 +1,5 @@
+import resumePdf from "~/assets/resume.pdf";
+
 export let handle = {
   i18n: "cv",
 };
@@ -6,7 +8,7 @@ export const CvViewer = () => {
   return (
     <div>
       <div className="flex w-full h-[90vh]">
-        <iframe className="w-full h-full" title="cv.Pdf" src="/cv.pdf" />
+        <iframe className="w-full h-full" title="cv.Pdf" src={resumePdf} />
       </div>
     </div>
   );
