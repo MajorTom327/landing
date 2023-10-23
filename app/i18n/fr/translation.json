@@ -1,0 +1,279 @@
+{
+  "site": {
+    "name": "Valentin Thomas"
+  },
+  "menu": {
+    "themes": "Les Sujets",
+    "project": "Mes Projets",
+    "cv": "Mon C.V.",
+    "contact": "Me contacter"
+  },
+  "music": {
+    "title": "Naviguer avec mon ambiance musicale"
+  },
+  "social": {
+    "portfolio": "Portfolio",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "wallet": "majortom327.eth"
+  },
+  "causes": {
+    "title": "Les causes qui me tiennent à coeur",
+    "spa": {
+      "title": "SPA",
+      "posix": "Faites connaissance avec mon meilleur ami: Posix",
+      "posix_role": "Happiness Manager",
+      "reasons": [
+        "La SPA (Société protectrice des animaux) française est une organisation de bienfaisance qui a pour mission de protéger les animaux et de lutter contre la cruauté envers eux. J'aime la SPA française parce qu'elle offre une aide précieuse aux animaux qui ont besoin de protection et de soins.",
+        "La SPA française travaille dur pour s'assurer que les animaux sont bien traités et protégés contre la cruauté et l'abandon. Elle offre des services tels que la stérilisation et la vaccination pour aider à contrôler la population animale, ainsi que des programmes de réhabilitation et de réadaptation pour les animaux qui ont été maltraités ou abandonnés.",
+        "En plus de ses efforts pour protéger les animaux, la SPA française sensibilise également les gens à la cause animale et leur apprend à prendre soin de leurs compagnons à quatre pattes de manière responsable. Cela contribue à créer une société plus juste et plus respectueuse des animaux, ce qui est important pour moi.",
+        "En tant qu'animal lover, je suis reconnaissant envers la SPA française pour son travail crucial pour protéger et soutenir les animaux. Je suis fier de soutenir cette organisation et de contribuer à ses efforts pour améliorer la vie des animaux dans notre société."
+      ]
+    },
+    "resto": {
+      "title": "restos du coeur",
+      "reasons": [
+        "La cause des restos du Coeur est très importante pour moi car j'ai vu les effets de la pauvreté et de la difficulté financière de près. En tant qu'enfant, mes parents ont dû faire face à des difficultés financières et nous avons dû compter sur les restos du Coeur pour pouvoir manger pendant une certaine période. Cette expérience m'a montré à quel point il est important de s'assurer que tout le monde a accès à de la nourriture saine et nutritive.",
+        "Les restos du Coeur offrent une aide précieuse aux personnes dans le besoin en leur fournissant des repas chauds et nutritifs gratuitement. Ils sont une source de soutien pour les personnes qui luttent pour joindre les deux bouts et qui ne pourraient pas se permettre de payer pour de la nourriture autrement.",
+        "En plus de leur travail pour aider à nourrir les personnes dans le besoin, les restos du Coeur sont également une force pour la solidarité et l'entraide dans les communautés. Ils créent un lieu où les gens peuvent se rassembler et se soutenir mutuellement, ce qui peut avoir un impact positif sur le bien-être émotionnel et social des personnes qui en bénéficient.",
+        "En résumé, la cause des restos du Coeur est importante pour moi car elle s'assure que les personnes dans le besoin ont accès à de la nourriture nutritive et qu'elle crée des opportunités de solidarité et d'entraide dans les communautés."
+      ]
+    },
+    "privacy": {
+      "title": "La vie privée",
+      "reasons": [
+        "La vie privée est un concept important pour moi car elle représente le droit de chaque individu à avoir un espace personnel et à être protégé contre les intrusions indésirables. Cela signifie que chacun a le droit de décider qui peut avoir accès à ses informations personnelles et comment elles peuvent être utilisées.",
+        "La vie privée est également importante pour préserver la dignité et l'intégrité de chaque individu. Lorsque nous sommes protégés contre les intrusions indésirables, nous pouvons nous sentir en sécurité et à l'aise de nous exprimer librement, sans crainte d'être jugés ou exploités.",
+        "En outre, la vie privée est cruciale pour protéger les libertés individuelles et pour garantir que les individus puissent vivre de manière autonome et libre. Lorsque notre vie privée est violée, nous pouvons nous sentir vulnérables et impuissants, ce qui peut avoir un impact négatif sur notre bien-être et notre épanouissement personnel.",
+        "En fin de compte, la vie privée est essentielle pour que chaque individu puisse vivre de manière libre et digne. C'est pourquoi il est important de protéger cet espace personnel et de respecter les droits à la vie privée des autres."
+      ]
+    }
+  },
+  "me": {
+    "hero": "Bonjour, je suis Valentin Thomas",
+    "description": "Je suis un développeur web. Je suis passionné par le développement web et l'innovation."
+  },
+  "personality": {
+    "title": "Ma personnalitée"
+  },
+  "values": {
+    "title": "Mes valeurs",
+    "openness": {
+      "title": "Ouverture d'esprit",
+      "description": "Je suis ouvert à de nouvelles expériences et à de nouvelles idées. Je suis curieux et j'aime apprendre de nouvelles choses."
+    },
+    "quality": {
+      "title": "Qualité",
+      "description": "Je m'efforce de faire de mon mieux dans tout ce que je fais. Je suis fier de mon travail et je m'engage à fournir des produits de qualité. Je suis toujours à la recherche de nouvelles façons d'améliorer mes compétences et mes connaissances que ce soit en outils comme en langages."
+    },
+    "creativity": {
+      "title": "Créativité",
+      "description": "Je suis créatif et j'aime trouver des solutions innovantes aux problèmes. Je suis toujours à la recherche de nouvelles idées et de nouvelles façons de faire les choses. J'aime créer des choses et je suis fier de mon imagination. J'apprecie de voir mes idées se concrétiser et voir mes créations prendre vie."
+    },
+    "honesty": {
+      "title": "Honnêteté",
+      "description": "Je suis honnête et je m'engage à être transparent et à être fidèle à mes engagements. Je suis digne de confiance et je suis fier de mon intégrité. J'apprecie autant de dire la vérité que de l'entendre qu'elle soit positive ou négative."
+    }
+  },
+  "time": {
+    "now": "Maintenant",
+    "experience": {
+      "month_one": "$t(skills.practiced) 1 mois",
+      "month_other": "$t(skills.practiced) {{count}} mois",
+      "year_one": "$t(skills.practiced) 1 année",
+      "year_other": "$t(skills.practiced) {{count}} années"
+    }
+  },
+  "skills": {
+    "practiced": "Pratiqué pendant",
+    "title": "Quelques une de mes compétences",
+    "levels": {
+      "beginner": "Débutant",
+      "intermediate": "Intermédiaire",
+      "advanced": "Avancé"
+    },
+    "remix": "Remix.run",
+    "react": "React",
+    "node": "Node.js",
+    "next": "NextJS",
+    "javascript": "Javascript",
+    "typescript": "Typescript",
+    "express": "Express",
+    "mongo": "MongoDB",
+    "web3": "Web3",
+    "mysql": "MySQL",
+    "csharp": "C#",
+    "dotnet": ".NET",
+    "meteor": "Meteor",
+    "php": "PHP",
+    "agile": "Agile",
+    "craft": "Craftmanship",
+    "git": "Git",
+    "docker": "Docker",
+    "solidity": "Solidity"
+  },
+  "timeline": {
+    "title": "Mon parcours"
+  },
+  "jobs": {
+    "fullstack": "Développeur Fullstack",
+    "csharp": "Développeur logiciel C#"
+  },
+  "societies": {
+    "fasst": "F.ASS.T",
+    "ededoc": "Ededoc",
+    "monbuilding": "MonBuilding",
+    "solicis": "Solicis",
+    "mscpi": "MeilleureSCPI"
+  },
+  "experiences": {
+    "fasst": {
+      "description": [
+        "Pendant cette expérience professionnelle, j'ai travaillé avec des technologies telles que React, NodeJS, GraphQL et MongoDB pour développer des applications pour le secteur des assurances. J'ai également appris de nombreuses nouvelles compétences et j'ai évolué au sein d'une équipe en croissance. J'ai aidé des développeurs junior en reconversion à s'intégrer à l'entreprise et j'ai participé à la structuration de l'entreprise qui est passée de moins d'une dizaine de collaborateurs à environ 50. Cette expérience professionnelle m'a permis de développer mes compétences techniques et de travailler dans un environnement en constante évolution. J'ai également contribué à la croissance et au développement de l'entreprise en accompagnant les développeurs junior et en participant à la structuration de l'entreprise."
+      ]
+    },
+    "ededoc": {
+      "description": [
+        "Pendant cette expérience professionnelle, j'ai appris à coder en C# pour travailler sur le développement d'une application d'imprimante virtuelle destinée à la dématérialisation de documents pour les entreprises. Mes principales tâches ont consisté à créer un système autour des emails pour m'assurer de la traçabilité de la livraison des emails en gérant les bounces, ainsi que l'intégration de la signature electronique de documents dans le flux de travail de l'imprimante. J'ai également travaillé sur du JavaScript en développant un système de scrapping qui permettait de récupérer des factures sur des portails de FAI. Cette expérience professionnelle m'a permis de développer mes compétences en développement d'applications natives et en traitement de données à partir de sites Web."
+      ]
+    },
+    "monbuilding": {
+      "description": [
+        "Pendant cette courte expérience professionnelle, j'ai découvert Meteor.js et commencé à apprendre ReactJS. J'ai eu la responsabilité d'intégrer le suivi de machines à laver avec pour objectif d'avoir l'information en quasi temps-réel. Cela a été une expérience enrichissante car c'était ma première expérience dans l'univers NodeJS et cela a donc été une sorte de révélation sur mon affection pour l'univers JS et les applications temps-réel. Cette expérience m'a permis de découvrir de nouvelles technologies et de renforcer mes compétences en développement web."
+      ]
+    },
+    "solicis": {
+      "description": [
+        "Cette expérience chez Solicis a été difficile car j'ai commencé à approfondir mes connaissances en PHP afin d'intégrer un site vitrine pour une agence de vente de maisons. Celle-ci utilisait le framework Zend. Cependant, j'ai peu apprécié cette expérience, ce qui confirme mon manque d'appétence pour PHP. Bien que cette expérience m'ait permis de développer mes compétences en PHP, j'ai réalisé que ce n'est pas une technologie qui m'intéresse particulièrement."
+      ]
+    },
+    "mscpi": {
+      "description": [
+        "Cette expérience a eu lieu à Paris, au sein de MeilleureSCPI, une société qui gère les accès à l'investissement immobilier dans le cadre de SCPI. J'ai commencé à travailler avec PHP dans le contexte d'un framework legacy et j'ai également développé des composants en Vue.js 2. Cela m'a permis également d'apprendre Bootstrap et de travailler en équipe avec Git. Cette expérience m'a donné l'occasion de développer mes compétences en PHP et en développement web, ainsi que de travailler avec des technologies modernes."
+      ]
+    }
+  },
+  "inspect": {
+    "more": "En voir plus",
+    "repository": "Voir le code source",
+    "website": "Voir le site web"
+  },
+  "projects": {
+    "title": "Si vous voulez en voir plus vous pouvez toujours aller voir sur <0>mon $t(social.github)</0>",
+    "portfolio": {
+      "title": "Ce portfolio",
+      "link": "https://valentin-thomas.com",
+      "description": [
+        "Ce portfolio, ainsi que mon CV au format PDF, est un site entièrement développé par mes soins."
+      ]
+    },
+    "tweaks": {
+      "title": "Tweaks Asylum",
+      "description": [
+        "J'ai eu l'opportunité de contribuer bénévolement au projet Twisted Tweaks, en travaillant sur l'intégration de fonctionnalités. J'ai particulièrement focalisé mes efforts sur la résolution de bugs et l'ajout du domaine ENS (Ethereum Name Service). Mon engagement m'a permis d'acquérir une expérience précieuse en programmation et en développement, tout en renforçant la communauté."
+      ]
+    },
+    "kwsn": {
+      "title": "Knights Who Say Nah",
+      "description": [
+        "Dans le projet \"Knights Who Say Nah\", j'ai activement résolu un bug bloquant les transactions blockchain après une victoire. J'ai volontairement apporté mon aide pour améliorer l'expérience des utilisateurs. Mon travail a abouti à la résolution du bug, offrant aux joueurs la possibilité de réaliser des transactions sans encombre après leurs succès. Cette expérience m'a rappelé l'impact positif de l'entraide dans des projets significatifs."
+      ]
+    },
+    "bellz": {
+      "title": "Bellz",
+      "description": [
+        "Bellz est une application de gestion comptable destinée aux particuliers qui souhaitent mieux gérer leurs finances. Elle permet de lister les transactions et les comptes de manière organisée, ce qui facilite la prise de décision financière. L'application offre également la possibilité de partager ces informations avec d'autres personnes, ce qui peut être utile lorsqu'on travaille en couple ou en famille. Disponible en tant que service web, Bellz permet aux utilisateurs de suivre leur comptabilité depuis n'importe où et à tout moment. En utilisant cette application, les particuliers peuvent atteindre leurs objectifs financiers de manière plus efficace et organisée.",
+        "Cette application a été construite autour de Remix afin d'apprendre a utiliser ce framework ainsi que d'apprendre certaines optimisations de sorte a reduire le temps de chargement et rendre l'application la plus rapide possible. Elle a été pensée pour permettre une utilisation sans javascript sur le front ainsi que dans des conditions de reseau hautement dégradée.",
+        "Elle m'aura aussi permis de produire une base de projet baser sur Remix, TailwindCSS et revolut afin d'avoir un template de service SaaS complet et performant."
+      ]
+    },
+    "deadsafe": {
+      "title": "The DeadSafe",
+      "link": "https://the-deadsafe.com",
+      "description": [
+        "Le projet DeadSafe est un jeu ambitieux de gestion décentralisée basé sur les NFTs, dont le but est de déverrouiller l'accès à un coffre-fort.",
+        "DeadSafe est en cours de développement. Cependant, une partie de la documentation du projet est déjà disponible sur le site web."
+      ]
+    },
+    "decentralizedblog": {
+      "title": "The Decentralized Blog",
+      "link": "http://blog.majortom327.eth",
+      "description": [
+        "Ce projet est un blog décentralisé qui exploite IPFS comme système de stockage de contenu et Ethereum comme blockchain pour stocker la liste des articles."
+      ]
+    },
+    "basemint": {
+      "title": "BaseMint",
+      "link": "https://github.com/MajorTom327/basemint",
+      "description": [
+        "Le projet de basemint est un fanart dont l'objectif est d'apprendre l'utilisation du web3 et les interractions avec un contrat ethereum. Dans le cas ci present, le contrat de VirtueAnimation pour leur NFT BaseMint Buds.",
+        "J'ai pu ainsi apprendre a afficher les informations de base d'un contrat et interagir avec au travers de javascript"
+      ]
+    },
+    "andromeda": {
+      "title": "Andromeda",
+      "link": "https://github.com/MajorTom327/andromeda",
+      "description": [
+        "Andromeda est une application conçue pour aider les développeurs à mieux gérer leur temps et à se souvenir de ce qu'ils ont accompli la veille. Elle offre une interface Kanban facile à utiliser qui permet aux développeurs de suivre leur journée de travail et de se remémorer ce qu'ils ont accompli lors de leur Daily. Cette application est développée en Meteor avec React et utilise MongoDB comme base de données. Elle permet aux développeurs de mieux organiser leur travail et de suivre leur progression de manière efficace.",
+        "J'ai pu profiter de la creation de cette application pour pouvoir travailler sur une interface donnant un etat visuel des choses a travers des animations de la page."
+      ]
+    },
+    "styx": {
+      "title": "Styx",
+      "description": [
+        "Styx est une application de gestion de clients pour crématorium. Elle permet de gérer facilement les défunts et les informations associées.",
+        "Cette application est un SaaS complet développé en autonomie pour répondre rapidement à un besoin. Elle a demandé un long temps de développement mais est toujours en production avec des mises à jour régulières afin de continuer à répondre aux besoins.",
+        "La version actuelle est en PHP avec MariaDB, mais les développements se concentrent sur l'implémentation à travers une stack TypeScript en utilisant Remix, TailwindCSS et Postgresql."
+      ]
+    },
+    "emdr": {
+      "title": "EMDR-Dinan",
+      "description": [
+        "Ce site web a été développé pour un client qui souhaitait avoir un site de présentation pour sa pratique de l'EMDR. Il a été développé en JavaScript avec Remix.run. Il s'agit d'un site web simple qui permet au client de présenter sa pratique et ses coordonnées de contact.",
+        "Une attention particulière a été accordée à l'optimisation du référencement (SEO) du site, au temps de chargement et à l'impact écologique du site."
+      ]
+    }
+  },
+  "cv": {
+    "printable": "Version imprimable"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "description": "Vous pouvez me contacter via le formulaire ci-dessous ou par email à l'adresse suivante :",
+    "name": "Votre nom",
+    "subject": "Sujet de votre message",
+    "message": "Votre message",
+    "email": "Votre email de contact",
+    "send": "Envoyer",
+    "captcha": "Captcha",
+    "captcha_label": "En raison d'un nombre de spams trop important, je vous demande de remplir ce simple captcha afin de pouvoir envoyer votre message. Merci de votre compréhension.",
+    "submited": "Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais."
+  },
+  "hobbies": {
+    "title": "Mes hobbies",
+    "game": "Jeux videos",
+    "code": "Code",
+    "gym": "Gym",
+    "blockchain": "Blockchain"
+  },
+  "workingValues": {
+    "title": "Certaines valeurs dans le travail qui me sont chères",
+    "pride": {
+      "title": "La fierté",
+      "description": "Je pense que réaliser quelque chose de bien fait et de propre est une source de fierté et de motivation. L'idée même de pouvoir montrer ce que j'ai fait et de pouvoir en parler avec fierté est un des moteurs de mon travail. Je pense que les créations numériques sont des choses dont la réalisation apporte quelque chose à autrui."
+    },
+    "kindness": {
+      "title": "La bienveillance",
+      "description": "L'apprentissage est un long parcours. Tout le monde apprend et a son rythme. Tout le monde a quelque chose à apprendre aux autres. Je préfère partir du principe que les personnes avec qui j'interagis ont quelque chose à m'apporter. C'est quelque chose qui me permet de rester ouvert, d'apporter mon aide tout en apprenant de mes interlocuteurs."
+    }
+  },
+  "errors": {
+    "title": "Quelque chose s'est mal passé",
+    "description": "Essayez de nous contacter pour nous en informer.",
+    "404": "La page que vous recherchez n'existe pas.",
+    "401": "Vous n'êtes pas autorisé à accéder à cette page.",
+    "403": "Vous n'êtes pas autorisé à accéder à cette page.",
+    "500": "Une erreur interne est survenue. Essayez de nous contacter pour nous en informer."
+  }
+}
