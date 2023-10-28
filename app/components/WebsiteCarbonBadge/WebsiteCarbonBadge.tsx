@@ -1,16 +1,11 @@
-import React from "react";
-import CarbonBadge from "react-carbonbadge";
+import type React from "react";
 
-type Props = {};
+// import CarbonBadge from "react-carbonbadge";
 
-export const WebsiteCarbonBadge: React.FC<Props> = ({}) => {
-  return (
-    <>
-      <CarbonBadge darkMode={true} />
-    </>
-  );
+// Bug: Cannot load the CarbonBadge component from react-carbonbadge and render it
+export const WebsiteCarbonBadge: React.FC = () => {
+  return null;
+  // return <CarbonBadge darkMode={true} />;
 };
-
-WebsiteCarbonBadge.defaultProps = {};
 
 export default WebsiteCarbonBadge;

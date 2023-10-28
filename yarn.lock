@@ -714,6 +714,11 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.6.tgz#22958c042e10b67463997bd6ea7115fe28cbcaf9"
   integrity sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==
 
+"@hookform/resolvers@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-3.3.2.tgz#5c40f06fe8137390b071d961c66d27ee8f76f3bc"
+  integrity sha512-Tw+GGPnBp+5DOsSg4ek3LCPgkBOuOgS5DsDV7qsWNH9LZc433kgsWICjlsh2J9p04H2K66hsXPPb9qn9ILdUtA==
+
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.11.tgz#88a04c570dbbc7dd943e4712429c3df09bc32844"
@@ -5454,6 +5459,11 @@ node-releases@^2.0.13:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
 
+nodemailer@^6.9.7:
+  version "6.9.7"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.7.tgz#ec2f488f62ba1558e7b19239b62778df4a5c4397"
+  integrity sha512-rUtR77ksqex/eZRLmQ21LKVH5nAAsVicAtAYudK7JgwenEDZ0UIQ1adUGqErz7sMkWYxWTTU1aeP2Jga6WQyJw==
+
 normalize-package-data@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-5.0.0.tgz#abcb8d7e724c40d88462b84982f7cbf6859b4588"
@@ -6180,6 +6190,11 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-carbonbadge@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-carbonbadge/-/react-carbonbadge-2.0.0.tgz#41777b2a6ca53d43480375a79f9ab6c715766bae"
+  integrity sha512-KzKUYsL0qtGyvZopVGB/+furoQ0kZytLLdXd/apnr/QsM8zzKabnPq3IHe2b8oenHUBSSrE1oVAFdxIQEl5TzQ==
+
 react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -6187,6 +6202,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-hook-form@^7.47.0:
+  version "7.47.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.47.0.tgz#a42f07266bd297ddf1f914f08f4b5f9783262f31"
+  integrity sha512-F/TroLjTICipmHeFlMrLtNLceO2xr1jU3CyiNla5zdwsGUGu2UOxxR4UyJgLlhMwLW/Wzp4cpJ7CPfgJIeKdSg==
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.0.0, react-is@^18.2.0:
   version "18.2.0"
@@ -6425,10 +6445,10 @@ remix-auth@^3.5.1:
   dependencies:
     uuid "^8.3.2"
 
-remix-hook-form@^2.0.1:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-2.0.3.tgz#c9deebbc2f4e8ac325acfba5ca8e93696526d465"
-  integrity sha512-3ScK/bChqD4onAYVMFMLH0Z3mALek1hxPGqZP+New8JcZjJZG+lV/TKKnVCdPLhCpLznTYBb2BzVs0giHOIiQw==
+remix-hook-form@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-3.0.3.tgz#5f5de09dfaf6e045b7d2dcbb423b5f27bcc1d052"
+  integrity sha512-UumNt97tKbZO2BYyBHJORYRrzLMF/G+kx0R/pnDw18TVAFoIjRcOM5vFKbCnJu+15etJH8c5521OWDXpGz03Ig==
 
 remix-utils@^7.0.2:
   version "7.0.2"

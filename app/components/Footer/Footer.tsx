@@ -47,11 +47,11 @@ export const Footer: React.FC<Props> = ({}) => {
         </a>
       </div>
 
-      {process.env.NODE_ENV !== "development" && (
+      {/* {process.env.NODE_ENV !== "development" && (
         <div className="flex justify-center gap-4">
           <WebsiteCarbonBadge />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

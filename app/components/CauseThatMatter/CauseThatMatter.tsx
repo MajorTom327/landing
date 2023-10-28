@@ -10,9 +10,9 @@ import Title from "../Title";
 type Props = {};
 
 const causes = [
-  { title: "causes.spa.title", route: "/home/cause/spa" },
-  { title: "causes.resto.title", route: "/home/cause/resto" },
-  { title: "causes.privacy.title", route: "/home/cause/privacy" },
+  { title: "causes.spa.title", route: "/cause/spa" },
+  { title: "causes.resto.title", route: "/cause/resto" },
+  { title: "causes.privacy.title", route: "/cause/privacy" },
 ];
 
 export const CauseThatMatter: React.FC<Props> = ({}) => {
@@ -44,7 +44,7 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
         </div>
       </div>
 
-      <Routlet route={"/home/cause"} />
+      <Routlet route={"/cause"} />
     </>
   );
 };
