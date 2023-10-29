@@ -17,8 +17,8 @@ export const Skill: React.FC<Props> = ({ title, level, duration, unit }) => {
   const { t } = useTranslation();
 
   const labelPractice = cond([
-    [equals("years"), () => t("time.experience.year")],
-    [equals("months"), () => t("time.experience.month")],
+    [equals("years"), () => "time.experience.year"],
+    [equals("months"), () => "time.experience.month"],
   ])(unit);
 
   return (

@@ -79,10 +79,8 @@
   "time": {
     "now": "now",
     "experience": {
-      "month_one": "$t(skills.practiced) 1 month",
-      "month_other": "$t(skills.practiced) {{count}} months",
-      "year_one": "$t(skills.practiced) 1 year",
-      "year_other": "$t(skills.practiced) {{count}} years"
+      "month": "Practicing during {{count}} months",
+      "year": "Practicing during {{count}} years"
     }
   },
   "skills": {
@@ -120,7 +118,13 @@
     "fullstack": "Fullstack Developer",
     "csharp": "C# Developer"
   },
-  "societies": {},
+  "societies": {
+    "fasst": "F.ASS.T",
+    "ededoc": "Ededoc",
+    "monbuilding": "MonBuilding",
+    "solicis": "Solicis",
+    "mscpi": "MeilleureSCPI"
+  },
   "experiences": {
     "fasst": {
       "description": [
@@ -234,6 +238,7 @@
   },
   "contact": {
     "title": "Contact me",
+    "description": "You can contact me via the form below or by email at the following address:",
     "name": "Your name",
     "subject": "The subjet of your message",
     "message": "Your message",

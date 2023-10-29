@@ -2,6 +2,7 @@
   "name": "landing",
   "private": true,
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "build": "remix build",
     "create:page": "node ./scripts/createPage.mjs",

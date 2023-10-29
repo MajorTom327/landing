@@ -27,6 +27,7 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
             <NavLink
               key={cause.title}
               prefetch="intent"
+              preventScrollReset
               className={({ isActive }) =>
                 classNames(
                   "px-4 py-2 rounded transition-colors text-lg w-full text-center",

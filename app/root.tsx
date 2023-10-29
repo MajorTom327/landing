@@ -2,6 +2,7 @@
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -27,6 +28,7 @@ import stylesheet from "~/tailwind.css";
 
 import Layout from "./components/Layout";
 import Footer from "./components/Layout/Footer";
+import MusicPlayer from "./components/MusicPlayer";
 import Navbar from "./components/Navbar";
 import { Button } from "./components/ui/button";
 import { Toaster } from "./components/ui/toaster";
@@ -91,6 +93,14 @@ export default function App() {
                   </Button>
                 </Navbar.Brand>
               </div>
+
+              <MusicPlayer />
+
+              <Navbar.Menu>
+                <Navbar.Item to="/projects" label="menu.project" />
+                <Navbar.Item to="/resume" label="menu.cv" />
+                <Navbar.Item to="/contact" label="menu.contact" />
+              </Navbar.Menu>
             </Navbar>
           }
           footer={<Footer />}

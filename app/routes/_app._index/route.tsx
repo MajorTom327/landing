@@ -8,12 +8,6 @@ import MyValues from "~/components/MyValues";
 
 import SomeProject from "./SomeProject";
 
-export function headers() {
-  return {
-    "Cache-Control": "s-maxage=60",
-  };
-}
-
 export const Home: React.FC = () => {
   return (
     <>

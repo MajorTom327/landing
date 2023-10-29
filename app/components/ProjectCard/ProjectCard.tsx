@@ -1,4 +1,4 @@
-import { Link, Outlet } from "@remix-run/react";
+import { Link } from "@remix-run/react";
 import classNames from "classnames";
 import React from "react";
 import type { Project } from "~/data/projects";
@@ -7,7 +7,6 @@ import getImageUrl from "~/lib/getImageUrl";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
-import Routlet from "../Routlet/Routlet";
 import Title from "../Title";
 import TechBadge from "./TechBadge";
 
@@ -27,7 +26,11 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
   return (
     <>
       <div className="z-0 border border-neutral-darken bg-neutral hover:bg-neutral-darken rounded-xl p-4 transition hover:transform hover:motion-safe:-translate-y-1 group">
-        <Link prefetch="intent" to={`/projects/${project.key}`}>
+        <Link
+          prefetch="intent"
+          preventScrollReset
+          to={`/projects/${project.key}`}
+        >
           {project.image && (
             <div className="-mt-4 -mx-4 h-32 rounded-t-xl overflow-y-hidden grayscale group-hover:grayscale-0 transition">
               <img

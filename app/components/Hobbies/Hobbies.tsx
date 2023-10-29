@@ -1,5 +1,5 @@
+import { Bitcoin, Dumbbell, Gamepad2, TerminalSquare } from "lucide-react";
 import React from "react";
-import { FaDumbbell, FaEthereum, FaGamepad, FaTerminal } from "react-icons/fa";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
@@ -12,19 +12,19 @@ type Hobby = {
 
 const hobby: Hobby[] = [
   {
-    icon: <FaGamepad />,
+    icon: <Gamepad2 />,
     description: "hobbies.game",
   },
   {
-    icon: <FaTerminal />,
+    icon: <TerminalSquare />,
     description: "hobbies.code",
   },
   {
-    icon: <FaDumbbell />,
+    icon: <Dumbbell />,
     description: "hobbies.gym",
   },
   {
-    icon: <FaEthereum />,
+    icon: <Bitcoin />,
     description: "hobbies.blockchain",
   },
 ];

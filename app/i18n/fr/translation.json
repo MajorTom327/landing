@@ -79,10 +79,8 @@
   "time": {
     "now": "Maintenant",
     "experience": {
-      "month_one": "$t(skills.practiced) 1 mois",
-      "month_other": "$t(skills.practiced) {{count}} mois",
-      "year_one": "$t(skills.practiced) 1 année",
-      "year_other": "$t(skills.practiced) {{count}} années"
+      "month": "Pratiqué pendant {{count}} mois",
+      "year": "Pratiqué pendant {{count}} années"
     }
   },
   "skills": {

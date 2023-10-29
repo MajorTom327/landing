@@ -1,6 +1,6 @@
+import { ChevronUp } from "lucide-react";
 import { DateTime } from "luxon";
 import React from "react";
-import { FaChevronUp } from "react-icons/fa";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
@@ -24,8 +24,8 @@ const TimelineLine: React.FC<{ isFirst: boolean | undefined }> = ({
       <div className="flex justify-center relative">
         <div className="h-4 w-4 absolute rounded-full bg-secondary group-hover:bg-secondary-lighten top-4 transition-colors"></div>
         {isFirst && (
-          <div className="absolute -top-1 text-gray-300">
-            <FaChevronUp />
+          <div className="absolute -top-2 text-gray-300">
+            <ChevronUp />
           </div>
         )}
         <div className="h-full border border-gray-300 rounded"></div>

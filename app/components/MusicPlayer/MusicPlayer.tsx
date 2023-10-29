@@ -1,7 +1,7 @@
+import { PauseCircle, PlayCircle } from "lucide-react";
 import { not } from "ramda";
 import { isNilOrEmpty } from "ramda-adjunct";
 import React, { useState } from "react";
-import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 import bgmUrl from "~/assets/bgm.mp3";
 
 import { useTranslation } from "~/hooks/useTranslation";
@@ -38,13 +38,13 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
         {() => (
           <>
             <button
-              className="justify-center items-center flex flex-col text-md font-normal"
+              className="justify-center items-center flex flex-col text-sm font-normal"
               onClick={onToggle}
               onMouseEnter={handleHover}
             >
               <div className="flex gap-2 items-center">
                 <div>{t("music.title")}</div>
-                {isPlaying ? <FaPauseCircle /> : <FaPlayCircle />}
+                {isPlaying ? <PauseCircle /> : <PlayCircle />}
               </div>
 
               {isPlaying && (
