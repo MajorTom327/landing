@@ -2,7 +2,6 @@
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -11,6 +10,8 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
+import classNames from "classnames";
+import { EyeOff } from "lucide-react";
 import {
   always,
   compose,
@@ -20,9 +21,12 @@ import {
   includes,
   isEmpty,
   map,
+  not,
   split,
   when,
 } from "ramda";
+import { useState } from "react";
+import { match } from "ts-pattern";
 // import { getClientLocales } from "remix-utils/locales/server";
 import stylesheet from "~/tailwind.css";
 
@@ -32,6 +36,7 @@ import MusicPlayer from "./components/MusicPlayer";
 import Navbar from "./components/Navbar";
 import { Button } from "./components/ui/button";
 import { Toaster } from "./components/ui/toaster";
+import { VisionContext } from "./context/visionContext";
 import { getPublicEnv } from "./lib/env.server";
 import SessionStore from "./services/session.server";
 import type { Locale } from "./types/refs";
@@ -73,6 +78,11 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 
 export default function App() {
   const { env, locale } = useLoaderData<typeof loader>();
+  const [isDeficitVision, setIsDeficitVision] = useState(false);
+
+  const bodyClasses = match(isDeficitVision)
+    .with(true, () => classNames("transition tracking-wider !uppercase"))
+    .otherwise(() => "transition");
 
   return (
     <html lang={locale}>
@@ -82,38 +92,45 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Layout
-          nav={
-            <Navbar>
-              <div className="flex gap-2 items-center">
-                <Navbar.Brand>
-                  <Button color="ghost" to="/">
-                    {env.APP_NAME}
+      <VisionContext.Provider value={isDeficitVision}>
+        <body className={bodyClasses}>
+          <Layout
+            nav={
+              <Navbar>
+                <div className="flex gap-2 items-center">
+                  <Navbar.Brand>
+                    <Button color="ghost" to="/">
+                      {env.APP_NAME}
+                    </Button>
+                  </Navbar.Brand>
+                </div>
+
+                <MusicPlayer />
+
+                <div className="flex gap-2 items-center">
+                  <Navbar.Menu>
+                    <Navbar.Item to="/projects" label="menu.project" />
+                    <Navbar.Item to="/resume" label="menu.cv" />
+                    <Navbar.Item to="/contact" label="menu.contact" />
+                  </Navbar.Menu>
+                  <Button size={"icon"} onClick={() => setIsDeficitVision(not)}>
+                    <EyeOff />
                   </Button>
-                </Navbar.Brand>
-              </div>
+                </div>
+              </Navbar>
+            }
+            footer={<Footer />}
+          >
+            <Outlet />
+          </Layout>
 
-              <MusicPlayer />
+          <Toaster />
 
-              <Navbar.Menu>
-                <Navbar.Item to="/projects" label="menu.project" />
-                <Navbar.Item to="/resume" label="menu.cv" />
-                <Navbar.Item to="/contact" label="menu.contact" />
-              </Navbar.Menu>
-            </Navbar>
-          }
-          footer={<Footer />}
-        >
-          <Outlet />
-        </Layout>
-
-        <Toaster />
-
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </body>
+      </VisionContext.Provider>
     </html>
   );
 }

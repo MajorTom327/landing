@@ -4,7 +4,10 @@
     ".cache": true,
     "api": true,
     "coverage": true,
-    "*.lock": true
+    "*.lock": true,
+    ".react-email": true,
+    ".vercel": true,
+    "build": true
   },
   "prettier.bracketSpacing": true,
   "prettier.enable": true,

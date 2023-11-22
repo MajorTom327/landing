@@ -1,5 +1,6 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useContext } from "react";
+import { VisionContext } from "~/context/visionContext";
 import type { Project } from "~/data/projects";
 
 import TechBadge from "~/components/ProjectCard/TechBadge";
@@ -23,6 +24,8 @@ export const ProjectCard: React.FC<Props> = ({ project, textLight }) => {
 
   const { t } = useTranslation();
 
+  const isDeficitVision = useContext(VisionContext);
+
   return (
     <>
       <div
@@ -32,7 +35,12 @@ export const ProjectCard: React.FC<Props> = ({ project, textLight }) => {
         <Title center lg>
           {t(project.title)}
         </Title>
-        <div className="backdrop-blur-lg lg:backdrop-blur rounded px-2 py-4 transition group-hover:backdrop-blur-xl">
+        <div
+          className={classNames("rounded px-2 py-4 transition", {
+            "backdrop-blur-xl": !isDeficitVision,
+            "bg-black backdrop-blur-xl bg-opacity-50": isDeficitVision,
+          })}
+        >
           <div className="flex flex-wrap justify-center gap-2 my-4">
             {project.techs.map((skill) => (
               <TechBadge key={skill} skill={skill} />

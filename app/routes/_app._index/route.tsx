@@ -6,7 +6,7 @@ import Divider from "~/components/Divider";
 import ErrorHandler from "~/components/ErrorHandler";
 import MyValues from "~/components/MyValues";
 
-import SomeProject from "./SomeProject";
+import SomeProject from "../_app/SomeProject";
 
 export const Home: React.FC = () => {
   return (
