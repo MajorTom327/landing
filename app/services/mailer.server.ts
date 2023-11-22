@@ -1,70 +1,57 @@
-// import nodemailer from "nodemailer";
-// import mg from "nodemailer-mailgun-transport";
-import { isNil } from "ramda";
+import type { Transporter } from "nodemailer";
+import nodeMailer from "nodemailer";
+import zod from "zod";
+import type { EmailOptions } from "~/emails";
+import emails from "~/emails";
 
-// import { isNilOrEmpty, isNotNilOrEmpty } from "ramda-adjunct";
-
-// const api_key = process.env.MAILGUN_API_KEY!;
-// const domain = process.env.MAILGUN_DOMAIN!;
-// const mailgunFrom = process.env.MAILGUN_FROM!;
-
-type MailContactParams = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
-
-// const shouldInitialize = isNotNilOrEmpty(process.env.MAILGUN_API_KEY);
+type SendMailOptions = {
+  from?: string;
+  to: string;
+  cc?: string[];
+  bcc?: string[];
+} & EmailOptions;
 
 export class Mailer {
-  nm: any;
+  transport: Transporter;
 
   constructor() {
-    // const auth = {
-    //   auth: {
-    //     api_key,
-    //     domain,
-    //   },
-    // };
-    // if (shouldInitialize) {
-    //   this.nm = nodemailer.createTransport(mg(auth));
-    // }
+    const { MAILER_HOST, MAILER_PORT, MAILER_USER, MAILER_PASS } = zod
+      .object({
+        MAILER_HOST: zod.string().min(1),
+        MAILER_PORT: zod.string(),
+        MAILER_USER: zod.string(),
+        MAILER_PASS: zod.string(),
+      })
+      .parse(process.env);
+
+    this.transport = nodeMailer.createTransport({
+      host: MAILER_HOST,
+      port: MAILER_PORT,
+      secure: false,
+      auth: {
+        user: MAILER_USER,
+        pass: MAILER_PASS,
+      },
+    });
   }
 
-  contact({ name, email, subject, message }: MailContactParams) {
-    if (isNil(this.nm)) return Promise.reject("Mailer not initialized");
+  sendMail(options: SendMailOptions) {
+    const { from, to, cc, bcc, params, emailId } = options;
 
-    // return this.nm
-    //   .sendMail({
-    //     from: mailgunFrom,
-    //     to: "me@valentin-thomas.com",
-    //     subject: `[WEBSITE CONTACT] ${name} <${email}>: ${subject}`,
-    //     replyTo: `${name} <${email}>`,
-    //     html: `
-    //     <h1>Received a message from your website</h1>
+    const email = new emails[emailId]();
 
-    //     <p>From: ${name} &lt;${email}&gt;</p>
-    //     <p>Subject: ${subject}</p>
-    //     <p>Message: ${message}</p>
-    //   `,
-    //     text: `
-    //     Received a message from your website
+    const renderedEmail = email.render(params);
 
-    //     From: ${name}<${email}>
-    //     Subject: ${subject}
-    //     Message: ${message}
-    //   `,
-    //   })
-    //   .then(() => {
-    //     console.log("Message sent");
-    //   })
-    //   .catch((err: any) => {
-    //     console.error(err);
-    //   });
+    return this.transport.sendMail({
+      from: from || process.env.MAILER_FROM,
+      to,
+      cc,
+      bcc,
+      subject: renderedEmail.subject,
+      text: renderedEmail.text,
+      html: renderedEmail.html,
+    });
   }
 }
 
-export const mailer = new Mailer();
-
-export default mailer;
+export default Mailer;
