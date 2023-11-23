@@ -80,9 +80,12 @@ export default function App() {
   const { env, locale } = useLoaderData<typeof loader>();
   const [isDeficitVision, setIsDeficitVision] = useState(false);
 
-  const bodyClasses = match(isDeficitVision)
-    .with(true, () => classNames("transition tracking-wider !uppercase"))
-    .otherwise(() => "transition");
+  const bodyClasses = classNames(
+    "bg-neutral text-neutral-content transition-all",
+    {
+      "tracking-wider !uppercase": isDeficitVision,
+    }
+  );
 
   return (
     <html lang={locale}>

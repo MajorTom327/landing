@@ -30,15 +30,6 @@ const toDark = (color) => chroma(color).darken(colorModifier.light).hex();
 const getContentColor = (colorHex) => {
   const color = chroma(colorHex);
   return chroma.contrast(color, colors.light) > 4 ? colors.light : colors.dark;
-  // const originalHue = chroma(color).get("hsl.h");
-  // const oppositeHue = (originalHue + 180) % 360;
-  // const oppositeColor = chroma.hsl(
-  //   oppositeHue,
-  //   color.get("hsl.s"),
-  //   color.get("hsl.l")
-  // );
-
-  // return oppositeColor.hex();
 };
 
 module.exports = {

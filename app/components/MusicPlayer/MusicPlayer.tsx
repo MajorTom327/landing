@@ -1,8 +1,10 @@
+import classNames from "classnames";
 import { PauseCircle, PlayCircle } from "lucide-react";
 import { not } from "ramda";
 import { isNilOrEmpty } from "ramda-adjunct";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import bgmUrl from "~/assets/bgm.mp3";
+import { VisionContext } from "~/context/visionContext";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
@@ -32,13 +34,20 @@ export const MusicPlayer: React.FC<Props> = ({}) => {
     if (isNilOrEmpty(currentUrl)) setCurrentUrl(bgmUrl);
   };
 
+  const isDeficitVision = useContext(VisionContext);
+
   return (
     <>
       <ClientOnly fallback={<></>}>
         {() => (
           <>
             <button
-              className="justify-center items-center flex flex-col text-sm font-normal"
+              className={classNames(
+                "justify-center items-center flex flex-col text-sm font-normal",
+                {
+                  "tracking-wider !uppercase": isDeficitVision,
+                }
+              )}
               onClick={onToggle}
               onMouseEnter={handleHover}
             >
