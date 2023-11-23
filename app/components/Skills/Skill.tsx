@@ -24,16 +24,16 @@ export const Skill: React.FC<Props> = ({ title, level, duration, unit }) => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex flex-col border rounded-3xl p-4 group w-full cursor-default">
-          <div className="text-2xl group-hover:scale-150 transition transform group-hover:-translate-y-5 font-semibold">
+        <div className="flex flex-col border rounded-3xl p-4 group w-full cursor-default justify-center items-center relative">
+          <div className="text-2xl group-hover:scale-150 transition transform group-hover:-translate-y-4 font-semibold">
             {t(title)}
           </div>
-          <div className="relative">
+          <div className="">
             <div className="text-xl text-gray-300 group-hover:opacity-0 transition ">
               {t(`skills.levels.${level}`)}
             </div>
             {duration && (
-              <div className="text-xl absolute top-0 right-0 left-0 text-gray-400 group-hover:opacity-100 opacity-0 transition ">
+              <div className="text-xl absolute top-12 right-0 left-0 text-center text-gray-400 group-hover:opacity-100 opacity-0 transition ">
                 {t(labelPractice, { count: duration })}
               </div>
             )}

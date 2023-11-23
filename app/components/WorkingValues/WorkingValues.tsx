@@ -2,6 +2,8 @@ import React from "react";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
+import { Card, CardContent, CardTitle } from "../ui/card";
+
 type Props = {};
 
 type WorkingValue = {
@@ -27,22 +29,30 @@ export const WorkingValues: React.FC<Props> = ({}) => {
   return (
     <>
       <div className="flex items-center justify-center w-full my-8 px-4 lg:px-16">
-        <div className="shadow-lg rounded-xl border border-gray-200 p-4 text-center flex flex-col gap-6 w-full">
-          <div className="text-4xl font-bold">{t("workingValues.title")}:</div>
-          <div className="flex flex-col gap-4">
-            {workingValues.map((workingValue, index) => (
-              <div
-                className="flex flex-col items-center gap-2 px-6 justify-center"
-                key={workingValue.label}
-              >
-                <div className="text-2xl">{t(workingValue.label)}</div>
-                <div className="text-gray-500">
-                  <p className="text-justify">{t(workingValue.description)}</p>
+        <Card>
+          <CardContent>
+            <CardTitle className="">
+              <h1 className="text-4xl font-bold mb-2 text-center">
+                {t("workingValues.title")}:
+              </h1>
+            </CardTitle>
+            <div className="flex flex-col gap-4">
+              {workingValues.map((workingValue, index) => (
+                <div
+                  className="flex flex-col items-center gap-2 px-6 justify-center"
+                  key={workingValue.label}
+                >
+                  <h2 className="text-2xl">{t(workingValue.label)}</h2>
+                  <div className="text-gray-500">
+                    <p className="text-justify">
+                      {t(workingValue.description)}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </>
   );

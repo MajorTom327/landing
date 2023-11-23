@@ -131,7 +131,7 @@ export const Index: React.FC<Props> = ({}) => {
 
   return (
     <>
-      <div className="flex items-center justify-center w-full my-8 px-2">
+      <div className="flex flex-col items-center justify-center w-full my-8 px-2">
         <div className="shadow-lg rounded-xl border border-gray-200 p-4 text-center gap-4">
           <div className="text-4xl font-bold">{t("contact.title")}</div>
           <div className="text-gray-500">

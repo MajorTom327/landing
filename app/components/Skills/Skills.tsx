@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslation } from "~/hooks/useTranslation";
 
 import Title from "../Title";
+import { Card, CardContent, CardTitle } from "../ui/card";
 import type { SkillProps } from "./Skill";
 import Skill from "./Skill";
 
@@ -50,14 +51,23 @@ export const Skills: React.FC<Props> = ({}) => {
   return (
     <>
       <div className="flex items-center justify-center w-full my-8 px-4 lg:px-16">
-        <div className="shadow-lg rounded-xl border border-gray-200 p-4 text-center flex flex-col gap-6 w-full">
-          <Title xl>{t("skills.title")}</Title>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {skills.map((skill, i) => (
-              <Skill key={i} {...skill} />
-            ))}
-          </div>
-        </div>
+        <Card className="w-full">
+          <CardContent>
+            <CardTitle>
+              <Title xl center>
+                {t("skills.title")}
+              </Title>
+            </CardTitle>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skills.map((skill, i) => (
+                <Skill key={i} {...skill} />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+        {/* <div className="shadow-lg rounded-xl border border-gray-200 p-4 text-center flex flex-col gap-6 w-full">
+        </div> */}
       </div>
     </>
   );
