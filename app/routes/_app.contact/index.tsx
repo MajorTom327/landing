@@ -9,8 +9,10 @@ import {
   getValidatedFormData,
   useRemixForm,
 } from "remix-hook-form";
+import { HoneypotInputs } from "remix-utils/honeypot/react";
 import zod from "zod";
 
+import { honeypot } from "~/services/honeypot.server";
 import mailer from "~/services/mailer.server";
 import { sessionStorage } from "~/services/session.server";
 
@@ -150,6 +152,7 @@ export const Index: React.FC<Props> = ({}) => {
               onSubmit={form.handleSubmit}
               className="flex flex-col text-left mt-8 gap-4"
             >
+              <HoneypotInputs label="Please leave this field blank" />
               <Input label="contact.name" name="name" required />
               <Input label="contact.subject" name="subject" required />
               <Input type="email" label="contact.email" name="email" required />
@@ -199,6 +202,13 @@ export const ErrorBoundary = () => <ErrorView />;
 
 export const action: ActionFunction = async ({ request }) => {
   let session = await sessionStorage.getSession(request.headers.get("Cookie"));
+
+  const formData = await request.clone().formData();
+  try {
+    honeypot.check(formData);
+  } catch (error) {
+    return redirect("/contact", 400);
+  }
 
   const {
     errors,

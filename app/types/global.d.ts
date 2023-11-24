@@ -4,6 +4,8 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv extends IEnvVars {}
   }
+
+  const BUILD_DATE: string;
 }
 
 export {};

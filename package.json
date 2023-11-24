@@ -7,7 +7,7 @@
     ".react-email"
   ],
   "scripts": {
-    "build": "remix build",
+    "build": "remix build && sh ./scripts/postBuild.sh",
     "create:page": "node ./scripts/createPage.mjs",
     "db:gen": "prisma generate",
     "db:migrate": "prisma migrate dev",

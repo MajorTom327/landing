@@ -26,9 +26,10 @@ import {
   when,
 } from "ramda";
 import { useState } from "react";
-import { match } from "ts-pattern";
-// import { getClientLocales } from "remix-utils/locales/server";
+import { HoneypotProvider } from "remix-utils/honeypot/react";
 import stylesheet from "~/tailwind.css";
+
+import { honeypot } from "~/services/honeypot.server";
 
 import Layout from "./components/Layout";
 import Footer from "./components/Layout/Footer";
@@ -69,6 +70,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
       csrf,
       env,
       locale,
+      honeypotInputProps: honeypot.getInputProps(),
     },
     {
       headers: await session.withCookieHeader({}),
@@ -77,7 +79,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 };
 
 export default function App() {
-  const { env, locale } = useLoaderData<typeof loader>();
+  const { env, locale, honeypotInputProps } = useLoaderData<typeof loader>();
   const [isDeficitVision, setIsDeficitVision] = useState(false);
 
   const bodyClasses = classNames(
@@ -95,45 +97,50 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <VisionContext.Provider value={isDeficitVision}>
-        <body className={bodyClasses}>
-          <Layout
-            nav={
-              <Navbar>
-                <div className="flex gap-2 items-center">
-                  <Navbar.Brand>
-                    <Button color="ghost" to="/">
-                      {env.APP_NAME}
+      <HoneypotProvider {...honeypotInputProps}>
+        <VisionContext.Provider value={isDeficitVision}>
+          <body className={bodyClasses}>
+            <Layout
+              nav={
+                <Navbar>
+                  <div className="flex gap-2 items-center">
+                    <Navbar.Brand>
+                      <Button color="ghost" to="/">
+                        {env.APP_NAME}
+                      </Button>
+                    </Navbar.Brand>
+                  </div>
+
+                  <MusicPlayer />
+
+                  <div className="flex gap-2 items-center">
+                    <Navbar.Menu>
+                      <Navbar.Item to="/projects" label="menu.project" />
+                      <Navbar.Item to="/resume" label="menu.cv" />
+                      <Navbar.Item to="/contact" label="menu.contact" />
+                    </Navbar.Menu>
+                    <Button
+                      size={"icon"}
+                      onClick={() => setIsDeficitVision(not)}
+                    >
+                      <EyeOff />
                     </Button>
-                  </Navbar.Brand>
-                </div>
+                  </div>
+                </Navbar>
+              }
+              footer={<Footer />}
+            >
+              <Outlet />
+            </Layout>
 
-                <MusicPlayer />
+            <Toaster />
 
-                <div className="flex gap-2 items-center">
-                  <Navbar.Menu>
-                    <Navbar.Item to="/projects" label="menu.project" />
-                    <Navbar.Item to="/resume" label="menu.cv" />
-                    <Navbar.Item to="/contact" label="menu.contact" />
-                  </Navbar.Menu>
-                  <Button size={"icon"} onClick={() => setIsDeficitVision(not)}>
-                    <EyeOff />
-                  </Button>
-                </div>
-              </Navbar>
-            }
-            footer={<Footer />}
-          >
-            <Outlet />
-          </Layout>
-
-          <Toaster />
-
-          <ScrollRestoration />
-          <Scripts />
-          <LiveReload />
-        </body>
-      </VisionContext.Provider>
+            <ScrollRestoration />
+            <Scripts />
+            <LiveReload />
+          </body>
+        </VisionContext.Provider>
+      </HoneypotProvider>
     </html>
   );
 }
