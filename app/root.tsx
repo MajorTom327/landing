@@ -1,6 +1,7 @@
 // import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/react";
 import {
   Links,
   LiveReload,
@@ -10,6 +11,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
+import { Analytics } from "@vercel/analytics/react";
 import classNames from "classnames";
 import { EyeOff } from "lucide-react";
 import {
@@ -43,11 +45,59 @@ import SessionStore from "./services/session.server";
 import type { Locale } from "./types/refs";
 
 export const links: LinksFunction = () => [
-  // ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
   { rel: "stylesheet", href: stylesheet },
+  {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/apple-touch-icon.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/favicon-32x32.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/favicon-16x16.png",
+  },
+  {
+    rel: "manifest",
+    href: "/site.webmanifest",
+  },
+  {
+    rel: "mask-icon",
+    href: "/safari-pinned-tab.svg",
+    color: "#5bbad5",
+  },
 ];
 
 const acceptedLocales = ["en", "fr"];
+
+export const meta: MetaFunction = () => {
+  return [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width,initial-scale=1" },
+    { title: "Valentin Thomas" },
+    {
+      name: "description",
+      content:
+        "Valentin THOMAS is a developper and here you can find his experiences and his CV",
+    },
+
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: "Valentin Thomas" },
+    { property: "og:image", content: getImageUrl("/valentin-thomas.png") },
+    { property: "og:url", content: "https://valentin-thomas.com" },
+    { property: "og:site_name", content: "Valentin Thomas" },
+    {
+      property: "og:description",
+      content: `You're looking for a senior fullstack developper ? Maybe it's me, take a look at my CV and my experiences to know more about me.`,
+    },
+  ];
+};
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const session = await new SessionStore(request).load();
@@ -134,10 +184,15 @@ export default function App() {
             </Layout>
 
             <Toaster />
-
+            <Analytics />
             <ScrollRestoration />
             <Scripts />
             <LiveReload />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.ENV = ${JSON.stringify(env)}`,
+              }}
+            />
           </body>
         </VisionContext.Provider>
       </HoneypotProvider>

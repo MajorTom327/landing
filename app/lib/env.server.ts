@@ -4,6 +4,7 @@ export const publicEnvSchema = zod.object({
   NODE_ENV: zod.enum(["development", "production", "test"]),
   APP_NAME: zod.string().default("My App"),
   APP_URL: zod.string().default("http://localhost:3000"),
+  VERCEL_ANALYTICS_ID: zod.string().optional(),
 });
 
 export const envSchema = zod
