@@ -1,3 +1,4 @@
+import { v4 as uuid } from "uuid";
 import zod from "zod";
 
 export const publicEnvSchema = zod.object({
@@ -7,7 +8,12 @@ export const publicEnvSchema = zod.object({
   VERCEL_ANALYTICS_ID: zod.string().optional(),
 });
 
-export const envSchema = zod.object({}).merge(publicEnvSchema);
+export const envSchema = zod
+  .object({
+    APP_KEY: zod.string().default(uuid()),
+    SESSION_SECRET: zod.string().uuid().default(uuid()),
+  })
+  .merge(publicEnvSchema);
 
 export type IEnvVars = zod.infer<typeof envSchema>;
 
