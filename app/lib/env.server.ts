@@ -2,17 +2,12 @@ import zod from "zod";
 
 export const publicEnvSchema = zod.object({
   NODE_ENV: zod.enum(["development", "production", "test"]),
-  APP_NAME: zod.string().default("My App"),
+  APP_NAME: zod.string().default("Valentin Thomas"),
   APP_URL: zod.string().default("http://localhost:3000"),
   VERCEL_ANALYTICS_ID: zod.string().optional(),
 });
 
-export const envSchema = zod
-  .object({
-    APP_KEY: zod.string(),
-    SESSION_SECRET: zod.string().uuid(),
-  })
-  .merge(publicEnvSchema);
+export const envSchema = zod.object({}).merge(publicEnvSchema);
 
 export type IEnvVars = zod.infer<typeof envSchema>;
 

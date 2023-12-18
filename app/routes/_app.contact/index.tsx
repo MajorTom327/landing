@@ -1,5 +1,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
+import type {
+  ActionFunction,
+  LoaderFunction,
+  MetaFunction,
+} from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import { Form, useLoaderData, useNavigation } from "@remix-run/react";
 import { isNilOrEmpty, isNotNil } from "ramda-adjunct";
@@ -11,6 +15,8 @@ import {
 } from "remix-hook-form";
 import { HoneypotInputs } from "remix-utils/honeypot/react";
 import zod from "zod";
+
+import subtitle from "~/lib/subtitle";
 
 import { honeypot } from "~/services/honeypot.server";
 import mailer from "~/services/mailer.server";
@@ -84,6 +90,10 @@ const generateCaptcha = () => {
     .sort(() => Math.random() - 0.5)
     .slice(0, 5)
     .join("");
+};
+
+export const meta: MetaFunction = ({ matches }) => {
+  return subtitle("Contact me", matches);
 };
 
 export const loader: LoaderFunction = async ({ request }) => {

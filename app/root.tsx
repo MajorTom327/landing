@@ -41,6 +41,7 @@ import { Button } from "./components/ui/button";
 import { Toaster } from "./components/ui/toaster";
 import { VisionContext } from "./context/visionContext";
 import { getPublicEnv } from "./lib/env.server";
+import getImageUrl from "./lib/getImageUrl";
 import SessionStore from "./services/session.server";
 import type { Locale } from "./types/refs";
 

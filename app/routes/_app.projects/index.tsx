@@ -1,6 +1,9 @@
+import type { MetaFunction } from "@remix-run/node";
 import React from "react";
 import projects from "~/data/projects";
 import constants from "~/refs/constants";
+
+import subtitle from "~/lib/subtitle";
 
 import ErrorView from "~/components/ErrorView";
 import ProjectCard from "~/components/ProjectCard/ProjectCard";
@@ -16,6 +19,10 @@ export function headers() {
     "Cache-Control": "s-maxage=60",
   };
 }
+
+export const meta: MetaFunction = ({ matches }) => {
+  return subtitle("My projects", matches);
+};
 
 export const Index: React.FC<Props> = ({}) => {
   const { t } = useTranslation();
