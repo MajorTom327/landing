@@ -5,7 +5,7 @@ const key = /BUILD_DATE/g;
 const date = new Date().toISOString();
 
 (() => {
-  const dir = path.join(__dirname, "../dist");
+  const dir = path.resolve("./build");
 
   fs.readdirSync(dir).forEach((file) => {
     const filePath = path.join(dir, file);
