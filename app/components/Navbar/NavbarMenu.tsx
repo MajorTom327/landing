@@ -7,7 +7,7 @@ type Props = {
 export const NavbarMenu: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <div className="flex gap-2">{children}</div>
+      <div className="flex justify-evenly gap-2">{children}</div>
     </>
   );
 };

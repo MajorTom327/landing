@@ -7398,11 +7398,6 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-carbonbadge@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-carbonbadge/-/react-carbonbadge-2.0.0.tgz#41777b2a6ca53d43480375a79f9ab6c715766bae"
-  integrity sha512-KzKUYsL0qtGyvZopVGB/+furoQ0kZytLLdXd/apnr/QsM8zzKabnPq3IHe2b8oenHUBSSrE1oVAFdxIQEl5TzQ==
-
 react-dom@18.2.0, react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
