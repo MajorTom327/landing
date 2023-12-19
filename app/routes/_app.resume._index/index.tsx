@@ -22,7 +22,7 @@ export const Index: React.FC<Props> = ({}) => {
   return (
     <>
       <div className="flex justify-center py-2">
-        <Button to="/resume/viewer">{t("cv.printable")}</Button>
+        <Button to="/resume/pdf">{t("cv.printable")}</Button>
       </div>
       <WorkingValues />
       <SkillsCard />
