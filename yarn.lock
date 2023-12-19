@@ -5754,10 +5754,10 @@ lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.1.0.tgz#2098d41c2dc56500e6c88584aa656c84de7d0484"
   integrity sha512-/1clY/ui8CzjKFyjdvwPWJUYKiFVXG2I2cY0ssG7h4+hwk+XOIX7ZSG9Q7TW8TW3Kp3BUSqgFWBLgL4PJ+Blag==
 
-lucide-react@^0.285.0:
-  version "0.285.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.285.0.tgz#2929460f74aeb6b709ef5c1f9fad7cd208cd6507"
-  integrity sha512-TvWtS0Zc2lT0wTMyD+sEB7x9TM/38MQMJfJbQMMWJOsPx+lEaWBk1aKalqhCZj/Vbl2r00Uqln7xTTY2T7R63g==
+lucide-react@^0.298.0:
+  version "0.298.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.298.0.tgz#1f4e5b8d848f339fc105f8eb959ca62467feb08a"
+  integrity sha512-tWoxZ663Zf/n8VxXTHnTJsU/w1ysWT1LORnIL1pzqElFdSqBhWbZeJ3sLdCZ5FpzpbkpkYEtluhuTyG2BTDYNQ==
 
 luxon@^3.4.3:
   version "3.4.4"
