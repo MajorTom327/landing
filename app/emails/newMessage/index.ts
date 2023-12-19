@@ -13,7 +13,7 @@ const paramsSchema = zod.object({
 export type NewMessageEmailParams = zod.infer<typeof paramsSchema>;
 
 export class NewMessageEmail extends EmailRenderer<NewMessageEmailParams> {
-  subject = "Vous avez été invité à rejoindre une équipe";
+  subject = "New message from contact form";
   content = ContentTemplate;
 
   private schema = paramsSchema;

@@ -137,6 +137,7 @@ export const Index: React.FC<Props> = ({}) => {
   useEffect(() => {
     const submission = navigation.formData;
     if (isNotNil(submission) && hasSubmited === false) {
+      form.reset();
       setHasSubmited(true);
     }
   }, [navigation, hasSubmited]);
@@ -191,12 +192,7 @@ export const Index: React.FC<Props> = ({}) => {
               {hasSubmited && <Alert>{t("contact.submited")}</Alert>}
 
               <div className="mt-8">
-                <Button
-                  className="w-full rounded"
-                  type="submit"
-                  // disabled={isNotNil(transition.submission)}
-                  // loading={isNotNil(transition.submission)}
-                >
+                <Button className="w-full rounded" type="submit">
                   {t("contact.send")}
                 </Button>
               </div>
