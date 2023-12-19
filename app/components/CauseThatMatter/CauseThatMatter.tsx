@@ -32,8 +32,10 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
                 classNames(
                   "px-4 py-2 rounded transition-colors text-lg w-full text-center",
                   {
-                    "bg-primary text-primary-content": isActive,
-                    "bg-secondary text-secondary-content": !isActive,
+                    "bg-primary hover:bg-primary-darken text-primary-content":
+                      isActive,
+                    "bg-secondary hover:bg-secondary-darken text-secondary-content":
+                      !isActive,
                   }
                 )
               }

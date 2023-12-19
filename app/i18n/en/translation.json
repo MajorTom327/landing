@@ -52,7 +52,7 @@
   },
   "me": {
     "hero": "Hi, I'm Valentin Thomas",
-    "description": "I'm a web developper. I am passionate about web development and innovation."
+    "description": "I'm a web developper since 2017 and a passionate about web development and innovation."
   },
   "personality": {
     "title": "My personality"
@@ -85,7 +85,7 @@
   },
   "skills": {
     "practiced": "Practicing during",
-    "title": "Some of my competences",
+    "title": "Some of my competences are:",
     "levels": {
       "beginner": "Beginner",
       "intermediate": "Intermediate",

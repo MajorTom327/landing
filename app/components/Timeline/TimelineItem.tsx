@@ -13,8 +13,7 @@ type Props = {
   isFirst?: boolean;
 };
 
-const toStr = (date: DateTime) =>
-  date.toLocaleString(undefined, DateTime.DATE_FULL);
+const toStr = (date: DateTime) => date.toLocaleString(DateTime.DATE_MED);
 
 const TimelineLine: React.FC<{ isFirst: boolean | undefined }> = ({
   isFirst,
@@ -59,7 +58,7 @@ export const TimelineItem: React.FC<Props> = ({ item, isFirst }) => {
           </div>
           <div className="flex gap-2">
             <div>{toStr(startOf)}</div>
-            <div>-</div>
+            <div>&#8594;</div>
             <div>{endOf ? toStr(endOf) : t("time.now")}</div>
           </div>
           <div className="flex gap-2">

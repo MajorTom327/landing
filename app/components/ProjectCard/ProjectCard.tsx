@@ -25,14 +25,14 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
 
   return (
     <>
-      <div className="z-0 border border-neutral-darken bg-neutral hover:bg-neutral-darken rounded-xl p-4 transition hover:transform hover:motion-safe:-translate-y-1 group">
+      <div className="z-0 border border-neutral-darken bg-neutral motion-safe:hover:bg-neutral-darken rounded-xl p-4 transition hover:transform hover:motion-safe:-translate-y-1 group">
         <Link
           prefetch="intent"
           preventScrollReset
           to={`/projects/${project.key}`}
         >
           {project.image && (
-            <div className="-mt-4 -mx-4 h-32 rounded-t-xl overflow-y-hidden grayscale group-hover:grayscale-0 transition">
+            <div className="-mt-4 -mx-4 h-32 rounded-t-xl overflow-y-hidden motion-safe:grayscale motion-safe:group-hover:grayscale-0 transition">
               <img
                 src={getImageUrl(project.image, { width: 750 })}
                 alt=""
@@ -40,7 +40,7 @@ export const ProjectCard: React.FC<Props> = ({ project, children }) => {
               />
             </div>
           )}
-          <Title center lg>
+          <Title center lg className="motion-reduce:underline">
             {t(project.title)}
           </Title>
 

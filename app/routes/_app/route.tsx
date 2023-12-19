@@ -5,13 +5,9 @@ import { useEffect } from "react";
 
 import { SessionStore } from "~/services/session.server";
 
-import ActorHero from "~/components/ActorHero";
-import CauseThatMatter from "~/components/CauseThatMatter";
-import Divider from "~/components/Divider";
-import MyValues from "~/components/MyValues";
 import { useToast } from "~/components/ui/use-toast";
 
-import SomeProject from "./SomeProject";
+import HomePage from "./HomePage";
 
 type Toast = {
   message: string;
@@ -50,22 +46,7 @@ export const App = () => {
   if (pathname.startsWith("/cause") || pathname === "/") {
     return (
       <>
-        <ActorHero />
-
-        <div className="flex flex-col gap-4 py-8">
-          <CauseThatMatter />
-          <div className="container mx-auto">
-            <Divider />
-          </div>
-
-          <MyValues />
-
-          <div className="container mx-auto">
-            <Divider />
-          </div>
-
-          <SomeProject />
-        </div>
+        <HomePage />
       </>
     );
   }
