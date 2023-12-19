@@ -9,6 +9,7 @@ import ActorHero from "~/components/ActorHero";
 import CauseThatMatter from "~/components/CauseThatMatter";
 import Divider from "~/components/Divider";
 import MyValues from "~/components/MyValues";
+import Skills from "~/components/Skills";
 import { useToast } from "~/components/ui/use-toast";
 
 import SomeProject from "./SomeProject";
@@ -59,6 +60,12 @@ export const App = () => {
           </div>
 
           <MyValues />
+
+          <div className="container mx-auto">
+            <Divider />
+          </div>
+
+          <Skills />
 
           <div className="container mx-auto">
             <Divider />
