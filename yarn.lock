@@ -7633,10 +7633,10 @@ remix-auth@^3.5.1:
   dependencies:
     uuid "^8.3.2"
 
-remix-hook-form@^3.0.3:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-3.2.1.tgz#5e25cd87a803152f333f516eecdea89c97593fce"
-  integrity sha512-ymKog+wsuPdzpgD0jT3pdVwL8Oohwo7P1agsnAV1yCBKg8bUGsj4RBgCnPK85XfiZ7G/5yL31jpp0Tx1xkT4Yg==
+remix-hook-form@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-3.2.3.tgz#08a984a6c939117eb60cfb3891dac3937b9354ee"
+  integrity sha512-bQsu4m7i+xxnIsBnYkdzi2z1s4ZkBhLRN9jHeTR4GHbAgLZ6a9mko69tUCGYv9lGRbqmW/DxfjCyrgDeZNv//w==
 
 remix-utils@^7.3.0:
   version "7.3.0"
