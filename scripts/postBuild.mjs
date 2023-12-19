@@ -13,7 +13,7 @@ const date = new Date().toISOString();
 
     if (stat.isFile()) {
       const content = fs.readFileSync(filePath, "utf8");
-      const result = content.replace(key, date);
+      const result = content.replace(key, `"${date}"`);
       fs.writeFileSync(filePath, result, "utf8");
     }
   });
