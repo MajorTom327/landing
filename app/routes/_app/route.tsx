@@ -18,6 +18,8 @@ type Toast = {
   message: string;
 };
 
+export const config = { runtime: "edge" };
+
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const session = await new SessionStore(request).load();
 
