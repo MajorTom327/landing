@@ -8,7 +8,6 @@ import { SessionStore } from "~/services/session.server";
 import ActorHero from "~/components/ActorHero";
 import CauseThatMatter from "~/components/CauseThatMatter";
 import Divider from "~/components/Divider";
-// import ErrorHandler from "~/components/ErrorHandler";
 import MyValues from "~/components/MyValues";
 import { useToast } from "~/components/ui/use-toast";
 
