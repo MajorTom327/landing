@@ -62,7 +62,7 @@ export const Footer: React.FC<Props> = ({ className }) => {
               </a>
             </div>
 
-            {node_env !== "development" ? (
+            {node_env !== "test" ? (
               <div>
                 <WebsiteCarbonBadge />
               </div>
