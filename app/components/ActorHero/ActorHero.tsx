@@ -25,7 +25,7 @@ export const ActorHero: React.FC<Props> = ({}) => {
               <Title className="text-center" lg>
                 {t("me.hero")}
               </Title>
-              <Title className="text-center" md>
+              <Title className="text-center " md>
                 {t("me.description")}
               </Title>
             </div>

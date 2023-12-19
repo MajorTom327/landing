@@ -1,10 +1,10 @@
 import React from "react";
 
-import Button from "~/components/Button";
 import Hobbies from "~/components/Hobbies";
 import { SkillsCard } from "~/components/Skills";
 import Timeline from "~/components/Timeline";
 import WorkingValues from "~/components/WorkingValues";
+import { Button } from "~/components/ui/Button";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
@@ -22,7 +22,9 @@ export const Index: React.FC<Props> = ({}) => {
   return (
     <>
       <div className="flex justify-center py-2">
-        <Button to="/resume/pdf">{t("cv.printable")}</Button>
+        <Button variant="shiny" to="/resume/pdf">
+          {t("cv.printable")}
+        </Button>
       </div>
       <WorkingValues />
       <SkillsCard />

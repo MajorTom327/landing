@@ -176,7 +176,7 @@ export default function App() {
                   <div className="flex gap-2 items-center">
                     <Navbar.Menu>
                       <Navbar.Item to="/projects" label="menu.project" />
-                      <Navbar.Item to="/resume" label="menu.cv" />
+                      <Navbar.Item to="/resume" label="menu.cv" shiny />
                       <Navbar.Item to="/contact" label="menu.contact" />
                     </Navbar.Menu>
                     <Button
