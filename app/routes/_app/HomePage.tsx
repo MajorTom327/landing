@@ -17,11 +17,6 @@ export const HomePage: React.FC<Props> = ({}) => {
       <ActorHero />
 
       <div className="flex flex-col gap-4 py-8">
-        <CauseThatMatter />
-        <div className="container mx-auto">
-          <Divider />
-        </div>
-
         <MyValues />
 
         <DarkBlock>
@@ -29,6 +24,11 @@ export const HomePage: React.FC<Props> = ({}) => {
             <Skills />
           </div>
         </DarkBlock>
+
+        <CauseThatMatter />
+        <div className="container mx-auto">
+          <Divider />
+        </div>
 
         <SomeProject />
       </div>
