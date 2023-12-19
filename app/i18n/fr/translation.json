@@ -3,8 +3,8 @@
     "name": "Valentin Thomas"
   },
   "menu": {
-    "themes": "Les Sujets",
-    "project": "Mes Projets",
+    "themes": "Les sujets",
+    "project": "Mes projets",
     "cv": "Mon C.V.",
     "contact": "Me contacter"
   },
@@ -19,25 +19,25 @@
     "wallet": "majortom327.eth"
   },
   "causes": {
-    "title": "Les causes qui me tiennent à coeur",
+    "title": "Les causes qui me tiennent à cœur",
     "spa": {
       "title": "SPA",
-      "posix": "Faites connaissance avec mon meilleur ami: Posix",
+      "posix": "Faites connaissance avec mon meilleur ami : Posix",
       "posix_role": "Happiness Manager",
       "reasons": [
         "La SPA (Société protectrice des animaux) française est une organisation de bienfaisance qui a pour mission de protéger les animaux et de lutter contre la cruauté envers eux. J'aime la SPA française parce qu'elle offre une aide précieuse aux animaux qui ont besoin de protection et de soins.",
         "La SPA française travaille dur pour s'assurer que les animaux sont bien traités et protégés contre la cruauté et l'abandon. Elle offre des services tels que la stérilisation et la vaccination pour aider à contrôler la population animale, ainsi que des programmes de réhabilitation et de réadaptation pour les animaux qui ont été maltraités ou abandonnés.",
         "En plus de ses efforts pour protéger les animaux, la SPA française sensibilise également les gens à la cause animale et leur apprend à prendre soin de leurs compagnons à quatre pattes de manière responsable. Cela contribue à créer une société plus juste et plus respectueuse des animaux, ce qui est important pour moi.",
-        "En tant qu'animal lover, je suis reconnaissant envers la SPA française pour son travail crucial pour protéger et soutenir les animaux. Je suis fier de soutenir cette organisation et de contribuer à ses efforts pour améliorer la vie des animaux dans notre société."
+        "En tant qu'amoureux des animaux, je suis reconnaissant envers la SPA française pour son travail crucial pour protéger et soutenir les animaux. Je suis fier de soutenir cette organisation et de contribuer à ses efforts pour améliorer la vie des animaux dans notre société."
       ]
     },
     "resto": {
-      "title": "restos du coeur",
+      "title": "Restos du Cœur",
       "reasons": [
-        "La cause des restos du Coeur est très importante pour moi car j'ai vu les effets de la pauvreté et de la difficulté financière de près. En tant qu'enfant, mes parents ont dû faire face à des difficultés financières et nous avons dû compter sur les restos du Coeur pour pouvoir manger pendant une certaine période. Cette expérience m'a montré à quel point il est important de s'assurer que tout le monde a accès à de la nourriture saine et nutritive.",
-        "Les restos du Coeur offrent une aide précieuse aux personnes dans le besoin en leur fournissant des repas chauds et nutritifs gratuitement. Ils sont une source de soutien pour les personnes qui luttent pour joindre les deux bouts et qui ne pourraient pas se permettre de payer pour de la nourriture autrement.",
-        "En plus de leur travail pour aider à nourrir les personnes dans le besoin, les restos du Coeur sont également une force pour la solidarité et l'entraide dans les communautés. Ils créent un lieu où les gens peuvent se rassembler et se soutenir mutuellement, ce qui peut avoir un impact positif sur le bien-être émotionnel et social des personnes qui en bénéficient.",
-        "En résumé, la cause des restos du Coeur est importante pour moi car elle s'assure que les personnes dans le besoin ont accès à de la nourriture nutritive et qu'elle crée des opportunités de solidarité et d'entraide dans les communautés."
+        "La cause des Restos du Cœur est très importante pour moi car j'ai vu les effets de la pauvreté et de la difficulté financière de près. En tant qu'enfant, mes parents ont dû faire face à des difficultés financières et nous avons dû compter sur les Restos du Cœur pour pouvoir manger pendant une certaine période. Cette expérience m'a montré à quel point il est important de s'assurer que tout le monde a accès à de la nourriture saine et nutritive.",
+        "Les Restos du Cœur offrent une aide précieuse aux personnes dans le besoin en leur fournissant des repas chauds et nutritifs gratuitement. Ils sont une source de soutien pour les personnes qui luttent pour joindre les deux bouts et qui ne pourraient pas se permettre de payer pour de la nourriture autrement.",
+        "En plus de leur travail pour aider à nourrir les personnes dans le besoin, les Restos du Cœur sont également une force pour la solidarité et l'entraide dans les communautés. Ils créent un lieu où les gens peuvent se rassembler et se soutenir mutuellement, ce qui peut avoir un impact positif sur le bien-être émotionnel et social des personnes qui en bénéficient.",
+        "En résumé, la cause des Restos du Cœur est importante pour moi car elle s'assure que les personnes dans le besoin ont accès à de la nourriture nutritive et qu'elle crée des opportunités de solidarité et d'entraide dans les communautés."
       ]
     },
     "privacy": {
@@ -55,7 +55,7 @@
     "description": "Je suis un développeur web depuis 2017 et un passionné du développement web et de l'innovation."
   },
   "personality": {
-    "title": "Ma personnalitée"
+    "title": "Ma personnalité"
   },
   "values": {
     "title": "Mes valeurs",
@@ -69,11 +69,11 @@
     },
     "creativity": {
       "title": "Créativité",
-      "description": "Je suis créatif et j'aime trouver des solutions innovantes aux problèmes. Je suis toujours à la recherche de nouvelles idées et de nouvelles façons de faire les choses. J'aime créer des choses et je suis fier de mon imagination. J'apprecie de voir mes idées se concrétiser et voir mes créations prendre vie."
+      "description": "Je suis créatif et j'aime trouver des solutions innovantes aux problèmes. Je suis toujours à la recherche de nouvelles idées et de nouvelles façons de faire les choses. J'aime créer des choses et je suis fier de mon imagination. J'apprécie de voir mes idées se concrétiser et voir mes créations prendre vie."
     },
     "honesty": {
       "title": "Honnêteté",
-      "description": "Je suis honnête et je m'engage à être transparent et à être fidèle à mes engagements. Je suis digne de confiance et je suis fier de mon intégrité. J'apprecie autant de dire la vérité que de l'entendre qu'elle soit positive ou négative."
+      "description": "Je suis honnête et je m'engage à être transparent et à être fidèle à mes engagements. Je suis digne de confiance et je suis fier de mon intégrité. J'apprécie autant de dire la vérité que de l'entendre qu'elle soit positive ou négative."
     }
   },
   "time": {
@@ -85,7 +85,7 @@
   },
   "skills": {
     "practiced": "Pratiqué pendant",
-    "title": "Quelques une de mes compétences",
+    "title": "Quelques-unes de mes compétences",
     "levels": {
       "beginner": "Débutant",
       "intermediate": "Intermédiaire",
@@ -106,7 +106,7 @@
     "meteor": "Meteor",
     "php": "PHP",
     "agile": "Agile",
-    "craft": "Craftmanship",
+    "craft": "Craftsmanship",
     "git": "Git",
     "docker": "Docker",
     "solidity": "Solidity"
@@ -133,12 +133,12 @@
     },
     "ededoc": {
       "description": [
-        "Pendant cette expérience professionnelle, j'ai appris à coder en C# pour travailler sur le développement d'une application d'imprimante virtuelle destinée à la dématérialisation de documents pour les entreprises. Mes principales tâches ont consisté à créer un système autour des emails pour m'assurer de la traçabilité de la livraison des emails en gérant les bounces, ainsi que l'intégration de la signature electronique de documents dans le flux de travail de l'imprimante. J'ai également travaillé sur du JavaScript en développant un système de scrapping qui permettait de récupérer des factures sur des portails de FAI. Cette expérience professionnelle m'a permis de développer mes compétences en développement d'applications natives et en traitement de données à partir de sites Web."
+        "Pendant cette expérience professionnelle, j'ai appris à coder en C# pour travailler sur le développement d'une application d'imprimante virtuelle destinée à la dématérialisation de documents pour les entreprises. Mes principales tâches ont consisté à créer un système autour des emails pour m'assurer de la traçabilité de la livraison des emails en gérant les bounces, ainsi que l'intégration de la signature électronique de documents dans le flux de travail de l'imprimante. J'ai également travaillé sur du JavaScript en développant un système de scrapping qui permettait de récupérer des factures sur des portails de FAI. Cette expérience professionnelle m'a permis de développer mes compétences en développement d'applications natives et en traitement de données à partir de sites Web."
       ]
     },
     "monbuilding": {
       "description": [
-        "Pendant cette courte expérience professionnelle, j'ai découvert Meteor.js et commencé à apprendre ReactJS. J'ai eu la responsabilité d'intégrer le suivi de machines à laver avec pour objectif d'avoir l'information en quasi temps-réel. Cela a été une expérience enrichissante car c'était ma première expérience dans l'univers NodeJS et cela a donc été une sorte de révélation sur mon affection pour l'univers JS et les applications temps-réel. Cette expérience m'a permis de découvrir de nouvelles technologies et de renforcer mes compétences en développement web."
+        "Pendant cette courte expérience professionnelle, j'ai découvert Meteor.js et commencé à apprendre ReactJS. J'ai eu la responsabilité d'intégrer le suivi de machines à laver avec pour objectif d'avoir l'information en quasi temps réel. Cela a été une expérience enrichissante car c'était ma première expérience dans l'univers NodeJS et cela a donc été une sorte de révélation sur mon affection pour l'univers JS et les applications temps réel. Cette expérience m'a permis de découvrir de nouvelles technologies et de renforcer mes compétences en développement web."
       ]
     },
     "solicis": {
@@ -246,11 +246,11 @@
     "send": "Envoyer",
     "captcha": "Captcha",
     "captcha_label": "En raison d'un nombre de spams trop important, je vous demande de remplir ce simple captcha afin de pouvoir envoyer votre message. Merci de votre compréhension.",
-    "submited": "Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais."
+    "submitted": "Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais."
   },
   "hobbies": {
     "title": "Mes hobbies",
-    "game": "Jeux videos",
+    "game": "Jeux vidéos",
     "code": "Code",
     "gym": "Gym",
     "blockchain": "Blockchain"
