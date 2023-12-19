@@ -4,7 +4,7 @@ import Hobbies from "~/components/Hobbies";
 import { SkillsCard } from "~/components/Skills";
 import Timeline from "~/components/Timeline";
 import WorkingValues from "~/components/WorkingValues";
-import { Button } from "~/components/ui/Button";
+import { Button } from "~/components/ui/button";
 
 import { useTranslation } from "~/hooks/useTranslation";
 

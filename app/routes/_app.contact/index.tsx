@@ -23,10 +23,9 @@ import mailer from "~/services/mailer.server";
 import { sessionStorage } from "~/services/session.server";
 
 import Alert from "~/components/Alert";
-import Button from "~/components/Button";
 import ErrorView from "~/components/ErrorView";
 import Input from "~/components/Input/Input";
-import { Textarea } from "~/components/ui/textarea";
+import { Button } from "~/components/ui/button";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
