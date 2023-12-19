@@ -1,18 +1,15 @@
-import type { InvitationEmailParams } from "./newMessage";
-import InvitationEmail from "./newMessage";
-
-export { InvitationEmail } from "./newMessage";
-export type { InvitationEmailParams } from "./newMessage";
+import type { NewMessageEmailParams } from "./newMessage";
+import NewMessageEmail from "./newMessage";
 
 const emails = {
-  invitation: InvitationEmail,
+  newMessage: NewMessageEmail,
 };
 
 export type EmailId = keyof typeof emails;
 
 export type EmailOptions = {
-  emailId: "invitation";
-  params: InvitationEmailParams;
+  emailId: "newMessage";
+  params: NewMessageEmailParams;
 };
 
 export default emails;

@@ -4,12 +4,20 @@ import zod from "zod";
 export const publicEnvSchema = zod.object({
   NODE_ENV: zod.enum(["development", "production", "test"]),
   APP_NAME: zod.string().default("Valentin Thomas"),
-  APP_URL: zod.string().default("http://localhost:3000"),
+  APP_URL: zod.string().default("https://valentin-thomas.com"),
   VERCEL_ANALYTICS_ID: zod.string().optional(),
 });
 
 export const envSchema = zod
   .object({
+    MAILER_FROM: zod
+      .string()
+      .email()
+      .default("Landing <landing@mail.styx-sys.com>"),
+    MAILER_TO: zod
+      .string()
+      .email()
+      .default("Valentin Thomas <contact@valentin-thomas.com>"),
     APP_KEY: zod.string().default(uuid()),
     SESSION_SECRET: zod.string().uuid().default(uuid()),
   })

@@ -9,7 +9,15 @@ type SendMailOptions = {
   to: string;
   cc?: string[];
   bcc?: string[];
+  replyTo?: string;
 } & EmailOptions;
+
+type MailContactParams = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 export class Mailer {
   transport: Transporter;
@@ -25,6 +33,7 @@ export class Mailer {
       .parse(process.env);
 
     this.transport = nodeMailer.createTransport({
+      // @ts-ignore
       host: MAILER_HOST,
       port: MAILER_PORT,
       secure: false,
@@ -50,6 +59,19 @@ export class Mailer {
       subject: renderedEmail.subject,
       text: renderedEmail.text,
       html: renderedEmail.html,
+    });
+  }
+
+  contact({ name, email, subject, message }: MailContactParams) {
+    return this.sendMail({
+      to: process.env.MAILER_FROM,
+      emailId: "newMessage",
+      params: {
+        name,
+        email,
+        subject,
+        message,
+      },
     });
   }
 }

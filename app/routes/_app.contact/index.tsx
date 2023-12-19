@@ -150,10 +150,10 @@ export const Index: React.FC<Props> = ({}) => {
             <p className="justify">{t("contact.description")}</p>
             <p>
               <a
-                href="mailto:me@valentin-thomas.com"
+                href="mailto:contact@valentin-thomas.com"
                 className="text-secondary hover:underline"
               >
-                me@valentin-thomas.com
+                contact@valentin-thomas.com
               </a>
             </p>
           </div>

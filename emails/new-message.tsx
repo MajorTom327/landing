@@ -4,12 +4,10 @@ import {
   Head,
   Heading,
   Html,
-  Img,
   Link,
   Preview,
   Text,
 } from "@react-email/components";
-import * as React from "react";
 import zod from "zod";
 
 export const schemaNewMessageProps = zod.object({
@@ -20,10 +18,6 @@ export const schemaNewMessageProps = zod.object({
 });
 
 type NewMessageEmailProps = zod.infer<typeof schemaNewMessageProps>;
-
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
 
 export const NewMessageEmail = (props: NewMessageEmailProps) => {
   const { name, email, subject, message } = schemaNewMessageProps.parse(props);
