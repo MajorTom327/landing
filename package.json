@@ -70,7 +70,7 @@
     "remix-utils": "^7.3.0",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
-    "ts-pattern": "^5.0.5",
+    "ts-pattern": "^5.0.6",
     "uuid": "^9.0.1",
     "zod": "^3.22.2"
   },
