@@ -3,7 +3,7 @@ import CarbonBadge from "react-carbonbadge";
 
 // Bug: Cannot load the CarbonBadge component from react-carbonbadge and render it
 export const WebsiteCarbonBadge: React.FC = () => {
-  return null;
+  // return null;
   return <CarbonBadge darkMode={true} />;
 };
 
