@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "~/components/Button";
 import Hobbies from "~/components/Hobbies";
-import Skills from "~/components/Skills";
+import { SkillsCard } from "~/components/Skills";
 import Timeline from "~/components/Timeline";
 import WorkingValues from "~/components/WorkingValues";
 
@@ -25,7 +25,7 @@ export const Index: React.FC<Props> = ({}) => {
         <Button to="/resume/viewer">{t("cv.printable")}</Button>
       </div>
       <WorkingValues />
-      <Skills />
+      <SkillsCard />
       <Timeline />
       <Hobbies />
     </>
