@@ -7,7 +7,7 @@
     ".react-email"
   ],
   "scripts": {
-    "build": "remix build && sh ./scripts/postBuild.sh",
+    "build": "remix build && node ./scripts/postBuild.mjs",
     "create:page": "node ./scripts/createPage.mjs",
     "dev": "remix dev",
     "vercel": "vercel dev",
