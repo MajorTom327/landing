@@ -22,7 +22,7 @@ export const CauseThatMatter: React.FC<Props> = ({}) => {
       <div className="container mx-auto py-8">
         <Title xl>{t("causes.title")}</Title>
 
-        <div className="flex justify-evenly w-full gap-3 py-8">
+        <div className="flex flex-col md:flex-row justify-evenly w-full gap-3 py-8">
           {causes.map((cause) => (
             <NavLink
               key={cause.title}

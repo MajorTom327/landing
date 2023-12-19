@@ -22,7 +22,7 @@ export const SkillsCard: React.FC = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {skills.map((skill, i) => (
-                <Skill key={i} {...skill} />
+                <Skill key={i} {...skill} light />
               ))}
             </div>
           </CardContent>

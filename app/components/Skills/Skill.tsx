@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { DateTime } from "luxon";
 import { cond, equals } from "ramda";
 import React from "react";
@@ -9,11 +10,18 @@ type Props = {
   level: "beginner" | "intermediate" | "advanced";
   duration?: number;
   unit: "years" | "months";
+  light?: boolean;
 };
 
 export type SkillProps = Props;
 
-export const Skill: React.FC<Props> = ({ title, level, duration, unit }) => {
+export const Skill: React.FC<Props> = ({
+  title,
+  level,
+  duration,
+  unit,
+  light,
+}) => {
   const { t } = useTranslation();
 
   const labelPractice = cond([
@@ -24,7 +32,14 @@ export const Skill: React.FC<Props> = ({ title, level, duration, unit }) => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="flex flex-col border border-white/75 shadow-lg rounded-3xl p-4 group w-full cursor-default justify-center items-center relative">
+        <div
+          className={classNames(
+            "flex flex-col border   rounded-3xl p-4 group w-full cursor-default justify-center items-center relative",
+            {
+              "border-white/75 shadow-xl": !light,
+            }
+          )}
+        >
           <div className="text-2xl motion-safe:group-hover:scale-150 motion-safe:transition transform motion-safe:group-hover:-translate-y-4 font-semibold">
             {t(title)}
           </div>
