@@ -7678,10 +7678,10 @@ remix-hook-form@^3.2.3:
   resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-3.2.3.tgz#08a984a6c939117eb60cfb3891dac3937b9354ee"
   integrity sha512-bQsu4m7i+xxnIsBnYkdzi2z1s4ZkBhLRN9jHeTR4GHbAgLZ6a9mko69tUCGYv9lGRbqmW/DxfjCyrgDeZNv//w==
 
-remix-utils@^7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-7.3.0.tgz#f5837ae6aa0a29cc21590f4b38686292324bbd9e"
-  integrity sha512-Ea5eNL04Ke4YYKI79ZR5doWtULe3ABkYkqhaP7mKiYcNVYAg6pA0PMuFYR2uyJYCGW43+/WlTfr3D4X5A0PsUA==
+remix-utils@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-7.4.0.tgz#272b29b66a5e965a48dc26e177f8152cde85b0dc"
+  integrity sha512-Bq5frrMqixGoeTKaexQeCASFQUHreY3dD/cBuowdb6G8uQe006p3HJkxmElRc4ez25yLqlmi08hq6EQX/U8fpw==
   dependencies:
     type-fest "^4.3.3"
 
@@ -8620,15 +8620,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-type-fest@^4.0.0:
+type-fest@^4.0.0, type-fest@^4.3.3:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.8.3.tgz#6db08d9f44d596cd953f83020c7c56310c368d1c"
   integrity sha512-//BaTm14Q/gHBn09xlnKNqfI8t6bmdzx2DXYfPBNofN0WUybCEUDcbCWcTa0oF09lzLjZgPphXAsvRiMK0V6Bw==
-
-type-fest@^4.3.3:
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.8.2.tgz#20d4cc287745723dbabf925de644eeb7de0349c1"
-  integrity sha512-mcvrCjixA5166hSrUoJgGb9gBQN4loMYyj9zxuMs/66ibHNEFd5JXMw37YVDx58L4/QID9jIzdTBB4mDwDJ6KQ==
 
 type-is@~1.6.18:
   version "1.6.18"
