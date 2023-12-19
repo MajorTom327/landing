@@ -8,7 +8,6 @@ import { SessionStore } from "~/services/session.server";
 import ActorHero from "~/components/ActorHero";
 import CauseThatMatter from "~/components/CauseThatMatter";
 import Divider from "~/components/Divider";
-// import ErrorHandler from "~/components/ErrorHandler";
 import MyValues from "~/components/MyValues";
 import { useToast } from "~/components/ui/use-toast";
 
@@ -17,8 +16,6 @@ import SomeProject from "./SomeProject";
 type Toast = {
   message: string;
 };
-
-export const config = { runtime: "edge" };
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const session = await new SessionStore(request).load();
