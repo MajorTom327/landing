@@ -21,7 +21,7 @@ export const NavbarItem: React.FC<Props> = ({ to, label, shiny }) => {
         to={to}
         className={
           shiny
-            ? "motion-safe:animate-[pulse_5s_ease-in-out_infinite]"
+            ? "motion-safe:animate-[pulse_5s_ease-in-out_infinite] flex"
             : undefined
         }
       >

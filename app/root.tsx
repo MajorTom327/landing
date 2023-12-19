@@ -167,23 +167,31 @@ export default function App() {
             <Layout
               nav={
                 <Navbar>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-2 items-center justify-between">
                     <Navbar.Brand>
                       <Button color="ghost" to="/">
                         {env.APP_NAME}
                       </Button>
                     </Navbar.Brand>
+                    <Button
+                      className="block md:hidden"
+                      size={"icon"}
+                      onClick={() => setIsDeficitVision(not)}
+                    >
+                      <EyeOff />
+                    </Button>
                   </div>
 
                   <MusicPlayer />
 
-                  <div className="flex gap-2 items-center">
+                  <div className="flex flex-col md:flex-row  gap-2 items-center">
                     <Navbar.Menu>
                       <Navbar.Item to="/projects" label="menu.project" />
                       <Navbar.Item to="/resume" label="menu.cv" shiny />
                       <Navbar.Item to="/contact" label="menu.contact" />
                     </Navbar.Menu>
                     <Button
+                      className="hidden md:block"
                       size={"icon"}
                       onClick={() => setIsDeficitVision(not)}
                     >
