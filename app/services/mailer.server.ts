@@ -76,4 +76,6 @@ export class Mailer {
   }
 }
 
-export default Mailer;
+export const mailer = new Mailer();
+
+export default mailer;

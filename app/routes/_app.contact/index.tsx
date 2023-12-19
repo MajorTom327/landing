@@ -241,8 +241,7 @@ export const action: ActionFunction = async ({ request }) => {
     return redirect("/contact");
   }
 
-  // @ts-ignore
-  mailer.contact({ name, subject, email, message });
+  await mailer.contact({ name, subject, email, message });
 
   return null;
 };

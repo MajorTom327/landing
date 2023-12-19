@@ -78,6 +78,7 @@ export const links: LinksFunction = () => [
 const acceptedLocales = ["en", "fr"];
 
 export const meta: MetaFunction = () => {
+  const imageUrl = getImageUrl("/valentin-thomas.png");
   return [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width,initial-scale=1" },
@@ -90,13 +91,21 @@ export const meta: MetaFunction = () => {
 
     { property: "og:type", content: "website" },
     { property: "og:title", content: "Valentin Thomas" },
-    { property: "og:image", content: getImageUrl("/valentin-thomas.png") },
+    { property: "twitter:title", content: "Valentin Thomas" },
+    { property: "og:image", content: imageUrl },
+    { property: "twitter:image", content: imageUrl },
     { property: "og:url", content: "https://valentin-thomas.com" },
     { property: "og:site_name", content: "Valentin Thomas" },
     {
       property: "og:description",
       content: `You're looking for a senior fullstack developper ? Maybe it's me, take a look at my CV and my experiences to know more about me.`,
     },
+
+    {
+      property: "twitter:description",
+      content: `You're looking for a senior fullstack developper ? Maybe it's me, take a look at my CV and my experiences to know more about me.`,
+    },
+    { property: "twitter:card", content: "summary_large_image" },
   ];
 };
 
