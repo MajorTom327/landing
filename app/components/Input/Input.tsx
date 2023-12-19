@@ -2,17 +2,19 @@ import classNames from "classnames";
 import { Asterisk } from "lucide-react";
 import React, { useId } from "react";
 import { useRemixFormContext } from "remix-hook-form";
+import { match } from "ts-pattern";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
+import { Textarea } from "../ui/textarea";
 
 export type InputProps = Omit<
   {
     addon?: React.ReactNode;
     label: string;
-  } & React.HTMLProps<HTMLInputElement>,
+  } & React.HTMLProps<HTMLInputElement | HTMLTextAreaElement>,
   "ref"
 >;
 
@@ -35,6 +37,11 @@ export const BaseInput: React.FC<InputProps> = ({ addon, label, ...props }) => {
       required: props.required,
     }),
   };
+
+  const input = match(props.type)
+    .with("textarea", () => <Textarea {...inputProps} rows={5} />)
+    .otherwise(() => <Input {...inputProps} />);
+
   return (
     <>
       <div className="flex flex-col gap-1">
@@ -48,11 +55,11 @@ export const BaseInput: React.FC<InputProps> = ({ addon, label, ...props }) => {
         </Label>
         {addon ? (
           <div className="w-full flex gap-1">
-            <Input {...inputProps} />
+            {input}
             {addon && <div className="flex-shrink">{addon}</div>}
           </div>
         ) : (
-          <Input {...inputProps} />
+          input
         )}
       </div>
     </>

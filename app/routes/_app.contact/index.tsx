@@ -26,6 +26,7 @@ import Alert from "~/components/Alert";
 import Button from "~/components/Button";
 import ErrorView from "~/components/ErrorView";
 import Input from "~/components/Input/Input";
+import { Textarea } from "~/components/ui/textarea";
 
 import { useTranslation } from "~/hooks/useTranslation";
 
