@@ -88,6 +88,10 @@ export const meta: MetaFunction = () => {
       content:
         "Valentin THOMAS is a developper and here you can find his experiences and his CV",
     },
+    {
+      name: "google-site-verification",
+      content: "8XQj1D3-XlX1Lhxe7KGqccmOZ1rztlGAq-0eIJxXeIc",
+    },
 
     { property: "og:type", content: "website" },
     { property: "og:title", content: "Valentin Thomas" },
