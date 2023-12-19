@@ -6,8 +6,7 @@ current_date=$(date "+%Y-%m-%d")
 escaped_date=$(echo "$current_date" | sed 's/[&/\]/\\&/g')
 
 # Use sed to replace BUILD_DATE in the specified file
-sed "s/BUILD_DATE/\"$escaped_date\"/g" ./build/index.js > ./build/index.js.tmp
-mv ./build/index.js.tmp ./build/index.js
+sed -i "" "s/BUILD_DATE/\"$escaped_date\"/g" ./build/*.js
 
 
 # sed -i "s/BUILD_DATE/$(date +%Y-%m-%d)/g" ./build/index.js
