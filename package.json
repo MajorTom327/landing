@@ -9,12 +9,6 @@
   "scripts": {
     "build": "remix build && sh ./scripts/postBuild.sh",
     "create:page": "node ./scripts/createPage.mjs",
-    "db:gen": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:push": "prisma db push --force-reset",
-    "db:seed": "prisma db seed",
-    "db:studio": "prisma studio",
-    "db:update": "concurrently \"npm:db:push\" \"npm:db:gen\"",
     "dev": "remix dev",
     "vercel": "vercel dev",
     "format-code": "npm run prettier:fix & npm run lint:fix",
@@ -109,8 +103,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "prisma": {
-    "seed": "ts-node --require tsconfig-paths/register prisma/seed.ts"
   }
 }

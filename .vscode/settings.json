@@ -4,7 +4,7 @@
     ".cache": true,
     "api": true,
     "coverage": true,
-    "*.lock": true,
+    "*.lock": false,
     ".react-email": true,
     ".vercel": true,
     "build": true
