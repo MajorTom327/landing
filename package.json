@@ -9,12 +9,6 @@
   "scripts": {
     "build": "remix build && sh ./scripts/postBuild.sh",
     "create:page": "node ./scripts/createPage.mjs",
-    "db:gen": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:push": "prisma db push --force-reset",
-    "db:seed": "prisma db seed",
-    "db:studio": "prisma studio",
-    "db:update": "concurrently \"npm:db:push\" \"npm:db:gen\"",
     "dev": "remix dev",
     "vercel": "vercel dev",
     "format-code": "npm run prettier:fix & npm run lint:fix",
@@ -31,7 +25,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
-    "@prisma/client": "^5.3.1",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-select": "^2.0.0",
@@ -58,7 +51,6 @@
     "nodemailer": "^6.9.7",
     "pino": "^8.15.1",
     "pino-pretty": "^10.2.0",
-    "prisma": "^5.3.1",
     "ramda": "^0.29.0",
     "ramda-adjunct": "^4.1.1",
     "react": "^18.2.0",
@@ -111,8 +103,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "prisma": {
-    "seed": "ts-node --require tsconfig-paths/register prisma/seed.ts"
   }
 }
