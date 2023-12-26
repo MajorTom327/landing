@@ -46,7 +46,7 @@
     "clsx": "^2.0.0",
     "crypto-js": "^4.1.1",
     "isbot": "^3.6.8",
-    "lucide-react": "^0.298.0",
+    "lucide-react": "^0.302.0",
     "luxon": "^3.4.3",
     "nodemailer": "^6.9.7",
     "pino": "^8.17.1",
