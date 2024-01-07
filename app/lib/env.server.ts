@@ -4,8 +4,12 @@ import zod from "zod";
 export const publicEnvSchema = zod.object({
   NODE_ENV: zod.enum(["development", "production", "test"]),
   APP_NAME: zod.string().default("Valentin Thomas"),
-  APP_URL: zod.string().default("https://valentin-thomas.com"),
+  APP_URL: zod.string().default("https://www.valentin-thomas.com"),
   VERCEL_ANALYTICS_ID: zod.string().optional(),
+  VERCEL_URL: zod
+    .string()
+    .optional()
+    .default("https://www.valentin-thomas.com"),
 });
 
 export const envSchema = zod
