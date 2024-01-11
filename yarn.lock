@@ -1724,10 +1724,10 @@
   resolved "https://registry.yarnpkg.com/@react-email/text/-/text-0.0.6.tgz#c28a2b70f3e17de8e93e3fbdf9a18afff3623a29"
   integrity sha512-PDUTAD1PjlzXFOIUrR1zuV2xxguL62yne5YLcn1k+u/dVUyzn6iU/5lFShxCfzuh3QDWCf4+JRNnXN9rmV6jzw==
 
-"@remix-run/css-bundle@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/css-bundle/-/css-bundle-2.4.0.tgz#961c240f5004e53a25ddfd2ea7f4d30d4c483ac6"
-  integrity sha512-kFFJ5Iek1lNjoiajiqirLGcxTvPdmbIezvKZbJwSO173pZRHr1MlTnLactrYhFmEHNBE6LMN54QXDynl93S+aQ==
+"@remix-run/css-bundle@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/css-bundle/-/css-bundle-2.4.1.tgz#479e38ac371705242c2a8ef19df0dd97297c48c7"
+  integrity sha512-+Gl/bj8yfkVAlimbZZnTgzrrQJgnhV2xNNGc0lMXekEiDobk7DTTyonAXqrkxaRYGvMhBVwMaaDKWUE1iy4fHg==
 
 "@remix-run/dev@npm:@vercel/remix-run-dev@2.0.1":
   version "2.0.1"
