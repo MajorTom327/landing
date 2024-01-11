@@ -7705,10 +7705,10 @@ remix-hook-form@^3.2.3:
   resolved "https://registry.yarnpkg.com/remix-hook-form/-/remix-hook-form-3.2.3.tgz#08a984a6c939117eb60cfb3891dac3937b9354ee"
   integrity sha512-bQsu4m7i+xxnIsBnYkdzi2z1s4ZkBhLRN9jHeTR4GHbAgLZ6a9mko69tUCGYv9lGRbqmW/DxfjCyrgDeZNv//w==
 
-remix-utils@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-7.4.0.tgz#272b29b66a5e965a48dc26e177f8152cde85b0dc"
-  integrity sha512-Bq5frrMqixGoeTKaexQeCASFQUHreY3dD/cBuowdb6G8uQe006p3HJkxmElRc4ez25yLqlmi08hq6EQX/U8fpw==
+remix-utils@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/remix-utils/-/remix-utils-7.5.0.tgz#0121585167957b194ec8bcae08e8902eacd0564a"
+  integrity sha512-vzjDhbdwK+3XxqL2LM7ZPzq0zyjb+77eAWbKhDqhnh0nlA11n3CmTtYzrZYpVf6h24+6m5mD6KnRfcdD3Zrl7w==
   dependencies:
     type-fest "^4.3.3"
 
