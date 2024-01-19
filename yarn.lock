@@ -1783,10 +1783,10 @@
     tsconfig-paths "^4.0.0"
     ws "^7.4.5"
 
-"@remix-run/eslint-config@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/eslint-config/-/eslint-config-2.4.0.tgz#a92c91e16bb25ea8d60e63b21b9ab9af5d8f3230"
-  integrity sha512-eKlRNt0k8QbU/6+HBQ+s/2gpcCgK13pMU7iPkmKILIon4MMxNgRhKcxJnJDbGbraTt8hcddhHuWHhVh/wTu4IQ==
+"@remix-run/eslint-config@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/eslint-config/-/eslint-config-2.5.1.tgz#23e1e9c507287df94243e99a26a1b05c0f6b3982"
+  integrity sha512-PpLj0QSd2NZ12KdTA2QYPd/FK3Szu9Np7kTmx26VxDZJTzQYSgGb5i2O9uby+j2sD68zR/+EAYaIcOlq66ekJw==
   dependencies:
     "@babel/core" "^7.21.8"
     "@babel/eslint-parser" "^7.21.8"
