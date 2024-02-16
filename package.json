@@ -70,7 +70,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.1.0",
     "@remix-run/dev": "npm:@vercel/remix-run-dev@2.0.1",
-    "@remix-run/eslint-config": "2.4.0",
+    "@remix-run/eslint-config": "2.6.0",
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.0.0",
