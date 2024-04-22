@@ -88,7 +88,7 @@
     "autoprefixer": "^10.4.16",
     "chroma-js": "^2.4.2",
     "concurrently": "^8.2.1",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "happy-dom": "^14.7.1",
     "husky": "^8.0.3",
     "pretty-quick": "^3.1.3",
