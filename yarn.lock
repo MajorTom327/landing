@@ -2325,12 +2325,12 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
   integrity sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==
 
-"@types/ramda@^0.29.4":
-  version "0.29.9"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.29.9.tgz#a4c1a9d056249268ffe16c2f6d198e42c2fc994a"
-  integrity sha512-X3yEG6tQCWBcUAql+RPC/O1Hm9BSU+MXu2wJnCETuAgUlrEDwTA1kIOdEEE4YXDtf0zfQLHa9CCE7WYp9kqPIQ==
+"@types/ramda@^0.29.12":
+  version "0.29.12"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.29.12.tgz#fd8a23849176c6c1b3510243b64084c067e6a48f"
+  integrity sha512-sgIEjpJhdQPB52gDF4aphs9nl0xe54CR22DPdWqT8gQHjZYmVApgA0R3/CpMbl0Y8az2TEZrPNL2zy0EvjbkLA==
   dependencies:
-    types-ramda "^0.29.6"
+    types-ramda "^0.29.10"
 
 "@types/react-dom@^18.0.0", "@types/react-dom@^18.2.18":
   version "18.2.18"
@@ -8755,10 +8755,10 @@ typed-array-length@^1.0.4:
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
 
-types-ramda@^0.29.6:
-  version "0.29.6"
-  resolved "https://registry.yarnpkg.com/types-ramda/-/types-ramda-0.29.6.tgz#a1d2a3c15a48e27d35832d7194d93369975f1427"
-  integrity sha512-VJoOk1uYNh9ZguGd3eZvqkdhD4hTGtnjRBUx5Zc0U9ftmnCgiWcSj/lsahzKunbiwRje1MxxNkEy1UdcXRCpYw==
+types-ramda@^0.29.10:
+  version "0.29.10"
+  resolved "https://registry.yarnpkg.com/types-ramda/-/types-ramda-0.29.10.tgz#820432905b820301c74f6396f07aa2359b41cde4"
+  integrity sha512-5PJiW/eiTPyXXBYGZOYGezMl6qj7keBiZheRwfjJZY26QPHsNrjfJnz0mru6oeqqoTHOni893Jfd6zyUXfQRWg==
   dependencies:
     ts-toolbelt "^9.6.0"
 
