@@ -51,7 +51,7 @@
     "nodemailer": "^6.9.9",
     "pino": "^8.19.0",
     "pino-pretty": "^10.3.0",
-    "ramda": "^0.29.0",
+    "ramda": "^0.30.0",
     "ramda-adjunct": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
