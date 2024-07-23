@@ -101,15 +101,17 @@
     "mongo": "MongoDB",
     "web3": "Web3",
     "mysql": "MySQL",
+    "postgres": "Postgresql",
     "csharp": "C#",
     "dotnet": ".NET",
     "meteor": "Meteor",
     "php": "PHP",
     "agile": "Agile",
-    "craft": "Craftmanship",
+    "craft": "Craftsmanship",
     "git": "Git",
     "docker": "Docker",
-    "solidity": "Solidity"
+    "solidity": "Solidity",
+    "rust": "Rust"
   },
   "timeline": {
     "title": "My timeline"
@@ -119,6 +121,7 @@
     "csharp": "C# Developer"
   },
   "societies": {
+    "soiltrackers": "SoilTrackers",
     "fasst": "F.ASS.T",
     "ededoc": "Ededoc",
     "monbuilding": "MonBuilding",
@@ -126,6 +129,11 @@
     "mscpi": "MeilleureSCPI"
   },
   "experiences": {
+    "soiltrackers": {
+      "description": [
+        "The tasks involve developing services using NestJS and TypeScript within an NX Monorepo, creating a frontend application with Vite, React, Tailwind, and SWR, building an automatic trip register for tracking trucks' trips and soil movement registration, and implementing a mock tracker in Rust for testing, utilizing sockets to interact with the application."
+      ]
+    },
     "fasst": {
       "description": [
         "During this professional experience, I worked with technologies such as React, NodeJS, GraphQL, and MongoDB to develop applications for the insurance sector. I also learned many new skills and progressed within a growing team. I helped junior developers in transition get onboarded at the company and participated in the restructuring of the company which went from less than ten employees to around 50. This professional experience allowed me to develop my technical skills and work in a constantly evolving environment. I also contributed to the growth and development of the company by supporting junior developers and participating in the restructuring of the company."

@@ -101,6 +101,7 @@
     "mongo": "MongoDB",
     "web3": "Web3",
     "mysql": "MySQL",
+    "postgres": "Postgresql",
     "csharp": "C#",
     "dotnet": ".NET",
     "meteor": "Meteor",
@@ -109,7 +110,8 @@
     "craft": "Craftsmanship",
     "git": "Git",
     "docker": "Docker",
-    "solidity": "Solidity"
+    "solidity": "Solidity",
+    "rust": "Rust"
   },
   "timeline": {
     "title": "Mon parcours"
@@ -119,6 +121,7 @@
     "csharp": "Développeur logiciel C#"
   },
   "societies": {
+    "soiltrackers": "SoilTrackers",
     "fasst": "F.ASS.T",
     "ededoc": "Ededoc",
     "monbuilding": "MonBuilding",
@@ -126,6 +129,11 @@
     "mscpi": "MeilleureSCPI"
   },
   "experiences": {
+    "soiltrackers": {
+      "description": [
+        "Les tâches impliquent le développement de services utilisant NestJS et TypeScript dans un NX Monorepo, la création d'une application frontale avec Vite, React, Tailwind et SWR, la création d'un registre de déplacements automatique pour le suivi des déplacements des camions et l'enregistrement des mouvements de sol, et la mise en œuvre d'un suivi simulé dans Rust. pour les tests, en utilisant des sockets pour interagir avec l'application."
+      ]
+    },
     "fasst": {
       "description": [
         "Pendant cette expérience professionnelle, j'ai travaillé avec des technologies telles que React, NodeJS, GraphQL et MongoDB pour développer des applications pour le secteur des assurances. J'ai également appris de nombreuses nouvelles compétences et j'ai évolué au sein d'une équipe en croissance. J'ai aidé des développeurs junior en reconversion à s'intégrer à l'entreprise et j'ai participé à la structuration de l'entreprise qui est passée de moins d'une dizaine de collaborateurs à environ 50. Cette expérience professionnelle m'a permis de développer mes compétences techniques et de travailler dans un environnement en constante évolution. J'ai également contribué à la croissance et au développement de l'entreprise en accompagnant les développeurs junior et en participant à la structuration de l'entreprise."

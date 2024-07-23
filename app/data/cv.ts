@@ -17,10 +17,18 @@ type CVItem = {
 const originalCV: CVItem[] = [
   {
     title: "jobs.fullstack",
+    society: "societies.soiltrackers",
+    skills: ["skills.react", "skills.node", "skils.remix", "skills.agile", "skills.postgres", "skills.rust"],
+    description: ["experiences.soiltrackers.description.0"],
+    startOf: "2024-01-01",
+  },
+  {
+    title: "jobs.fullstack",
     society: "societies.fasst",
-    skills: ["skills.react", "skills.node", "skills.express", "skills.mongo"],
+    skills: ["skills.react", "skills.node", "skills.express", "skills.mongo", "skills.agile"],
     description: ["experiences.fasst.description.0"],
     startOf: "2020-07-01",
+    endOf: "2023-10-01"
   },
   {
     title: "jobs.csharp",
