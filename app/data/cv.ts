@@ -18,7 +18,7 @@ const originalCV: CVItem[] = [
   {
     title: "jobs.fullstack",
     society: "societies.soiltrackers",
-    skills: ["skills.react", "skills.node", "skils.remix", "skills.agile", "skills.postgres", "skills.rust"],
+    skills: ["skills.react", "skills.node", "skills.remix", "skills.agile", "skills.postgres", "skills.rust"],
     description: ["experiences.soiltrackers.description.0"],
     startOf: "2024-01-01",
   },
