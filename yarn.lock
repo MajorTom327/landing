@@ -8042,10 +8042,10 @@ react-dom@18.2.0, react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-email@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/react-email/-/react-email-2.1.5.tgz#afa1e9e435644b97cd9df18a29081978ba47fc5b"
-  integrity sha512-SjGt5XiqNwrC6FT0rAxERj0MC9binUOVZDzspAxcRHpxjZavvePAHvV29uROWNQ1Ha7ssg1sfy4dTQi7bjCXrg==
+react-email@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/react-email/-/react-email-2.1.6.tgz#657ce068c052260c8f731b6e30a1766b02785886"
+  integrity sha512-BtR9VI1CMq4953wfiBmzupKlWcRThaWG2dDgl1vWAllK3tNNmJNerwY4VlmASRDQZE3LpLXU3+lf8N/VAKdbZQ==
   dependencies:
     "@babel/core" "7.24.5"
     "@babel/parser" "7.24.5"
