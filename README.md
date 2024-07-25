@@ -1,53 +1,40 @@
-# Welcome to the landing!
+# Welcome to Remix!
 
-- [Remix Docs](https://remix.run/docs)
-- [Vercel](https://vercel.com)
+- 📖 [Remix docs](https://remix.run/docs)
 
-This project include many dependencies and basic configuration for projects.
-Like:
+## Development
 
-- [React](https://reactjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [ts-pattern](https://npmjs.org/package/ts-pattern)
-- [Ramda](https://ramdajs.com/)
-- [Ramda-Adjunct](https://char0n.github.io/ramda-adjunct/)
-- [Remix-Utils](https://github.com/sergiodxa/remix-utils)
-- [shadcn-ui](https://ui.shadcn.com/)
+Run the dev server:
 
-This include a basic configuration for vercel
-
-## Getting Started
-
-```shell
-npx create-remix@latest --package-manager yarn -y --template majortom327/lofi-stack --token $GH_TOKEN
+```shellscript
+npm run dev
 ```
 
 ## Deployment
 
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
-
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
+First, build your app for production:
 
 ```sh
-yarn install
+npm run build
 ```
 
-Afterwards, start the Remix development server like so:
+Then run the app in production mode:
 
 ```sh
-yarn dev
+npm start
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+Now you'll need to pick a host to deploy it to.
 
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
+### DIY
 
-## Tests
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
 
-To run the test, simply use the following command:
+Make sure to deploy the output of `npm run build`
 
-```sh
-yarn test
-```
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
