@@ -11,17 +11,32 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@remix-run/node": "^2.10.3",
     "@remix-run/react": "^2.10.3",
     "@remix-run/serve": "^2.10.3",
+    "@tailwindcss/vite": "^4.0.0-alpha.17",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "12.0.0-alpha.0",
     "isbot": "^4.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "lucide-react": "^0.414.0",
+    "next-themes": "^0.3.0",
+    "react": "19.0.0-rc-ab2135c7-20240724",
+    "react-dom": "19.0.0-rc-ab2135c7-20240724",
+    "sonner": "^1.5.0",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "ts-pattern": "^5.2.0",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.10.3",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
+    "@types/bun": "^1.1.6",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "autoprefixer": "^10.4.19",
@@ -32,10 +47,14 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^4.0.0-alpha.17",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
   },
   "engines": {
     "node": ">=20.0.0"
