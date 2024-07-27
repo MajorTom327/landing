@@ -7,13 +7,14 @@ import {
   useProfileStore,
 } from "~/components/profile/profile-store";
 import { Button } from "~/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.15,
     },
   },
 };
@@ -44,7 +45,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ children, to }) => {
           "transition relative text-wrap text-left",
           {
             "text-secondary-foreground": isActive,
-            "hover:bg-primary/50": !isActive
+            "hover:bg-primary/50": !isActive,
           }
         )}
       >
@@ -69,6 +70,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ children, to }) => {
 };
 
 export const ProfileMenu: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <motion.ul
       variants={container}
@@ -76,10 +78,10 @@ export const ProfileMenu: React.FC = () => {
       animate="show"
       className={"flex flex-col justify-evenly gap-2 flex-wrap"}
     >
-      <MenuItem to={"about-me"}>Who am I?</MenuItem>
-      <MenuItem to={"about-work"}>What I do?</MenuItem>
-      <MenuItem to={"my-values"}>What are my values?</MenuItem>
-      <MenuItem to={"causes"}>Which causes are importants to me?</MenuItem>
+      <MenuItem to={"about-me"}>{t("profile.who.label")}</MenuItem>
+      <MenuItem to={"about-work"}>{t("profile.work.label")}</MenuItem>
+      <MenuItem to={"my-values"}>{t("profile.values.label")}</MenuItem>
+      <MenuItem to={"causes"}>{t("profile.causes.label")}</MenuItem>
     </motion.ul>
   );
 };

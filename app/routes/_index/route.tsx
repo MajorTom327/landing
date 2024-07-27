@@ -8,6 +8,7 @@ export default function Index() {
     <>
       <div className="flex flex-col gap-32 p-16">
         <Profile />
+        <Separator />
         <Toolbox />
 
         <Separator />

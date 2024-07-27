@@ -1,0 +1,117 @@
+{
+  "general": {
+    "copyright": "$t(profile.fullname) © 2017-{{now}}"
+  },
+  "contacts": {
+    "service": {
+      "github": {
+        "label": "GitHub",
+        "url": "https://github.com/majortom327"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/valentin-thomas-110236144/"
+      },
+      "farcaster": {
+        "label": "Farcaster",
+        "url": "https://warpcast.com/majortom327.eth"
+      },
+      "ens": {
+        "label": "majortom327.eth",
+        "url": "https://rainbow.me/majortom327.eth"
+      }
+    }
+  },
+  "profile": {
+    "firstname": "Valentin",
+    "lastname": "Thomas",
+    "fullname": "$t(profile.firstname) $t(profile.lastname)",
+    "role": "FullStack Developer",
+    "description": "A $t(profile.role) since 2015, professionally since 2017",
+    "who": {
+      "label": "Who am I?",
+      "description": [
+        "I'm a $t(profile.role), more on the $t(tech.react) side. I'm a big fan of $t(tech.remix) and love to use $t(tech.ts). I'm a $t(tech.tailwind) fan, and use it with $t(tech.shad).",
+        "I like to build efficient web application, love to teach and share knowledge. You can see me on discord and ask me for help!",
+        "My objective is to be a part of a team where we collaborate and share a large amount of knowledge with each other to grow together and make high-quality products that push the company to new heights. I also aim to utilize my ability to find innovative solutions in the face of unexpected challenges, contributing to the company's overall success. "
+      ]
+    },
+    "work": {
+      "label": "What do I do?"
+    },
+    "values": {
+      "label": "What are my values?",
+      "openness": {
+        "label": "Openness",
+        "description": [
+          "I am open to new experiences and new ideas. I am curious and enjoy learning new things.",
+          "Sharing knowledge is one of my core idea. I take the time to teach other as much as I can."
+        ]
+      },
+      "quality": {
+        "label": "Quality",
+        "description": [
+          "I strive to do my best in everything I do. I am proud of my work and committed to delivering quality products. I am always looking for new ways to improve my skills and knowledge, whether it be in tools or languages."
+        ]
+      },
+      "creativity": {
+        "label": "Creativity",
+        "description": [
+          "I am creative and enjoy finding innovative solutions to problems. I am always looking for new ideas and ways of doing things. I enjoy creating things and am proud of my imagination. I appreciate seeing my ideas come to life and watching my creations come to life."
+        ]
+      },
+      "honesty": {
+        "label": "Honesty",
+        "description": [
+          "I am honest and committed to being transparent and keeping my promises. I am trustworthy and proud of my integrity. I appreciate both telling the truth and hearing it, whether it is positive or negative."
+        ]
+      }
+    },
+    "causes": {
+      "label": "Which causes are importants to me?",
+      "spa": {
+        "label": "The S.P.A.",
+        "description": [
+          "The spa had an important impact on my life. I grew up with animals (dogs and cats), knowing how they share their love unconditionally.",
+          "My best friend, Posix, is a cat who was abandoned on the side of the road, tail broken and his heart broken. Now he has a family, he has healed from depression, and is happy to share cuddles.",
+          "Too many fur friends are abandoned as if they are toys. They have feelings and love their family.",
+          "Adopt, don't shop!"
+        ],
+        "link": "$t(profile.causes.spa.label)'s website",
+        "url": "https://www.la-spa.fr/"
+      },
+      "restos": {
+        "label": "Les Restos du Cœur",
+        "description": [
+          "\"$t(profile.causes.restos.label)\" provide valuable assistance to those in need by providing hot and nutritious meals for free. They are a source of support for people who are struggling to make ends meet and who would not be able to afford food otherwise.",
+          "They are important to me, as when I was younger, they helped my family to live during a hard financial moment."
+        ],
+        "link": "$t(profile.causes.restos.label)'s website",
+        "url": "https://www.restosducoeur.org/"
+      }
+    }
+  },
+  "toolbox": {
+    "label": "My favorite tools"
+  },
+  "tech": {
+    "description": {
+      "react": "From class to Function Components, soon Server Components?",
+      "node": "NodeJS is one of my favorite tools. I'm still open to test things like Bun or Deno, but currently I feel they are not enough mature in comparison of nodejs",
+      "git": "Can't work without. Can you?",
+      "remix": "Remix totally changed the way I build application. Efficient, I can build a large amount of stuff in a minimal of time. And still have a app able to render fast and with no js if needed.",
+      "ts": "I like types in my apps.",
+      "postgres": "Postgres is a great database. Not that much to say.",
+      "docker": "It work on my computer (and others)"
+    },
+    "docker": "Docker",
+    "git": "Git",
+    "node": "Node.JS",
+    "postgres": "Postgres",
+    "react": "React",
+    "remix": "Remix",
+    "shad": "ShadCN",
+    "ts": "TypeScript",
+    "tailwind": "TailwindCSS"
+  }
+}

@@ -1,3 +1,3 @@
 <component name="DependencyValidationManager">
-  <scope name="barrelize" pattern="(file[new_landing]:app/components//*||file[new_landing]:app/lib//*)&amp;&amp;!file:app/*/index.ts" />
+  <scope name="barrelize" pattern="!file[new_landing]:app/*/index.ts&amp;&amp;!file[new_landing]:app/routes//*&amp;&amp;!file:app/entry.*.tsx&amp;&amp;!file:app/root.tsx&amp;&amp;file[new_landing]:app//*" />
 </component>

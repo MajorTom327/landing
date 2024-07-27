@@ -4,11 +4,28 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
 import "./tailwind.css";
 import { Navbar, NavbarItem, NavbarMenu } from "~/components/navbar";
 import { MotionConfig } from "framer-motion";
-import type { MetaFunction } from "@remix-run/node";
+import type { LoaderFunction, MetaFunction } from "@remix-run/node";
+import {
+  always,
+  compose,
+  defaultTo,
+  filter,
+  head,
+  includes,
+  isEmpty,
+  map,
+  split,
+  when,
+} from "rambda";
+import { honeypot } from "~/.server/honeypot";
+import { HoneypotProvider } from "remix-utils/honeypot/react";
+import { useTranslation } from "react-i18next";
+import { Footer } from "~/components/footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,7 +34,27 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+const acceptedLocales = ["en", "fr"];
+
+export const loader: LoaderFunction = ({ request }) => {
+  // @ts-expect-error Ramda shitty types
+  const locale: Locale = compose(
+    head,
+    when(isEmpty, always(["en"])),
+    filter((locale: string) => includes(locale, acceptedLocales)), // Filter out locales that are not accepted
+    map(compose(head, split("-"))), // Clean up locale to only get the language not the region
+    split(","), // Handle multiple languages
+    defaultTo("en-US") // Handle header doesn't exist
+  )(request.headers.get("accept-language"));
+
+  return {
+    locale,
+    honeypotInputProps: honeypot.getInputProps(),
+  };
+};
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const { t } = useTranslation();
   return (
     <html lang="en">
       <head>
@@ -32,7 +69,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <Navbar>
               <NavbarMenu>
                 <NavbarItem to={"/"} end>
-                  Valentin Thomas
+                  {t("profile.fullname")}
                 </NavbarItem>
               </NavbarMenu>
               <NavbarMenu>
@@ -45,6 +82,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col gap-2 mx-4 sm:mx-auto md:w-9/10 lg:w-8/10 my-2">
             {children}
           </div>
+          <Footer />
         </MotionConfig>
         <ScrollRestoration />
         <Scripts />
@@ -54,5 +92,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const data = useLoaderData<typeof loader>();
+
+  return (
+    <HoneypotProvider {...data.honeypotInputProps}>
+      <Outlet />
+    </HoneypotProvider>
+  );
 }
