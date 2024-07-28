@@ -105,13 +105,17 @@
       "docker": "It work on my computer (and others)"
     },
     "docker": "Docker",
+    "eth": "Ethereum",
     "git": "Git",
+    "meteor": "MeteorJS",
+    "next": "NextJS",
     "node": "Node.JS",
     "postgres": "Postgres",
     "react": "React",
     "remix": "Remix",
     "shad": "ShadCN",
     "ts": "TypeScript",
-    "tailwind": "TailwindCSS"
+    "tailwind": "TailwindCSS",
+    "web3": "Web3"
   }
 }

@@ -1,0 +1,168 @@
+{
+  "repo": "Repository",
+  "website": "Website",
+  "projects": {
+    "label": "My projects",
+    "list": [
+      "styx",
+      "emdr",
+      "andromeda",
+      "basemint",
+      "blog",
+      "deadsafe",
+      "bellz",
+      "knights",
+      "tweaks"
+    ]
+  },
+  "andromeda": {
+    "label": "Andromeda",
+    "caption": "$t(andromeda.label) interface screenshot",
+    "description": [
+      "Andromeda is an application designed to help developers better manage their time and remember what they accomplished the previous day. It offers an easy-to-use Kanban interface that allows developers to track their work day and recall what they accomplished during their Daily. This application is developed in Meteor with React and uses MongoDB as its database. It enables developers to better organize their work and track their progress effectively.",
+      "I was able to take advantage of creating this application to work on an interface that provides a visual state of things through page animations."
+    ],
+    "tech": [
+      "$t(common:tech.meteor)",
+      "$t(common:tech.node)",
+      "$t(common:tech.react)"
+    ],
+    "urls": {
+      "repo": "https://github.com/MajorTom327/andromeda"
+    }
+  },
+  "basemint": {
+    "label": "Basemint",
+    "caption": "$t(basemint.label) interface screenshot",
+    "description": [
+      "The Basemint project is a fan art whose goal is to learn about using web3 and interacting with an Ethereum contract. In this case, the contract is for VirtueAnimation's BaseMint Buds NFT.",
+      "I was able to learn how to display the basic information of a contract and interact with it through JavaScript."
+    ],
+    "tech": [
+      "$t(common:tech.web3)",
+      "$t(common:tech.eth)",
+      "$t(common:tech.react)"
+    ],
+    "urls": {
+      "repo": "https://github.com/MajorTom327/basemint",
+      "website": "https://majortom327.github.io/basemint/"
+    }
+  },
+  "bellz": {
+    "label": "Bellz",
+    "caption": "$t(bellz.label) interface screenshot",
+    "description": [
+      "Bellz is a personal accounting management application that helps individuals better manage their finances. It lists transactions and accounts in an organized manner, facilitating financial decision making. The application also allows users to share this information with others, which can be useful when working as a couple or as a family. Available as a web service, Bellz allows users to track their accounting from anywhere and at any time. By using this application, individuals can more efficiently and effectively reach their financial goals.",
+      "This application was built around Remix to learn how to use this framework as well as learn some optimization techniques to reduce loading time and make the application as fast as possible. It was designed to allow for JavaScript-free use on the front-end as well as in highly degraded network conditions.",
+      "It also allowed me to create a project foundation based on Remix, TailwindCSS, and Revolut in order to have a complete and performant SaaS service template."
+    ],
+    "tech": [
+      "$t(common:tech.react)",
+      "$t(common:tech.remix)",
+      "$t(common:tech.node)"
+    ],
+    "urls": {
+      "repo": "https://github.com/MajorTom327/bellz"
+    }
+  },
+  "blog": {
+    "label": "Decentralized Blog",
+    "caption": "$t(blog.label) interface screenshot",
+    "description": [
+    ],
+    "tech": [
+      "$t(common:tech.web3)",
+      "$t(common:tech.eth)",
+      "$t(common:tech.react)",
+      "$t(common:tech.node)"
+    ],
+    "urls": {
+      "repo": "https://github.com/MajorTom327/the-decentralized-blog"
+    }
+  },
+  "deadsafe": {
+    "label": "The DeadSafe",
+    "caption": "$t(deadsafe.label) interface screenshot",
+    "description": [
+      "The DeadSafe project is an ambitious decentralized management game based on NFTs, with the aim of unlocking access to a safe.",
+      "DeadSafe is currently being developed. However, partial documentation of the project is already available on the website."
+    ],
+    "tech": [
+      "$t(common:tech.web3)",
+      "$t(common:tech.eth)",
+      "$t(common:tech.react)",
+      "$t(common:tech.remix)"
+    ],
+    "urls": {
+      "repo": "https://github.com/MajorTom327/deadsafe-landing",
+      "website": "https://www.the-deadsafe.com/"
+    }
+  },
+  "emdr": {
+    "label": "EMDR Dinan",
+    "caption": "$t(emdr.label) interface screenshot",
+    "description": [
+      "This website was developed for a client who wanted to have a showcase website for his EMDR practice. It was developed in JS with the Remix.run. It is a simple website that allows the client to present his practice and his contact information.",
+      "There is an important point put on the SEO of the website and the optimization of the loading time plus the ecological impact of the website."
+    ],
+    "tech": [
+      "$t(common:tech.remix)",
+      "$t(common:tech.node)",
+      "$t(common:tech.react)"
+    ],
+    "urls": {
+      "website": "https://www.emdr-dinan.fr/"
+    }
+  },
+  "knights": {
+    "label": "Knights Who Say Nah",
+    "caption": "$t(knights.label) interface screenshot",
+    "description": [
+      "In the \"Knights Who Say Nah\" project, I actively resolved a bug that was blocking blockchain transactions after a victory. I volunteered to help improve user experience. My efforts led to the bug's resolution, allowing players to smoothly conduct transactions after their successes. This experience reinforced the positive impact of collaboration in meaningful projects."
+    ],
+    "tech": [
+      "$t(common:tech.react)",
+      "$t(common:tech.node)",
+      "$t(common:tech.web3)",
+      "$t(common:tech.next)"
+    ],
+    "urls": {
+      "website": "https://slay.knightssaynah.com/"
+    }
+  },
+  "styx": {
+    "label": "Styx",
+    "caption": "$t(styx.label) interface screenshot",
+    "description": [
+      "Styx is a client management application for crematoriums. It allows easy management of deceased clients and associated information.",
+      "This application is a complete SaaS developed independently to quickly meet a need. It required a long development time but is still in production with regular updates to continue to meet the needs.",
+      "The current version is in PHP with MariaDB, but developments are focused on implementation through a TypeScript stack using Remix, TailwindCSS, and Postgresql."
+    ],
+    "tech": [
+      "$t(common:tech.remix)",
+      "$t(common:tech.node)",
+      "$t(common:tech.react)"
+    ],
+    "urls": {
+      "website": "https://doc.styx-sys.com/"
+    }
+  },
+  "tweaks": {
+    "label": "Tweaks Asylum",
+    "caption": "$t(tweaks.label) interface screenshot",
+    "description": [
+      "I had the opportunity to contribute voluntarily to the Twisted Tweaks project, focusing on feature integration. I particularly concentrated my efforts on bug resolution and the addition of the ENS (Ethereum Name Service) domain. My involvement allowed me to gain valuable experience in programming and development while enhancing the community.",
+      "I had the option to rebuild a website based on Remix too"
+    ],
+    "tech": [
+      "$t(common:tech.react)",
+      "$t(common:tech.node)",
+      "$t(common:tech.web3)",
+      "$t(common:tech.next)",
+      "$t(common:tech.remix)"
+    ],
+    "urls": {
+      "website": "https://www.tweaklabs.xyz/asylum"
+    }
+  }
+}
