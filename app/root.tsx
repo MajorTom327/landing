@@ -26,6 +26,7 @@ import { honeypot } from "~/.server/honeypot";
 import { HoneypotProvider } from "remix-utils/honeypot/react";
 import { useTranslation } from "react-i18next";
 import { Footer } from "~/components/footer";
+import { env } from "~/.server";
 
 export const meta: MetaFunction = () => {
   return [
@@ -47,10 +48,13 @@ export const loader: LoaderFunction = ({ request }) => {
     defaultTo("en-US") // Handle header doesn't exist
   )(request.headers.get("accept-language"));
 
-  return {
+  const result = {
+    env: env.getPublicEnv(),
     locale,
     honeypotInputProps: honeypot.getInputProps(),
   };
+
+  return result;
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
