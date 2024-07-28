@@ -20,9 +20,9 @@ export const AboutMeCard: React.FC = () => {
         <ScrollArea className={"h-[32rem] p-4"}>
           <div className={"flex flex-col gap-6 items-center"}>
             {(
-              t("profile.who.description", {
+              (t("profile.who.description", {
                 returnObjects: true,
-              }) as Array<string>
+              }) as Array<string>) ?? []
             ).map((p) => (
               <p key={p}>{p}</p>
             ))}

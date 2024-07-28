@@ -6,9 +6,10 @@ export const ProjectsIndexRoute: React.FC = () => {
   const { t } = useTranslation("projects");
 
   const projects = useMemo(() => {
-    const projectNames = t("projects.list", {
-      returnObjects: true,
-    }) as string[];
+    const projectNames =
+      (t("projects.list", {
+        returnObjects: true,
+      }) as string[]) ?? [];
 
     return projectNames
       .map((projectName) => {

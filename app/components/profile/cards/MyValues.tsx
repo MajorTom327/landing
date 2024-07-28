@@ -13,9 +13,9 @@ const ValueGroup: React.FC<{
       <div className="text-xl text-center">{t(`${value}.label`)}</div>
 
       {(
-        t(`${value}.description`, {
+        (t(`${value}.description`, {
           returnObjects: true,
-        }) as string[]
+        }) as string[]) ?? []
       ).map((paragraph) => (
         <p className={"text-justify"} key={paragraph}>
           {paragraph}
