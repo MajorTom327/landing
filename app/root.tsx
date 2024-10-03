@@ -160,6 +160,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script defer data-domain="valentin-thomas.com" src="https://plausible.valentin-thomas.com/js/script.js"></script>
       </head>
       <HoneypotProvider {...honeypotInputProps}>
         <VisionContext.Provider value={isDeficitVision}>
