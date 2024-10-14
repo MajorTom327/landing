@@ -106,7 +106,7 @@ export const projects: Project[] = [
     title: "projects.styx.title",
     image: styxAsset,
     techs: ["skills.node", "skills.react", "skills.remix"],
-    url: "https://doc.styx-sys.com",
+    url: "https://github.com/MajorTom327/doc-styx",
     description: [
       "projects.styx.description.0",
       "projects.styx.description.1",
