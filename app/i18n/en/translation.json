@@ -117,7 +117,10 @@
     "title": "My timeline"
   },
   "jobs": {
-    "fullstack": "Fullstack Developer",
+    "fullstack": {
+      "senior": "Fullstack Developer",
+      "index": "Fullstack Developer"
+    },
     "csharp": "C# Developer"
   },
   "societies": {

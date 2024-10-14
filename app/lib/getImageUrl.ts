@@ -8,18 +8,7 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  if (process.env.NODE_ENV === "development") {
-    return src;
-  }
-
-  const params = new URLSearchParams({});
-
-  params.append("url", src);
-  // @ts-ignore
-  params.append("w", propOr(1200, "width", options).toString());
-  // @ts-ignore
-  params.append("q", propOr(75, "quality", options).toString());
-  return `https://valentin-thomas.com/_vercel/image?${params}`;
+  return src;
 };
 
 export default getImageUrl;

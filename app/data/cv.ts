@@ -16,14 +16,14 @@ type CVItem = {
 
 const originalCV: CVItem[] = [
   {
-    title: "jobs.fullstack",
+    title: "jobs.fullstack.senior",
     society: "societies.soiltrackers",
     skills: ["skills.react", "skills.node", "skills.remix", "skills.agile", "skills.postgres", "skills.rust"],
     description: ["experiences.soiltrackers.description.0"],
     startOf: "2024-01-01",
   },
   {
-    title: "jobs.fullstack",
+    title: "jobs.fullstack.senior",
     society: "societies.fasst",
     skills: ["skills.react", "skills.node", "skills.express", "skills.mongo", "skills.agile"],
     description: ["experiences.fasst.description.0"],
@@ -39,7 +39,7 @@ const originalCV: CVItem[] = [
     startOf: "2018-11-01",
   },
   {
-    title: "jobs.fullstack",
+    title: "jobs.fullstack.index",
     society: "societies.monbuilding",
     skills: ["skills.meteor", "skills.react"],
     description: ["experiences.monbuilding.description.0"],
@@ -47,7 +47,7 @@ const originalCV: CVItem[] = [
     startOf: "2018-08-01",
   },
   {
-    title: "jobs.fullstack",
+    title: "jobs.fullstack.index",
     society: "societies.solicis",
     skills: ["skills.php"],
     description: ["experiences.solicis.description.0"],
@@ -55,7 +55,7 @@ const originalCV: CVItem[] = [
     startOf: "2018-05-01",
   },
   {
-    title: "jobs.fullstack",
+    title: "jobs.fullstack.index",
     society: "societies.mscpi",
     skills: ["skills.php"],
     description: ["experiences.mscpi.description.0"],
