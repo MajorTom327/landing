@@ -19,7 +19,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 
   const dateContent = isDevelopment() ? new Date().toISOString() : BUILD_DATE;
 
-  const host = getEnv("VERCEL_URL");
+  const host = getEnv("COOLIFY_URL");
 
   const xmlContent = [
     `<?xml version="1.0" encoding="UTF-8"?>`,
